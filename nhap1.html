@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Đếm giờ bài kiểm tra</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 40px;
+      background: #f4f4f4;
+    }
+
+    #timer-container {
+      position: relative;
+      width: 100%;
+      max-width: 600px;
+      height: 30px;
+      background-color: #ddd;
+      border-radius: 20px;
+      overflow: hidden;
+      margin-bottom: 20px;
+    }
+
+    #timer-bar {
+      height: 100%;
+      width: 100%;
+      background-color: #4CAF50;
+      transition: width 1s linear;
+    }
+
+    #time-left {
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    #timeout-message {
+      display: none;
+      color: red;
+      font-size: 18px;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Thời gian làm bài</h2>
+
+  <div id="timer-container">
+    <div id="timer-bar"></div>
+  </div>
+
+  <div id="time-left">30:00</div>
+  <div id="timeout-message">⏰ Hết giờ! Bài làm đã được nộp tự động.</div>
+
+  <script>
+    const totalSeconds = 30 * 60; // 30 phút
+    let remainingSeconds = totalSeconds;
+
+    const timerBar = document.getElementById("timer-bar");
+    const timeLeftText = document.getElementById("time-left");
+    const timeoutMessage = document.getElementById("timeout-message");
+
+    const updateTimer = () => {
+      let minutes = Math.floor(remainingSeconds / 60);
+      let seconds = remainingSeconds % 60;
+
+      timeLeftText.textContent = `${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
+
+      let percentage = (remainingSeconds / totalSeconds) * 100;
+      timerBar.style.width = percentage + "%";
+
+      if (remainingSeconds <= 0) {
+        clearInterval(timerInterval);
+        timeoutMessage.style.display = 'block';
+        // Gửi bài tự động ở đây nếu cần
+      }
+
+      remainingSeconds--;
+    };
+
+    updateTimer(); // chạy lần đầu
+    const timerInterval = setInterval(updateTimer, 1000);
+  </script>
+
+</body>
+</html>

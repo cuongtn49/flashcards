@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flashcard Settings</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+            margin: 0;
+        }
+        .settings-container {
+            width: 400px;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+        h2 {
+            text-align: center;
+        }
+        .setting-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 10px 0;
+        }
+        select, input {
+            padding: 5px;
+            font-size: 16px;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            font-size: 18px;
+            background: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background 0.3s;
+            margin-top: 15px;
+        }
+        button:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="settings-container">
+        <h2>⚙️ Cài Đặt Hệ Thống</h2>
+
+        <div class="setting-item">
+            <label for="theme">🎨 Giao diện:</label>
+            <select id="theme">
+                <option value="light">Sáng</option>
+                <option value="dark">Tối</option>
+            </select>
+        </div>
+
+        <div class="setting-item">
+            <label for="sound">🔊 Âm thanh:</label>
+            <select id="sound">
+                <option value="on">Bật</option>
+                <option value="off">Tắt</option>
+            </select>
+        </div>
+
+        <div class="setting-item">
+            <label for="study-mode">📖 Chế độ học:</label>
+            <select id="study-mode">
+                <option value="normal">Bình thường</option>
+                <option value="spaced-repetition">Ghi nhớ khoảng cách</option>
+                <option value="quiz-mode">Trắc nghiệm</option>
+            </select>
+        </div>
+
+        <div class="setting-item">
+            <label for="font-size">🔤 Cỡ chữ:</label>
+            <input type="number" id="font-size" min="12" max="24" value="16">
+        </div>
+
+        <button id="save-settings">💾 Lưu cài đặt</button>
+    </div>
+
+    <script>
+        // Load settings từ Local Storage khi mở trang
+        window.onload = function () {
+            document.getElementById("theme").value = localStorage.getItem("theme") || "light";
+            document.getElementById("sound").value = localStorage.getItem("sound") || "on";
+            document.getElementById("study-mode").value = localStorage.getItem("study-mode") || "normal";
+            document.getElementById("font-size").value = localStorage.getItem("font-size") || "16";
+        };
+
+        // Lưu cài đặt vào Local Storage
+        document.getElementById("save-settings").addEventListener("click", function () {
+            localStorage.setItem("theme", document.getElementById("theme").value);
+            localStorage.setItem("sound", document.getElementById("sound").value);
+            localStorage.setItem("study-mode", document.getElementById("study-mode").value);
+            localStorage.setItem("font-size", document.getElementById("font-size").value);
+            alert("✅ Cài đặt đã được lưu!");
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dictionary App</title>
+    <style>
+        body,
+        .box-child {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            /* align-items: center; */
+            margin: 20px;
+        }
+
+        #box {
+            display: flex;
+            flex-direction: row;
+            /* align-items: center; */
+            justify-content: space-between;
+            border: 1px solid black;
+
+
+            margin: 20px;
+        }
+
+        .box-child {
+            flex: 1;
+            border: 1px solid black;
+
+        }
+
+        .box-child .input-format {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 20px;
+        }
+
+        input,
+        button {
+            margin: 5px;
+            padding: 10px;
+            font-size: 16px;
+        }
+
+        table {
+            width: 55%;
+            margin-top: 20px;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f4f4f4;
+        }
+
+        .delete-btn {
+            cursor: pointer;
+            color: red;
+        }
+
+        #table-box {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+    <div id="box">
+        <div class="box-child">ccc</div>
+        <div class="box-child">
+            <div class="input-format">
+                <h1>Dictionary App</h1>
+                <input id="word" type="text" placeholder="Word">
+                <input id="meaning" type="text" placeholder="Meaning">
+                <input id="annotation1" type="text" placeholder="Annotation 1">
+                <input id="annotation2" type="text" placeholder="Annotation 2">
+                <button onclick="saveWord()">Save</button>
+                <button onclick="sortByAlphabet()">Sort</button>
+            </div>
+
+        </div>
+        <div class="box-child">ccc</div>
+    </div>
+
+
+    <div id="table-box">
+        <table id="wordsTable">
+            <thead>
+                <tr>
+                    <th>Word</th>
+                    <th>Meaning</th>
+                    <th>Annotation 1</th>
+                    <th>Annotation 2</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="list-data"></tbody>
+        </table>
+    </div>
+
+    <script>
+        function saveWord() {
+            const word = document.getElementById('word').value;
+            const meaning = document.getElementById('meaning').value;
+            const annotation1 = document.getElementById('annotation1').value;
+            const annotation2 = document.getElementById('annotation2').value;
+
+            if (word && meaning) {
+                const words = JSON.parse(localStorage.getItem(localStorage.getItem("modifyData"))) || [];
+                words.push({ 'question': word, 'answer': meaning, annotation1, annotation2 });
+                localStorage.setItem(localStorage.getItem("modifyData"), JSON.stringify(words));
+                renderTable();
+                clearInputs();
+            } else {
+                alert('Please enter both word and meaning!');
+            }
+        }
+        function sortByAlphabet() {
+            alert("Sắp xếp thành công");
+            const data = JSON.parse(localStorage.getItem(localStorage.getItem("modifyData"))) || [];
+
+            // Sắp xếp theo thuộc tính "question"
+            data.sort((a, b) => a.question.localeCompare(b.question));
+
+            // Lưu lại vào localStorage (nếu cần)
+            localStorage.setItem(localStorage.getItem("modifyData"), JSON.stringify(data));
+            console.log("Đã sắp xếp theo bảng chữ cái:", data);
+            renderTable();
+        }
+
+
+
+        // function renderTable() {
+        //     const words = JSON.parse(localStorage.getItem(localStorage.getItem("modifyData"))) || [];
+        //     const tbody = document.getElementById('wordsTable').querySelector('tbody');
+        //     tbody.innerHTML = '';
+
+        //     words.forEach(({ question, answer, annotation1, annotation2 }) => {
+        //         const row = `<tr>
+        //             <td>${question}</td>
+        //             <td>${answer}</td>
+        //             <td>${annotation1}</td>
+        //             <td>${annotation2}</td>
+        //             <td class='delete-btn' onclick="deleteWord('${question}')">Xóa</td>
+        //         </tr>`;
+        //         tbody.innerHTML += row;
+        //     });
+        // }
+        function renderTable() {
+            const words = JSON.parse(localStorage.getItem(localStorage.getItem("modifyData"))) || [];
+            const tbody = document.getElementById('list-data');
+            let html = '';
+
+            words.forEach(({ question, answer, annotation1, annotation2 }) => {
+                html += `<tr>
+            <td>${question}</td>
+            <td>${answer}</td>
+            <td>${annotation1}</td>
+            <td>${annotation2}</td>
+            <td class='delete-btn' onclick="deleteWord('${question}')">Xóa</td>
+        </tr>`;
+            });
+
+            tbody.innerHTML = html;
+        }
+
+
+        function deleteWord(word) {
+            let words = JSON.parse(localStorage.getItem(localStorage.getItem("modifyData"))) || [];
+            words = words.filter(element => element.question !== word);
+            localStorage.setItem(localStorage.getItem("modifyData"), JSON.stringify(words));
+            renderTable();
+        }
+
+        function clearInputs() {
+            document.getElementById('word').value = '';
+            document.getElementById('meaning').value = '';
+            document.getElementById('annotation1').value = '';
+            document.getElementById('annotation2').value = '';
+        }
+
+        window.onload = renderTable;
+        // localStorage.removeItem("modifyData");
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Export HTML to PDF</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
+</head>
+<style>
+    #content{
+        margin: 50px;
+    }
+</style>
+<body>
+
+    <div id="content">
+        <h1>Danh sách Flashcards</h1>
+        <div id="flashcards">
+            <!-- Nội dung flashcard sẽ được chèn vào đây -->
+        </div>
+    </div>
+
+    <button onclick="exportPDF()">Tải PDF</button>
+
+    <script>
+        function exportPDF() {
+            const element = document.getElementById('content');
+            html2pdf().from(element).save();
+        }
+
+        // Ví dụ dữ liệu flashcard
+        var flashcards = JSON.parse(localStorage.getItem("data")) || [];
+
+        // Chèn dữ liệu flashcard vào HTML
+        var flashcardsContainer = document.getElementById('flashcards');
+        flashcards.forEach((card, index) => {
+            let question = document.createElement('p');
+            question.textContent = `Q${index + 1}: ${card.question}`;
+            flashcardsContainer.appendChild(question);
+
+            let answer = document.createElement('p');
+            answer.textContent = `A: ${card.answer}`;
+            flashcardsContainer.appendChild(answer);
+        });
+    </script>
+
+</body>
+</html>

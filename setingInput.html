@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="input">
+    <button id="confirm">confirm</button>
+    <br>
+    <!-- <input type="checkbox"> Bắt buộc điền tựa đề -->
+    <script>
+        // const struct={separatorSymbol:"--"};
+        // localStorage.setItem("setting",JSON.stringify(struct));
+        const setting = JSON.parse(localStorage.getItem("setting"));
+        // alert(seting);
+        document.getElementById("input").value=setting.separatorSymbol;
+        document.getElementById("confirm").addEventListener("click",()=>{
+            setting.separatorSymbol=document.getElementById("input").value.trim();
+            localStorage.setItem("setting",JSON.stringify(setting));
+            alert("Lưu thành công");
+        })
+    </script>
+</body>
+</html>

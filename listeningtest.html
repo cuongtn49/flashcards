@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listening test</title>
+</head>
+<style>
+    #listening-test {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        border: 1px solid black;
+        justify-content: center;
+        /* padding: 50px; */
+        margin: 20px;
+    }
+
+    .input-format {
+        display: flex;
+    }
+
+    #listening-test {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        border: 1px solid #ddd;
+        justify-content: center;
+        padding: 40px;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .input-format {
+        padding: 10px;
+        font-size: 16px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        transition: all 0.3s ease;
+        width: 200px;
+    }
+
+    .input-format:focus {
+        border-color: #007bff;
+        box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+        outline: none;
+    }
+
+    /* #answer-test {
+        margin-top: 20px;
+        font-size: 18px;
+        font-weight: bold;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        text-align: left;
+        max-width: 600px;
+        margin: 20px auto;
+        border-left: 5px solid #007bff;
+    }
+
+    #answer-test div {
+        padding: 10px;
+        border-bottom: 1px solid #ddd;
+        font-size: 16px;
+        color: #333;
+    }
+
+    #answer-test div:last-child {
+        border-bottom: none;
+    } */
+    #answer-test {
+        margin-top: 20px;
+        font-size: 18px;
+        font-weight: bold;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        text-align: left;
+        max-width: 1000px;
+        margin: 20px auto;
+        border-left: 5px solid #007bff;
+        column-count: 5;
+        column-gap: 20px;
+    }
+
+    #answer-test div {
+        padding: 10px;
+        border-bottom: 1px solid #ddd;
+        font-size: 16px;
+        color: #333;
+        break-inside: avoid;
+    }
+
+    #answer-test div:last-child {
+        border-bottom: none;
+    }
+</style>
+
+<body>
+    <img src="../gith/image/volume.png" alt="" onclick="createAudio(20)" style="width: 40px;">
+    <img src="../gith/image/submit.png" id="submit" alt="" onclick="submit(20)" style="width: 40px;display: none;">
+    <div id="listening-test"></div>
+    <div id="answer-test" style="display: none;"></div>
+    <script>
+        var flashcards = JSON.parse(localStorage.getItem("data")) || [];
+        flashcards = flashcards.map(Element => Element).sort(() => Math.random() - 0.5);
+        console.log(flashcards);
+        createInput(20);
+        // function createAudio(n) {
+        //     for (let i = 0; i < n; i++) {
+        //         setTimeout(() => {
+        //             speak("Number " + (i + 1));
+        //             speak(flashcards[i].question);
+        //             // console.log(flashcards[i].question);
+        //             // document.getElementById("listening-test").innerText += " - " + flashcards[i].question;
+        //         }, 3000);
+
+        //     }
+        // }
+        function createAudio(n) {
+            let index = 0;
+            function playNext() {
+                if (index < n && index < flashcards.length) {
+                    let questionText = flashcards[index].question || "Unknown question";
+                    speak(`Number ${index + 1}`);
+                    setTimeout(() => {
+                        speak(questionText);
+                        index++;
+                        setTimeout(playNext, 5000); // Chờ 3 giây trước khi đọc câu tiếp theo
+                    }, 1000);
+                } else {
+                    document.getElementById("submit").style.display = "block";
+                }
+            }
+            playNext();
+
+        }
+        function displayAnswer(n) {
+            document.getElementById("answer-test").innerHTML = ``;
+            for (let i = 0; i < n; i++) {
+                const div = document.createElement("div");
+                div.textContent = `${i + 1} - ${flashcards[i].question}`;
+                document.getElementById("answer-test").appendChild(div);
+                div.style.cursor = "pointer";
+                div.onclick = function () {
+                    details(
+                        flashcards[i].question,
+                        flashcards[i].answer,
+                        flashcards[i].annotation1,
+                        flashcards[i].annotation2
+                    );
+                };
+            }
+            document.getElementById("answer-test").style.display = "block";
+        }
+        function createInput(n) {
+            for (let i = 0; i < n; i++) {
+                const div = document.createElement('div');
+                div.innerHTML = `Question ${(i + 1)} <input class="input-format" type="text"}">`;
+                document.getElementById("listening-test").appendChild(div);
+            }
+        }
+        function speak(inputText) {
+            // const inputText = document.getElementById("text-input").value; // Lấy giá trị văn bản từ ô input
+            const utterance = new SpeechSynthesisUtterance(inputText); // Tạo đối tượng chứa văn bản cần đọc
+            window.speechSynthesis.speak(utterance); // Đọc văn bản
+        }
+
+        function submit(n) {
+            var list = document.getElementsByTagName("input");
+            for (let i = 0; i < list.length; i++) {
+                if (list[i].value.trim().toLowerCase() !== flashcards[i].question.toLowerCase()) list[i].style.background = "rgb(255, 0, 0,0.5)";
+                else {
+                    list[i].disabled = true;
+                    list[i].style.background = "rgb(0, 255, 0,0.5)";
+                }
+            }
+            var answers = Array.from(list).map(element => element.value);
+            console.log(answers); // Kiểm tra danh sách câu trả lời trong console
+            displayAnswer(n);
+        }
+
+        function details(word, mean, transcription, type) {
+            localStorage.setItem("details-listenning-test-46845", JSON.stringify({ word, mean, transcription, type }));
+            window.open("detailword.html", "_blank");
+        }
+
+        const inputs = document.querySelectorAll('input[type="text"]');
+        inputs.forEach((input, index) => {
+            input.addEventListener('keydown', (event) => {
+                if (event.key === 'Enter') {
+                    event.preventDefault(); // Ngăn chặn hành vi mặc định (submit form)
+                    const nextInput = inputs[index + 1];
+                    if (nextInput) {
+                        nextInput.focus(); // Focus vào input tiếp theo
+                    } else {
+                        // Nếu không còn input nào, có thể submit form hoặc làm gì đó khác
+                        alert('Bạn đã điền xong tất cả các ô!');
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

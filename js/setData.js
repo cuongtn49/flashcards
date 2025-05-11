@@ -1,0 +1,7025 @@
+var dataSet=[
+    {
+        "question": "abandon",
+        "answer": "từ bỏ, bỏ rơi, ruồng bỏ",
+        "annotation1": "/ə'bændən/",
+        "annotation2": "v",
+        "save": false
+    },
+    {
+        "question": "abode",
+        "answer": "nơi ở, sự lưu trú",
+        "annotation1": "/əˈbəʊd/",
+        "annotation2": "n, v",
+        "save": false
+    },
+    {
+        "question": "abort",
+        "answer": "sẩy thai, làm sẩy thai, phá thai bỏ dở",
+        "annotation1": "/ə'bɔ:t/",
+        "annotation2": "v",
+        "save": false
+    },
+    {
+        "question": "abortion",
+        "answer": "sự sẩy thai, sự phá thai, sự nạo thai",
+        "annotation1": "/ə'bɔ:∫n/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "abroad",
+        "answer": "ở nước ngoài, ra nước ngoài",
+        "annotation1": "/əˈbrɔːd/",
+        "annotation2": "adv",
+        "save": false
+    },
+    {
+        "question": "absent",
+        "answer": "vắng mặt, đi nghỉ",
+        "annotation1": "/ˈæbsənt/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "abstraction",
+        "answer": "sự trừu tượng, cái nhìn trừu tượng",
+        "annotation1": "/æbˈstrækʃn/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "absurd",
+        "answer": "vô lý, ngu xuẩn, ngớ ngẩn",
+        "annotation1": "/əb'sə:d/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "abuse",
+        "answer": "sự lạm dụng",
+        "annotation1": "/ə´bju:z/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "academic",
+        "answer": "thuộc học viện, thuộc trường đại học",
+        "annotation1": "/ˌækəˈdɛmɪk/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "academy",
+        "answer": "học viện",
+        "annotation1": "/ə'kædəmi/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "access",
+        "answer": "lối vào, cửa vào, đường vào",
+        "annotation1": "/'ækses/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "accomplish",
+        "answer": "hoàn thành, làm xong, đạt được mục tiêu",
+        "annotation1": "/əˈkɑːmplɪʃ/",
+        "annotation2": "v",
+        "save": false
+    },
+    {
+        "question": "accord",
+        "answer": "phù hợp, hòa hợp",
+        "annotation1": "/əˈkɔːrd/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "account",
+        "answer": "sự tính toán, tính toán",
+        "annotation1": "/ə'kaunt/",
+        "annotation2": "n, v",
+        "save": false
+    },
+    {
+        "question": "accountant",
+        "answer": "nhân viên kế toán, người giữ sổ sách kế toán",
+        "annotation1": "/ə´kauntənt/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "accurate",
+        "answer": "đúng đắn, chính xác, xác đáng",
+        "annotation1": "/ˈækjərət/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "accuse",
+        "answer": "buộc tội, kết tội, tố cáo",
+        "annotation1": "/əkjuːz/",
+        "annotation2": "v",
+        "save": false
+    },
+    {
+        "question": "accused",
+        "answer": "bị cáo",
+        "annotation1": "/ə'kju:zt/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "achieve",
+        "answer": "đạt được, giành được",
+        "annotation1": "/əˈtʃiːv/",
+        "annotation2": "v",
+        "save": false
+    },
+    {
+        "question": "acid",
+        "answer": "hoá học axit, chua",
+        "annotation1": "/'æsid/",
+        "annotation2": "n, adj",
+        "save": false
+    },
+    {
+        "question": "acknowledge",
+        "answer": "nhận, thừa nhận, công nhận",
+        "annotation1": "/ək'nɔlidʤ/",
+        "annotation2": "v",
+        "save": false
+    },
+    {
+        "question": "acquit",
+        "answer": "tha tội, tuyên bố trắng án",
+        "annotation1": "/əˈkwɪt/",
+        "annotation2": "v",
+        "save": false
+    },
+    {
+        "question": "active",
+        "answer": "tích cực, nhanh nhẹn, lanh lợi",
+        "annotation1": "/ˈæktɪv/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "activity",
+        "answer": "sự tích cực, hoạt động",
+        "annotation1": "/ækˈtɪvəti/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "adamant",
+        "answer": "kỷ cương, cứng rắn",
+        "annotation1": "/ˈædəmənt/",
+        "annotation2": "n, adj",
+        "save": false
+    },
+    {
+        "question": "add",
+        "answer": "thêm vào, làm tăng thêm",
+        "annotation1": "/æd/",
+        "annotation2": "v",
+        "save": false
+    },
+    {
+        "question": "address",
+        "answer": "địa chỉ",
+        "annotation1": "/'ædres/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "adequate",
+        "answer": "đủ, đầy đủ, tương xứng, xứng đáng",
+        "annotation1": "/ˈædɪkwət/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "adjust",
+        "answer": "sửa lại cho đúng, điều chỉnh",
+        "annotation1": "/əˈdʒʌst/",
+        "annotation2": "v",
+        "save": false
+    },
+    {
+        "question": "administration",
+        "answer": "sự trông nom, sự quản lý, sự cai quản, sự cai trị",
+        "annotation1": "/ədmini'streiʃn/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "admit",
+        "answer": "nhận vào, thừa nhận, thú nhận",
+        "annotation1": "/ədˈmɪt/",
+        "annotation2": "v",
+        "save": false
+    },
+    {
+        "question": "adopt",
+        "answer": "nhận làm con nuôi",
+        "annotation1": "/əˈdɒpt/",
+        "annotation2": "v",
+        "save": false
+    },
+    {
+        "question": "adore",
+        "answer": "ngưỡng vọng, kính yêu",
+        "annotation1": "/əˈdɔr , əˈdoʊr/",
+        "annotation2": "v",
+        "save": false
+    },
+    {
+        "question": "adroit",
+        "answer": "khéo léo, khéo tay",
+        "annotation1": "/əˈdrɔɪt/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "adult",
+        "answer": "người lớn, trưởng thành",
+        "annotation1": "/'ædʌlt, /ə'dʌlt/",
+        "annotation2": "n, adj",
+        "save": false
+    },
+    {
+        "question": "adversity",
+        "answer": "sự bất hạnh, nghịch cảnh",
+        "annotation1": "/ədˈvɜːrsəti/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "affect",
+        "answer": "ảnh hưởng, làm ảnh hưởng đến, làm tác động đến, chạm đến",
+        "annotation1": "/ə'fekt/",
+        "annotation2": "v",
+        "save": false
+    },
+    {
+        "question": "affection",
+        "answer": "sự làm ảnh hưởng đến, sự làm tác động đến",
+        "annotation1": "/ʌfɛkʃən/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "affectionate",
+        "answer": "thương yêu, trìu mến",
+        "annotation1": "/əˈfekʃənət/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "afford",
+        "answer": "kính yêu, kính mến",
+        "annotation1": "/ə'fɔ:rd/",
+        "annotation2": "v",
+        "save": false
+    },
+    {
+        "question": "agency",
+        "answer": "tác dụng, lực",
+        "annotation1": "/ˈeɪdʒənsi/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "agenda",
+        "answer": "những việc phải làm",
+        "annotation1": "/ə´dʒendə/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "aggressive",
+        "answer": "hay gây hấn, hung hãn, hung hăng",
+        "annotation1": "/əˈɡresɪv/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "agility",
+        "answer": "sự nhanh nhẹn, lanh lợi",
+        "annotation1": "/əˈdʒɪləti/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "agitate",
+        "answer": "khích động, làm xúc động",
+        "annotation1": "/ˈædʒɪteɪt/",
+        "annotation2": "v",
+        "save": false
+    },
+    {
+        "question": "agree",
+        "answer": "đồng ý, chấp thuận",
+        "annotation1": "/əˈɡriː/",
+        "annotation2": "v",
+        "save": false
+    },
+    {
+        "question": "agreement",
+        "answer": "hiệp định, hiệp nghị",
+        "annotation1": "/ə'gri:mənt/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "aid",
+        "answer": "sự giúp đỡ, sự viện trợ, cứu trợ",
+        "annotation1": "/eɪd/",
+        "annotation2": "n, v",
+        "save": false
+    },
+    {
+        "question": "air",
+        "answer": "bầu không khí, không khí",
+        "annotation1": "/er/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "aisle",
+        "answer": "cánh, gian bên trong",
+        "annotation1": "/aɪl/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "alarm",
+        "answer": "sự báo động, sự báo nguy",
+        "annotation1": "/ə'lɑ:m/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "album",
+        "answer": "tập ảnh, quyển album",
+        "annotation1": "/´ælbəm/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "alien",
+        "answer": "xa lạ",
+        "annotation1": "/'eiliən/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "alike",
+        "answer": "tương tự, giống nhau, như nhau",
+        "annotation1": "/əˈlaɪk/",
+        "annotation2": "adj, adv",
+        "save": false
+    },
+    {
+        "question": "all rounder",
+        "answer": "người toàn diện, toàn năng",
+        "annotation1": "/ˌɔːl ˈraʊndər/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "alliance",
+        "answer": "sự liên minh, khối liên minh",
+        "annotation1": "/ə'laiəns/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "allow",
+        "answer": "cho phép, để cho",
+        "annotation1": "/əˈlaʊ/",
+        "annotation2": "v",
+        "save": false
+    },
+    {
+        "question": "allure",
+        "answer": "sức quyến rũ, cám dỗ",
+        "annotation1": "/əˈlʊr/",
+        "annotation2": "n, v",
+        "save": false
+    },
+    {
+        "question": "ally",
+        "answer": "nước đồng minh, liên kết, liên minh",
+        "annotation1": "/ə´lai/",
+        "annotation2": "n, v",
+        "save": false
+    },
+    {
+        "question": "alone",
+        "answer": "một mình, trơ trọi, cô đơn, đơn độc",
+        "annotation1": "/ə'loun/",
+        "annotation2": "adv, adj",
+        "save": false
+    },
+    {
+        "question": "alteration",
+        "answer": "sự thay đổi, điều chỉnh",
+        "annotation1": "/ˌɔːltəˈreɪʃn/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "alternative",
+        "answer": "xen nhau, thay đổi nhau, thay phiên nhau",
+        "annotation1": "/ɔlˈtɜrnətɪv , ælˈtɜrnətɪv/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "always",
+        "answer": "luôn luôn, mọi lúc",
+        "annotation1": "/ˈɔːlweɪz/",
+        "annotation2": "adv",
+        "save": false
+    },
+    {
+        "question": "amateur",
+        "answer": "người nghiệp dư, có tính chất nghiệp dư",
+        "annotation1": "/ˈæmətʃər/, /ˈæmətər/",
+        "annotation2": "n, v",
+        "save": false
+    },
+    {
+        "question": "amaze",
+        "answer": "làm kinh ngạc, làm sửng sốt",
+        "annotation1": "/ə´meiz/",
+        "annotation2": "v",
+        "save": false
+    },
+    {
+        "question": "ambassador",
+        "answer": "đại sứ",
+        "annotation1": "/æm'bæsədə/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "ambience",
+        "answer": "môi trường, không khí ở một địa điểm",
+        "annotation1": "/ˈæmbiəns/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "ambition",
+        "answer": "đam mê, khát vọng, tham vọng",
+        "annotation1": "/æmˈbɪʃn/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "ambitious",
+        "answer": "có nhiều khát vọng, tham vọng",
+        "annotation1": "/æmˈbɪʃəs/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "ambulance",
+        "answer": "xe cứu thương, xe cấp cứu",
+        "annotation1": "/'æmbjuləns/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "amiable",
+        "answer": "đáng mến, dễ thương",
+        "annotation1": "/ˈeɪmiəbl/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "amicable",
+        "answer": "thân ái, thân mật, thân tình",
+        "annotation1": "/ˈæmɪkəbl/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "amount",
+        "answer": "số lượng, lượng, cộng dồn lên đến",
+        "annotation1": "/əˈmaʊnt/",
+        "annotation2": "n, v",
+        "save": false
+    },
+    {
+        "question": "ample",
+        "answer": "phong phú, nhiều",
+        "annotation1": "/ˈæmpl/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "amusing",
+        "answer": "có tính giải trí, buồn cười",
+        "annotation1": "/əˈmjuːzɪŋ/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "angelic",
+        "answer": "tốt bụng, thánh thiện như thiên thần",
+        "annotation1": "/ænˈdʒelɪk/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "angry",
+        "answer": "cáu giận, tức giận",
+        "annotation1": "/ˈæŋɡri/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "anguish",
+        "answer": "nỗi đau đớn, khổ não",
+        "annotation1": "/ˈæŋɡwɪʃ/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "anniversary",
+        "answer": "ngày kỷ niệm, lễ kỷ niệm",
+        "annotation1": "/¸æni´və:səri/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "annoy",
+        "answer": "quấy rầy, làm phiền",
+        "annotation1": "/əˈnɔɪ/",
+        "annotation2": "v",
+        "save": false
+    },
+    {
+        "question": "annual",
+        "answer": "hàng năm, từng năm",
+        "annotation1": "/'ænjuəl/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "anonymous",
+        "answer": "giấu tên, ẩn danh, nặc danh",
+        "annotation1": "/ə'nɔniməs/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "answer",
+        "answer": "câu trả lời, hồi đáp, trả lời",
+        "annotation1": "/ˈænsər/",
+        "annotation2": "n, v",
+        "save": false
+    },
+    {
+        "question": "antiquated",
+        "answer": "cổ xưa, cũ kỹ, không hợp thời",
+        "annotation1": "/ˈæntɪkweɪtɪd/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "antique",
+        "answer": "cổ, cổ xưa, theo lối cổ",
+        "annotation1": "/ænˈtik/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "anxiety",
+        "answer": "mối lo, mối lo âu, mối băn khoăn, sự lo lắng",
+        "annotation1": "/æɳ'zaiəti/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "anxious",
+        "answer": "lo âu, băn khoăn",
+        "annotation1": "/ˈæŋkʃəs/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "anyhow",
+        "answer": "thế nào cũng được, cách nào cũng được",
+        "annotation1": "/'enihau/",
+        "annotation2": "adv",
+        "save": false
+    },
+    {
+        "question": "apart",
+        "answer": "về một bên, qua một bên, riêng ra, xa ra",
+        "annotation1": "/ə'pɑ:t/",
+        "annotation2": "adv",
+        "save": false
+    },
+    {
+        "question": "appeal",
+        "answer": "sự kêu gọi, lời kêu gọi",
+        "annotation1": "/ə'pi:l/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "appetite",
+        "answer": "sự ngon miệng, sự thèm ăn",
+        "annotation1": "/ˈæpɪˌtaɪt/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "apply",
+        "answer": "áp dụng, gắn vào, áp vào, ghép vào, đính vào",
+        "annotation1": "/ə´plai/",
+        "annotation2": "v",
+        "save": false
+    },
+    {
+        "question": "appointment",
+        "answer": "sự bổ nhiệm, chức vụ được bổ nhiệm",
+        "annotation1": "/ə'pɔintmənt/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "appreciate",
+        "answer": "đánh giá, cảm kích",
+        "annotation1": "/əˈpriʃiˌeɪt/",
+        "annotation2": "v",
+        "save": false
+    },
+    {
+        "question": "appreciation",
+        "answer": "sự đánh giá cao, sự cảm kích",
+        "annotation1": "/əˌpriːʃiˈeɪʃn/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "approach",
+        "answer": "sự đến gần, sự lại gần",
+        "annotation1": "/ə´proutʃ/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "appropriate",
+        "answer": "thích hợp, thích đáng",
+        "annotation1": "/ə'proupriət/",
+        "annotation2": "adj, v",
+        "save": false
+    },
+    {
+        "question": "approval",
+        "answer": "sự tán thành, sự đồng ý, sự chấp thuận",
+        "annotation1": "/ə'pru:vl/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "approve",
+        "answer": "tán thành, chấp thuận, bằng lòng",
+        "annotation1": "/əˈpruːv/",
+        "annotation2": "v",
+        "save": false
+    },
+    {
+        "question": "area",
+        "answer": "diện tích, khu vực, lĩnh vực",
+        "annotation1": "/ˈeriə/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "argue",
+        "answer": "chứng tỏ, chỉ rõ",
+        "annotation1": "/ˈɑrgyu/",
+        "annotation2": "v",
+        "save": false
+    },
+    {
+        "question": "arrive",
+        "answer": "đến nơi, đạt tới",
+        "annotation1": "/əˈraɪv/",
+        "annotation2": "v",
+        "save": false
+    },
+    {
+        "question": "arrogant",
+        "answer": "kiêu ngạo, kiêu căng, ngạo mạn",
+        "annotation1": "/'ærəgənt/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "article",
+        "answer": "bài báo",
+        "annotation1": "/ˈɑrtɪkəl/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "ashamed",
+        "answer": "xấu hổ, ngượng ngùng",
+        "annotation1": "/ə'ʃeimd/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "aside",
+        "answer": "về một bên, sang một bên",
+        "annotation1": "/ə'said/",
+        "annotation2": "adv",
+        "save": false
+    },
+    {
+        "question": "ask",
+        "answer": "hỏi, yêu cầu",
+        "annotation1": "/æsk/",
+        "annotation2": "v",
+        "save": false
+    },
+    {
+        "question": "aspirin",
+        "answer": "dược học atpirin",
+        "annotation1": "/´æspirin/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "aspiring",
+        "answer": "thiết tha, mong mỏi, khao khát",
+        "annotation1": "/əˈspaɪərɪŋ/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "assault",
+        "answer": "cuộc tấn công, đột kích, tấn công, công kích",
+        "annotation1": "/əˈsɔːlt/",
+        "annotation2": "n, v",
+        "save": false
+    },
+    {
+        "question": "assembly",
+        "answer": "cuộc họp, dây chuyền",
+        "annotation1": "/əˈsembli/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "assertive",
+        "answer": "quả quyết, quyết đoán",
+        "annotation1": "/əˈsɜːrtɪv/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "assess",
+        "answer": "định giá, đánh giá",
+        "annotation1": "/əˈses/",
+        "annotation2": "v",
+        "save": false
+    },
+    {
+        "question": "asset",
+        "answer": "tài sản, món quý",
+        "annotation1": "/ˈæset/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "assist",
+        "answer": "giúp, giúp đỡ",
+        "annotation1": "/əˈsɪst/",
+        "annotation2": "v",
+        "save": false
+    },
+    {
+        "question": "associate",
+        "answer": "kết giao, kết hợp",
+        "annotation1": "/əˈsoʊsieɪt/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "assume",
+        "answer": "mang, khoác, có, lấy",
+        "annotation1": "/ə'sju:m/",
+        "annotation2": "v",
+        "save": false
+    },
+    {
+        "question": "assure",
+        "answer": "quả quyết, cam đoan",
+        "annotation1": "/ə´ʃuə/",
+        "annotation2": "v",
+        "save": false
+    },
+    {
+        "question": "astonishing",
+        "answer": "gây bất ngờ, làm ngạc nhiên",
+        "annotation1": "/əˈstɑːnɪʃɪŋ/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "atrocious",
+        "answer": "hung bạo, tàn ác, tồi tệ",
+        "annotation1": "/əˈtrəʊʃəs/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "attack",
+        "answer": "sự tấn công, tấn công",
+        "annotation1": "/ə'tæk/",
+        "annotation2": "n, v",
+        "save": false
+    },
+    {
+        "question": "attempt",
+        "answer": "sự cố gắng, sự thử",
+        "annotation1": "/ə'tempt/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "attend",
+        "answer": "dự, có mặt",
+        "annotation1": "/əˈtɛnd/",
+        "annotation2": "v",
+        "save": false
+    },
+    {
+        "question": "attire",
+        "answer": "quần áo, đồ trang điểm, mặc quần áo",
+        "annotation1": "/əˈtaɪər/",
+        "annotation2": "n, v",
+        "save": false
+    },
+    {
+        "question": "attitude",
+        "answer": "thái độ, quan điểm",
+        "annotation1": "/'ætitju:d/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "attorney",
+        "answer": "người được ủy quyền đại diện",
+        "annotation1": "/ə'tз:ni/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "attract",
+        "answer": "thu hút, hấp dẫn",
+        "annotation1": "/əˈtrækt/",
+        "annotation2": "v",
+        "save": false
+    },
+    {
+        "question": "attractive",
+        "answer": "hút, thu hút, hấp dẫn",
+        "annotation1": "/ə'træktiv/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "auction",
+        "answer": "sự bán đấu giá",
+        "annotation1": "/'ɔ:k∫n/",
+        "annotation2": "n, v",
+        "save": false
+    },
+    {
+        "question": "audacious",
+        "answer": "trơ tráo, táo bạo",
+        "annotation1": "/ɔːˈdeɪʃəs/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "audience",
+        "answer": "người nghe, thính giả, người xem, khán giả",
+        "annotation1": "/ˈɔdiəns/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "authentic",
+        "answer": "đích thực, xác thực",
+        "annotation1": "/ɔːˈθentɪk/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "authority",
+        "answer": "uy quyền, quyền lực, quyền thế",
+        "annotation1": "/əˈθɔrɪti , əˈθɒrɪti/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "available",
+        "answer": "sẵn có, có thể dùng được",
+        "annotation1": "/ə'veɪləbl/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "avenge",
+        "answer": "trả thù, báo thù",
+        "annotation1": "/əˈvendʒ/",
+        "annotation2": "v",
+        "save": false
+    },
+    {
+        "question": "avoid",
+        "answer": "tránh, tránh xa, ngăn ngừa",
+        "annotation1": "/ə'void/",
+        "annotation2": "v",
+        "save": false
+    },
+    {
+        "question": "aware",
+        "answer": "biết, nhận thấy, nhận thức thấy",
+        "annotation1": "/ə'weər/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "away",
+        "answer": "rời xa, đi xa, biến đi",
+        "annotation1": "/əˈweɪ/",
+        "annotation2": "adj, adv",
+        "save": false
+    },
+    {
+        "question": "awful",
+        "answer": "đáng sợ, khủng khiếp, cực kỳ",
+        "annotation1": "/ˈɔːfl/",
+        "annotation2": "adj, adv",
+        "save": false
+    },
+    {
+        "question": "awkward",
+        "answer": "vụng về, lúng túng, ngượng ngịu",
+        "annotation1": "/'ɔ:kwəd/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "baby",
+        "answer": "đứa trẻ",
+        "annotation1": "/ˈbeɪbi/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "bachelor",
+        "answer": "người chưa vợ, người có bằng cử nhân",
+        "annotation1": "/ˈbætʃələr/, /ˈbætʃlər/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "backward",
+        "answer": "về phía sau, giật lùi",
+        "annotation1": "/'bækwəd/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "bacon",
+        "answer": "thịt lưng lợn muối xông khói",
+        "annotation1": "/'beikən/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "badge",
+        "answer": "huy hiệu, phù hiệu, quân hàm",
+        "annotation1": "/bæʤ/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "baggage",
+        "answer": "hành lý",
+        "annotation1": "/'bægiʤ/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "bait",
+        "answer": "mồi, bả",
+        "annotation1": "/beit/",
+        "annotation2": "n, v",
+        "save": false
+    },
+    {
+        "question": "bake",
+        "answer": "bỏ lò, nướng bằng lò",
+        "annotation1": "/beik/",
+        "annotation2": "v",
+        "save": false
+    },
+    {
+        "question": "balance",
+        "answer": "cái cân, sự thăng bằng",
+        "annotation1": "/'bæləns/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "balcony",
+        "answer": "ban công",
+        "annotation1": "/'bælkəni/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "bald",
+        "answer": "hói đầu, trọc trụi",
+        "annotation1": "/bɔ:ld/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "ballet",
+        "answer": "ba lê, kịch múa",
+        "annotation1": "/bæˈleɪ/, /ˈbæleɪ/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "band",
+        "answer": "dải, băng, đai, nẹp, buộc dải, buộc băng",
+        "annotation1": "/bænd/",
+        "annotation2": "n, v",
+        "save": false
+    },
+    {
+        "question": "bane",
+        "answer": "nguyên do, nỗi khổ",
+        "annotation1": "/beɪn/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "bang",
+        "answer": "tóc mái, đánh mạnh, đánh đập",
+        "annotation1": "/bæη/",
+        "annotation2": "n, v",
+        "save": false
+    },
+    {
+        "question": "banner",
+        "answer": "ngọn cờ",
+        "annotation1": "/'bænə/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "bar",
+        "answer": "quầy bán rượu",
+        "annotation1": "/ba:/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "barbecue",
+        "answer": "lợn bò, cừu nướng quay cả con",
+        "annotation1": "/´ba:bi¸kju:/",
+        "annotation2": "n, v",
+        "save": false
+    },
+    {
+        "question": "bare",
+        "answer": "trần, trần truồng, trọc, trần trụi",
+        "annotation1": "/beər/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "barely",
+        "answer": "công khai, rõ ràng",
+        "annotation1": "/'beəli/",
+        "annotation2": "adv",
+        "save": false
+    },
+    {
+        "question": "bargain",
+        "answer": "sự mặc cả, sự thoả thuận mua bán",
+        "annotation1": "/´ba:gin/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "barn",
+        "answer": "kho thóc",
+        "annotation1": "/ba:n/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "barrel",
+        "answer": "thùng tròn, lớn, thường được làm bằng gỗ hoặc kim loại",
+        "annotation1": "/'bærəl/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "baseball",
+        "answer": "thể dục,thể thao bóng chày",
+        "annotation1": "/´beis¸bɔ:l/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "basement",
+        "answer": "nền móng, móng của một bức tường",
+        "annotation1": "/´beismənt/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "bashful",
+        "answer": "rụt rè, bẽn lẽn",
+        "annotation1": "/ˈbæʃfl/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "battery",
+        "answer": "bộ pin, ắc quy",
+        "annotation1": "/'bætəri/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "bay",
+        "answer": "hồng, vịnh",
+        "annotation1": "/bei/",
+        "annotation2": "adj, n",
+        "save": false
+    },
+    {
+        "question": "beam",
+        "answer": "xà, dầm",
+        "annotation1": "/bi:m/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "bear",
+        "answer": "mang, cầm, vác, đội, đeo, ôm, chịu đựng",
+        "annotation1": "/beə/",
+        "annotation2": "v",
+        "save": false
+    },
+    {
+        "question": "bearing",
+        "answer": "sự chịu đựng, sự sinh đẻ",
+        "annotation1": "/´bɛəriη/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "beat",
+        "answer": "sự đập, tiếng đập",
+        "annotation1": "/bi:t/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "beaten",
+        "answer": "đập, nện nền đường",
+        "annotation1": "/bi:tn/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "beautiful",
+        "answer": "xinh đẹp, tuyệt vời",
+        "annotation1": "/ˈbjuːtɪfl/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "beg",
+        "answer": "ăn xin, xin xỏ, cầu xin",
+        "annotation1": "/beɡ/",
+        "annotation2": "v",
+        "save": false
+    },
+    {
+        "question": "begin",
+        "answer": "bắt đầu, khởi đầu",
+        "annotation1": "/bɪˈɡɪn/",
+        "annotation2": "v",
+        "save": false
+    },
+    {
+        "question": "beginning",
+        "answer": "lúc bắt đầu, căn nguyên",
+        "annotation1": "/bɪˈɡɪnɪŋ/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "behalf",
+        "answer": "thay mặt cho ai đó",
+        "annotation1": "/bɪ'hæf/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "behave",
+        "answer": "ăn ở, đối xử, cư xử",
+        "annotation1": "/bi'heiv/",
+        "annotation2": "v",
+        "save": false
+    },
+    {
+        "question": "behoove",
+        "answer": "có nhiệm vụ",
+        "annotation1": "/bɪˈhuːv/",
+        "annotation2": "v",
+        "save": false
+    },
+    {
+        "question": "believe",
+        "answer": "tin tưởng, cho rằng, nghĩ rằng",
+        "annotation1": "/bɪˈliːv/",
+        "annotation2": "v",
+        "save": false
+    },
+    {
+        "question": "belly",
+        "answer": "bụng, dạ dày, phồng ra cánh buồm",
+        "annotation1": "/ˈbɛli/",
+        "annotation2": "n, v",
+        "save": false
+    },
+    {
+        "question": "beloved",
+        "answer": "được yêu mến, được yêu quý, người yêu dấu, người yêu quý",
+        "annotation1": "/bi'lʌvid/",
+        "annotation2": "adj, n",
+        "save": false
+    },
+    {
+        "question": "below",
+        "answer": "ở dưới, cấp dưới, thấp hơn",
+        "annotation1": "/bɪˈləʊ/",
+        "annotation2": "adv, prep",
+        "save": false
+    },
+    {
+        "question": "bend",
+        "answer": "chỗ uốn, chỗ cong, cúi xuống, uốn cong",
+        "annotation1": "/bɛnd/",
+        "annotation2": "n, v",
+        "save": false
+    },
+    {
+        "question": "beneficial",
+        "answer": "có ích, có lợi",
+        "annotation1": "/ˌbenɪˈfɪʃl/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "benefit",
+        "answer": "lợi, lợi ích",
+        "annotation1": "/'benɪfɪt/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "benevolent",
+        "answer": "nhân từ, từ thiện",
+        "annotation1": "/bəˈnevələnt/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "bent",
+        "answer": "khiếu, sở thích, xu hướng, khuynh hướng",
+        "annotation1": "/bent/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "berserk",
+        "answer": "nổi quạu, cáu tiết",
+        "annotation1": "/bərˈsɜːrk/, /bərˈzɜːrk/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "bet",
+        "answer": "đánh cược, sự đánh cược",
+        "annotation1": "/bet/",
+        "annotation2": "n, v",
+        "save": false
+    },
+    {
+        "question": "betray",
+        "answer": "phản bội, phụ bạc, tiết lộ, để lộ",
+        "annotation1": "/bi'trei/",
+        "annotation2": "v",
+        "save": false
+    },
+    {
+        "question": "bias",
+        "answer": "thành kiến, sự thiên vị, hướng ý kiến, gây thành kiến",
+        "annotation1": "/ˈbaɪəs/",
+        "annotation2": "n, v",
+        "save": false
+    },
+    {
+        "question": "bid",
+        "answer": "sự đặt giá, trả giá",
+        "annotation1": "/bɪd/",
+        "annotation2": "n, v",
+        "save": false
+    },
+    {
+        "question": "big",
+        "answer": "to lớn",
+        "annotation1": "/bɪɡ/",
+        "annotation2": "adj, adv",
+        "save": false
+    },
+    {
+        "question": "big-hearted",
+        "answer": "rộng lượng, hào hiệp",
+        "annotation1": "/ˌbɪɡ ˈhɑːrtɪd/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "bigoted",
+        "answer": "mù quáng",
+        "annotation1": "/ˈbɪɡətɪd/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "birth",
+        "answer": "sự sinh đẻ, ra đời ngày thành lập",
+        "annotation1": "/bɜːrθ/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "bite",
+        "answer": "cắn, sự cắn, miếng cắn",
+        "annotation1": "/bait/",
+        "annotation2": "n, v",
+        "save": false
+    },
+    {
+        "question": "bizarre",
+        "answer": "kỳ quái, kỳ dị",
+        "annotation1": "/bɪˈzɑːr/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "blameless",
+        "answer": "không thể chê được",
+        "annotation1": "/ˈbleɪmləs/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "blank",
+        "answer": "chỗ trống, để trống, trống rỗng, bần thần",
+        "annotation1": "/blæŋk/",
+        "annotation2": "n, adj",
+        "save": false
+    },
+    {
+        "question": "blanket bath",
+        "answer": "việc lau rửa cho người ốm liệt",
+        "annotation1": "/ˈblæŋkɪt bæθ/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "blasé",
+        "answer": "dửng dưng, quá quen rồi",
+        "annotation1": "/blɑːˈzeɪ/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "blend",
+        "answer": "hỗn hợp, trộn lẫn, pha trộn",
+        "annotation1": "/blend/",
+        "annotation2": "n, v",
+        "save": false
+    },
+    {
+        "question": "blossom",
+        "answer": "hoa, ra hoa, trổ hoa",
+        "annotation1": "/ˈblɑːsəm/",
+        "annotation2": "n, v",
+        "save": false
+    },
+    {
+        "question": "blot",
+        "answer": "vết nhơ, vết nhục, bôi nhọ, làm bẩn",
+        "annotation1": "/blɑːt/",
+        "annotation2": "n, v",
+        "save": false
+    },
+    {
+        "question": "blunder",
+        "answer": "điều sai lầm, điều ngớ ngẩn mắc lỗi ngớ ngẩn",
+        "annotation1": "/ˈblʌndər/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "boat",
+        "answer": "tàu thủy, thuyền",
+        "annotation1": "/bəʊt/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "bold",
+        "answer": "táo bạo, gan dạ",
+        "annotation1": "/bəʊld/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "bottom",
+        "answer": "phần đáy, dưới cùng",
+        "annotation1": "/ˈbɑːtəm/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "brave",
+        "answer": "gan dạ, dũng cảm, bất chấp, đương đầu với",
+        "annotation1": "/breɪv/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "bravery",
+        "answer": "tính gan dạ, sự dũng cảm",
+        "annotation1": "/ˈbreɪvəri/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "bread and butter",
+        "answer": "miếng ăn, kế sinh nhai",
+        "annotation1": "/ˌbred ən ˈbʌtər/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "break",
+        "answer": "chỗ vỡ, sự rạn vỡ, làm gãy, làm đổ vỡ, ngắt, gián đoạn",
+        "annotation1": "/breɪk/",
+        "annotation2": "n, v",
+        "save": false
+    },
+    {
+        "question": "brief",
+        "answer": "ngắn, vắn tắt, bản tóm tắt",
+        "annotation1": "/briːf/",
+        "annotation2": "n, adj",
+        "save": false
+    },
+    {
+        "question": "broad",
+        "answer": "rộng, bao la, mênh mông",
+        "annotation1": "/brɔːd/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "bumpy",
+        "answer": "gập ghềnh, mấp mô",
+        "annotation1": "/ˈbʌmpi/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "bungalow",
+        "answer": "nhà một tầng",
+        "annotation1": "/ˈbʌŋɡələʊ/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "calamity",
+        "answer": "tai họa, thiên tai, tai ương",
+        "annotation1": "/kəˈlæməti/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "calendar",
+        "answer": "lịch",
+        "annotation1": "/ˈkælɪndər/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "calm",
+        "answer": "bình tĩnh, điềm đạm",
+        "annotation1": "/kɑːm/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "candid",
+        "answer": "thật thà, ngay thẳng, không xếp đặt",
+        "annotation1": "/ˈkændɪd/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "carriage",
+        "answer": "xe ngựa, sự chuyên chở hàng hóa",
+        "annotation1": "/ˈkærɪdʒ/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "casual",
+        "answer": "tự nhiên, như thường lệ, bình thường, quần áo bình thường, không trang trọng",
+        "annotation1": "/ˈkæʒuəl/",
+        "annotation2": "adj, n",
+        "save": false
+    },
+    {
+        "question": "cease",
+        "answer": "thôi, ngừng",
+        "annotation1": "/siːs/",
+        "annotation2": "v",
+        "save": false
+    },
+    {
+        "question": "center",
+        "answer": "trung tâm, đặt làm trung tâm",
+        "annotation1": "/ˈsentər/",
+        "annotation2": "n, v",
+        "save": false
+    },
+    {
+        "question": "certain",
+        "answer": "chắc chắn",
+        "annotation1": "/ˈsɜːrtn/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "change",
+        "answer": "sự thay đổi, biến đổi, thay đổi",
+        "annotation1": "/tʃeɪndʒ/",
+        "annotation2": "n, v",
+        "save": false
+    },
+    {
+        "question": "chaos",
+        "answer": "sự hỗn loạn, lộn xộn",
+        "annotation1": "/ˈkeɪɑːs/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "charismatic",
+        "answer": "có sức hút, lôi cuốn",
+        "annotation1": "/ˌkærɪzˈmætɪk/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "chatterbox",
+        "answer": "người ba hoa, nói nhiều",
+        "annotation1": "/ˈtʃætərbɑːks/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "chiefly",
+        "answer": "chủ yếu là, trước nhất",
+        "annotation1": "/ˈtʃiːfli/",
+        "annotation2": "adv",
+        "save": false
+    },
+    {
+        "question": "chilly",
+        "answer": "lạnh lẽo, giá lạnh",
+        "annotation1": "/ˈtʃɪli/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "chocolate",
+        "answer": "sô cô la",
+        "annotation1": "/ˈtʃɔːklət/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "choice",
+        "answer": "lựa chọn, sự chọn lựa, chất lượng tốt",
+        "annotation1": "/tʃɔɪs/",
+        "annotation2": "n, adj",
+        "save": false
+    },
+    {
+        "question": "choosy",
+        "answer": "khó chiều, kén chọn",
+        "annotation1": "/ˈtʃuːzi/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "chubby",
+        "answer": "mũm mĩm, mập mạp",
+        "annotation1": "/ˈtʃʌbi/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "circuit",
+        "answer": "chu vi, đường vòng quanh đi vòng quanh",
+        "annotation1": "/ˈsɜːrkɪt/",
+        "annotation2": "n, v",
+        "save": false
+    },
+    {
+        "question": "civil",
+        "answer": "thuộc công dân lễ phép, lịch sự",
+        "annotation1": "/ˈsɪvl/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "clarify",
+        "answer": "làm sáng tỏ, giải thích",
+        "annotation1": "/ˈklærəfaɪ/",
+        "annotation2": "v",
+        "save": false
+    },
+    {
+        "question": "close",
+        "answer": "đóng kín, đóng cửa gần sát",
+        "annotation1": "/kləʊz/",
+        "annotation2": "adj, adv",
+        "save": false
+    },
+    {
+        "question": "coarse",
+        "answer": "thô da, vải",
+        "annotation1": "/kɔːrs/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "collect",
+        "answer": "tập hợp, thu lượm, thu thập",
+        "annotation1": "/kəˈlekt/",
+        "annotation2": "v",
+        "save": false
+    },
+    {
+        "question": "collision",
+        "answer": "sự va đụng, xung đột",
+        "annotation1": "/kəˈlɪʒn/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "colossal",
+        "answer": "khổng lồ, to lớn",
+        "annotation1": "/kəˈlɑːsl/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "combative",
+        "answer": "hiếu chiến, thích gây gổ",
+        "annotation1": "/kəmˈbætɪv/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "combine",
+        "answer": "kết hợp, phối hợp",
+        "annotation1": "/kəmˈbaɪn/",
+        "annotation2": "v",
+        "save": false
+    },
+    {
+        "question": "comical",
+        "answer": "hài hước, khôi hài",
+        "annotation1": "/ˈkɑːmɪkl/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "commence",
+        "answer": "khởi đầu, bắt đầu",
+        "annotation1": "/kəˈmens/",
+        "annotation2": "v",
+        "save": false
+    },
+    {
+        "question": "comment",
+        "answer": "lời bình luận, bình luận, chỉ trích",
+        "annotation1": "/ˈkɑːment/",
+        "annotation2": "n, v",
+        "save": false
+    },
+    {
+        "question": "commerce",
+        "answer": "sự buôn bán, giao thương, thương nghiệp",
+        "annotation1": "/ˈkɑːmɜːrs/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "commotion",
+        "answer": "sự rung chuyển, chấn động",
+        "annotation1": "/kəˈməʊʃn/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "compassion",
+        "answer": "lòng thương cảm, lòng trắc ẩn",
+        "annotation1": "/kəmˈpæʃn/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "complex",
+        "answer": "khu phức hợp, phức tạp, rắc rối",
+        "annotation1": "/ˈkɑːmpleks/",
+        "annotation2": "n, adj",
+        "save": false
+    },
+    {
+        "question": "complicated",
+        "answer": "phức tạp, tinh vi",
+        "annotation1": "/ˈkɑːmplɪkeɪtɪd/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "compliment",
+        "answer": "lời khen, khen ngợi, ca tụng",
+        "annotation1": "/ˈkɑːmplɪmənt/",
+        "annotation2": "n, v",
+        "save": false
+    },
+    {
+        "question": "comply",
+        "answer": "tuân theo, đồng ý làm theo",
+        "annotation1": "/kəmˈplaɪ/",
+        "annotation2": "v",
+        "save": false
+    },
+    {
+        "question": "compress",
+        "answer": "ép, nén, đè",
+        "annotation1": "/kəmˈpres/",
+        "annotation2": "v",
+        "save": false
+    },
+    {
+        "question": "compulsion",
+        "answer": "sự cưỡng bức, ép buộc",
+        "annotation1": "/kəmˈpʌlʃn/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "concise",
+        "answer": "ngắn gọn, súc tích văn",
+        "annotation1": "/kən´saiz/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "confess",
+        "answer": "thú tội, nhận tội",
+        "annotation1": "/kənˈfes/",
+        "annotation2": "v",
+        "save": false
+    },
+    {
+        "question": "confine",
+        "answer": "giam giữ, nhốt giữ lại",
+        "annotation1": "/kənˈfaɪn/",
+        "annotation2": "v",
+        "save": false
+    },
+    {
+        "question": "conflict",
+        "answer": "sự xung đột, cuộc va chạm, mâu thuẫn, chống đối",
+        "annotation1": "/ˈkɑːnflɪkt/",
+        "annotation2": "n, v",
+        "save": false
+    },
+    {
+        "question": "conform",
+        "answer": "thích ứng với, thích nghi",
+        "annotation1": "/kənˈfɔːrm/",
+        "annotation2": "v",
+        "save": false
+    },
+    {
+        "question": "confuse",
+        "answer": "nhầm lẫn, gây khó hiểu",
+        "annotation1": "/kənˈfjuːz/",
+        "annotation2": "v",
+        "save": false
+    },
+    {
+        "question": "congested",
+        "answer": "đông nghịt, chật ních",
+        "annotation1": "/kənˈdʒestɪd/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "connect",
+        "answer": "nối lại, kết nối",
+        "annotation1": "/kəˈnekt/",
+        "annotation2": "v",
+        "save": false
+    },
+    {
+        "question": "conquer",
+        "answer": "đoạt, xâm chiếm, chinh phục",
+        "annotation1": "/ˈkɑːŋkər/",
+        "annotation2": "v",
+        "save": false
+    },
+    {
+        "question": "consent",
+        "answer": "sự đồng tình, ưng thuận",
+        "annotation1": "/kənˈsent/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "considerate",
+        "answer": "ân cần, chu đáo",
+        "annotation1": "/kənˈsɪdərət/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "constraint",
+        "answer": "sự bắt ép, cưỡng ép, sự đè nén",
+        "annotation1": "/kənˈstreɪnt/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "contaminate",
+        "answer": "làm bẩn, gây ô nhiễm, làm hư hỏng",
+        "annotation1": "/kənˈtæmɪneɪt/",
+        "annotation2": "v",
+        "save": false
+    },
+    {
+        "question": "contemporary",
+        "answer": "đương thời, đương đại, người cùng thời",
+        "annotation1": "/kənˈtempəreri/",
+        "annotation2": "n, adj",
+        "save": false
+    },
+    {
+        "question": "contrary",
+        "answer": "trái ngược",
+        "annotation1": "/ˈkɑːntreri/",
+        "annotation2": "n, adj",
+        "save": false
+    },
+    {
+        "question": "control",
+        "answer": "quyền hành, sự điều khiển, kiểm soát, kiềm chế",
+        "annotation1": "/kənˈtrəʊl/",
+        "annotation2": "n, v",
+        "save": false
+    },
+    {
+        "question": "convert",
+        "answer": "người cải đạo, đổi, biến đổi",
+        "annotation1": "/kənˈvɜːrt/",
+        "annotation2": "n, v",
+        "save": false
+    },
+    {
+        "question": "cordial",
+        "answer": "thân mật, chân thành",
+        "annotation1": "/ˈkɔːrdʒəl/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "correct",
+        "answer": "sửa, hiệu chỉnh, đúng, chính xác",
+        "annotation1": "/kəˈrekt/",
+        "annotation2": "v, adj",
+        "save": false
+    },
+    {
+        "question": "couch potato",
+        "answer": "người nghiện xem tv",
+        "annotation1": "/ˈkaʊtʃ pəteɪtəʊ/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "counsel",
+        "answer": "sự bàn bạc, lời khuyên, lời chỉ bảo, khuyên răn, khuyên bảo",
+        "annotation1": "/ˈkaʊnsl/",
+        "annotation2": "n, v",
+        "save": false
+    },
+    {
+        "question": "courage",
+        "answer": "sự can đảm, dũng khí",
+        "annotation1": "/ˈkɜːrɪdʒ/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "courteous",
+        "answer": "lịch sự, nhã nhặn",
+        "annotation1": "/ˈkɜːrtiəs/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "coy",
+        "answer": "bẽn lẽn, xấu hổ, rụt rè",
+        "annotation1": "/kɔɪ/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "crafty",
+        "answer": "láu cá, xảo quyệt",
+        "annotation1": "/ˈkræfti/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "cram",
+        "answer": "sự nhồi sọ, nhồi nhét, tống vào, luyện thi",
+        "annotation1": "/kræm/",
+        "annotation2": "n, v",
+        "save": false
+    },
+    {
+        "question": "cranky",
+        "answer": "kỳ quặc, gàn dở",
+        "annotation1": "/ˈkræŋki/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "crazy",
+        "answer": "điên rồ, mất trí",
+        "annotation1": "/ˈkreɪzi/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "creation",
+        "answer": "sự tạo thành, hình thành tác phẩm",
+        "annotation1": "/kriˈeɪʃn/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "creative",
+        "answer": "sáng tạo",
+        "annotation1": "/kri´eitiv/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "creativity",
+        "answer": "óc sáng tạo, sự sáng tạo",
+        "annotation1": "/ˌkriːeɪˈtɪvəti/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "cruel",
+        "answer": "độc ác, tàn bạo, tàn nhẫn",
+        "annotation1": "/ˈkruːəl/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "crumble",
+        "answer": "vỡ vụn, đổ nát, bẻ vụn, đập vụn",
+        "annotation1": "/ˈkrʌmbl/",
+        "annotation2": "n, v",
+        "save": false
+    },
+    {
+        "question": "cunning",
+        "answer": "xảo quyệt, láu cá",
+        "annotation1": "/ˈkʌnɪŋ/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "cupboard",
+        "answer": "tủ đựng",
+        "annotation1": "/ˈkʌbərd/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "curb",
+        "answer": "sự kiềm chế, sự nén lại, kìm hãm, hạn chế",
+        "annotation1": "/kɜːrb/",
+        "annotation2": "n, v",
+        "save": false
+    },
+    {
+        "question": "curse",
+        "answer": "sự nguyền rủa, chửi rủa, nguyền rủa, báng bổ",
+        "annotation1": "/kɜːrs/",
+        "annotation2": "n, v",
+        "save": false
+    },
+    {
+        "question": "daft",
+        "answer": "ngớ ngẩn, mất trí, gàn dở",
+        "annotation1": "/dæft/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "daily",
+        "answer": "hằng ngày",
+        "annotation1": "/ˈdeɪli/",
+        "annotation2": "adj, adv",
+        "save": false
+    },
+    {
+        "question": "dainty",
+        "answer": "nhã nhặn, xinh xắn, dễ thương",
+        "annotation1": "/ˈdeɪnti/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "daring",
+        "answer": "táo bạo, mạnh bạo",
+        "annotation1": "/ˈderɪŋ/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "dash",
+        "answer": "sự va đụng, va chạm",
+        "annotation1": "/dæʃ/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "dated",
+        "answer": "lỗi thời, cũ kỹ",
+        "annotation1": "/ˈdeɪtɪd/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "dawn",
+        "answer": "bình minh, rạng đông, bắt đầu rạng, lóe lên trong tâm trí",
+        "annotation1": "/dɔːn/",
+        "annotation2": "n, v",
+        "save": false
+    },
+    {
+        "question": "daybreak",
+        "answer": "lúc tảng sáng, rạng đông",
+        "annotation1": "/ˈdeɪbreɪk/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "deadly",
+        "answer": "làm chết người, trí mạng, chí tử",
+        "annotation1": "/ˈdedli/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "dearth",
+        "answer": "sự khan hiếm, đói kém",
+        "annotation1": "/dɜːrθ/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "debate",
+        "answer": "cuộc tranh luận, tranh luận",
+        "annotation1": "/dɪˈbeɪt/",
+        "annotation2": "n, v",
+        "save": false
+    },
+    {
+        "question": "deceased",
+        "answer": "đã chết, qua đời",
+        "annotation1": "/dɪˈsiːst/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "decoration",
+        "answer": "sự trang hoàng, trang trí",
+        "annotation1": "/ˌdekəˈreɪʃn/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "dedicated",
+        "answer": "tận tâm, tận tụy",
+        "annotation1": "/ˈdedɪkeɪtɪd/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "deduct",
+        "answer": "trừ đi, khấu trừ",
+        "annotation1": "/dɪˈdʌkt/",
+        "annotation2": "v",
+        "save": false
+    },
+    {
+        "question": "defend",
+        "answer": "bảo vệ, biện hộ",
+        "annotation1": "/dɪˈfend/",
+        "annotation2": "v",
+        "save": false
+    },
+    {
+        "question": "defy",
+        "answer": "thách thức, thách đố, bất chấp",
+        "annotation1": "/dɪˈfaɪ/",
+        "annotation2": "v",
+        "save": false
+    },
+    {
+        "question": "deliberate",
+        "answer": "chủ tâm, cố ý, cân nhắc, tính toán kỹ lưỡng",
+        "annotation1": "/dɪˈlɪbərət/",
+        "annotation2": "adj, v",
+        "save": false
+    },
+    {
+        "question": "delicate",
+        "answer": "thanh nhã, thanh tú, tinh tế, khéo léo",
+        "annotation1": "/ˈdelɪkət/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "delight",
+        "answer": "sự vui sướng, rạng rỡ",
+        "annotation1": "/dɪˈlaɪt/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "delighted",
+        "answer": "vui mừng, vui sướng",
+        "annotation1": "/dɪˈlaɪtɪd/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "demeanor",
+        "answer": "phong thái, cử chỉ",
+        "annotation1": "/dɪˈmiːnər/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "demerit",
+        "answer": "điều lầm lỗi, đáng trách",
+        "annotation1": "/diːˈmerɪt/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "democracy",
+        "answer": "nền dân chủ, chế độ dân chủ",
+        "annotation1": "/dɪˈmɑːkrəsi/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "democrat",
+        "answer": "người theo chế độ dân chủ",
+        "annotation1": "/ˈdeməkræt/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "demolish",
+        "answer": "phá hủy, đánh đổ",
+        "annotation1": "/di'mɔliʃ/",
+        "annotation2": "v",
+        "save": false
+    },
+    {
+        "question": "demonstration",
+        "answer": "sự thấu hiểu, biểu hiện, sự chứng minh, thuyết minh, cuộc biểu tình, tuần hành",
+        "annotation1": "/ˌdemənˈstreɪʃn/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "dense",
+        "answer": "dày đặc, đông đúc, rậm rạp",
+        "annotation1": "/dens/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "deny",
+        "answer": "từ chối, phủ nhận",
+        "annotation1": "/dɪˈnaɪ/",
+        "annotation2": "v",
+        "save": false
+    },
+    {
+        "question": "descendant",
+        "answer": "hậu duệ, con cháu",
+        "annotation1": "/dɪˈsendənt/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "desperate",
+        "answer": "tuyệt vọng, hết hy vọng",
+        "annotation1": "/ˈdespərət/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "despise",
+        "answer": "xem thường, khinh thường",
+        "annotation1": "/dɪˈspaɪz/",
+        "annotation2": "v",
+        "save": false
+    },
+    {
+        "question": "destiny",
+        "answer": "vận số, số mệnh",
+        "annotation1": "/ˈdestəni/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "destitute",
+        "answer": "thiếu thốn, nghèo túng",
+        "annotation1": "/ˈdestɪtuːt/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "destroy",
+        "answer": "phá hoại, phá huỷ, tàn phá",
+        "annotation1": "/dis'trɔi/",
+        "annotation2": "v",
+        "save": false
+    },
+    {
+        "question": "detain",
+        "answer": "ngăn cản, cản trở",
+        "annotation1": "/dɪˈteɪn/",
+        "annotation2": "v",
+        "save": false
+    },
+    {
+        "question": "deter",
+        "answer": "ngăn cản, cản trở",
+        "annotation1": "/dɪˈtɜːr/",
+        "annotation2": "v",
+        "save": false
+    },
+    {
+        "question": "deteriorate",
+        "answer": "hư hỏng, giảm giá trị",
+        "annotation1": "/dɪˈtɪriəreɪt/",
+        "annotation2": "v",
+        "save": false
+    },
+    {
+        "question": "determined",
+        "answer": "đã xác định rõ, quyết tâm, kiên quyết",
+        "annotation1": "/dɪˈtɜːrmɪnd/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "detest",
+        "answer": "ghét cay đắng, ghê tởm",
+        "annotation1": "/dɪˈtest/",
+        "annotation2": "v",
+        "save": false
+    },
+    {
+        "question": "devastate",
+        "answer": "tàn phá, phá huỷ",
+        "annotation1": "/ˈdevəsteɪt/",
+        "annotation2": "v",
+        "save": false
+    },
+    {
+        "question": "dialogue",
+        "answer": "cuộc đối thoại, đoạn đối thoại",
+        "annotation1": "/ˈdaɪəlɔːɡ/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "differ",
+        "answer": "không tán thành, không giống",
+        "annotation1": "/ˈdɪfər/",
+        "annotation2": "v",
+        "save": false
+    },
+    {
+        "question": "difficulty",
+        "answer": "trở ngại, điều khó khăn",
+        "annotation1": "/ˈdɪfɪkəlti/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "dilemma",
+        "answer": "thế tiến thoái lưỡng nan, tình trạng khó xử",
+        "annotation1": "/daɪˈlemə/, /dɪˈlemə/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "direction",
+        "answer": "phương hướng, chiều sự chỉ bảo, hướng dẫn",
+        "annotation1": "/dəˈrekʃn/, /daɪˈrekʃn/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "dirty",
+        "answer": "dơ bẩn, đê tiện",
+        "annotation1": "/ˈdɜːrti/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "disagree",
+        "answer": "không khớp, không hợp bất đồng, không đồng ý",
+        "annotation1": "/ˌdɪsəˈɡriː/",
+        "annotation2": "v",
+        "save": false
+    },
+    {
+        "question": "disaster",
+        "answer": "thảm họa, tai ương",
+        "annotation1": "/dɪˈzæstər/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "disclose",
+        "answer": "vạch trần, phơi bày",
+        "annotation1": "/dɪsˈkləʊz/",
+        "annotation2": "v",
+        "save": false
+    },
+    {
+        "question": "discount",
+        "answer": "giảm giá",
+        "annotation1": "/ˈdɪskaʊnt/",
+        "annotation2": "n, v",
+        "save": false
+    },
+    {
+        "question": "disgrace",
+        "answer": "sự ô nhục, hổ thẹn, làm nhục nhã",
+        "annotation1": "/dɪsˈɡreɪs/",
+        "annotation2": "n, v",
+        "save": false
+    },
+    {
+        "question": "dishonor",
+        "answer": "vô danh dự, thiếu uy tín",
+        "annotation1": "/dɪsˈɑːnər/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "disobedient",
+        "answer": "không tuân thủ, làm trái",
+        "annotation1": "/ˌdɪsəˈbiːdiənt/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "dispute",
+        "answer": "cuộc tranh cãi, bàn cãi, tranh luận",
+        "annotation1": "/ˈdɪspjuːt/, /dɪˈspjuːt/",
+        "annotation2": "n, v",
+        "save": false
+    },
+    {
+        "question": "distant",
+        "answer": "xa cách, lạnh nhạt",
+        "annotation1": "/ˈdɪstənt/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "distress",
+        "answer": "nỗi đau khổ, buồn bực, làm đau khổ, đau đớn",
+        "annotation1": "/dɪˈstres/",
+        "annotation2": "n, v",
+        "save": false
+    },
+    {
+        "question": "disturb",
+        "answer": "quấy rầy, khuấy động",
+        "annotation1": "/dɪˈstɜːrb/",
+        "annotation2": "v",
+        "save": false
+    },
+    {
+        "question": "disturbance",
+        "answer": "sự nhiễu loạn, náo động",
+        "annotation1": "/dɪˈstɜːrbəns/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "diverse",
+        "answer": "đa dạng, linh tinh",
+        "annotation1": "/daɪˈvɜːrs/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "divide",
+        "answer": "chia cắt ra, phân cắt",
+        "annotation1": "/dɪˈvaɪd/",
+        "annotation2": "v",
+        "save": false
+    },
+    {
+        "question": "divulge",
+        "answer": "để lộ ra",
+        "annotation1": "/daɪˈvʌldʒ/",
+        "annotation2": "v",
+        "save": false
+    },
+    {
+        "question": "docile",
+        "answer": "dễ bảo, dễ sai khiến",
+        "annotation1": "/ˈdɑːsl/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "doubtful",
+        "answer": "ngờ vực, hồ nghi",
+        "annotation1": "/ˈdaʊtfl/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "drab",
+        "answer": "đều đều, buồn tẻ, xám xịt",
+        "annotation1": "/dræb/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "dreadful",
+        "answer": "kinh khiếp, tồi tệ",
+        "annotation1": "/ˈdredfl/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "dream",
+        "answer": "giấc mơ, nằm mơ thấy, mơ ước, tưởng tượng",
+        "annotation1": "/driːm/",
+        "annotation2": "n, v",
+        "save": false
+    },
+    {
+        "question": "dreary",
+        "answer": "tồi tàn, ảm đạm, thê lương",
+        "annotation1": "/ˈdrɪri/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "drowsy",
+        "answer": "mơ màng, ngủ gà ngủ gật, uể oải",
+        "annotation1": "/ˈdraʊzi/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "dubious",
+        "answer": "lờ mờ, mơ hồ, không minh bạch, rõ ràng",
+        "annotation1": "/ˈduːbiəs/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "dull",
+        "answer": "chậm hiểu, tối dạ, làm cho đần độn đục, mờ, cùn",
+        "annotation1": "/dʌl/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "dumb",
+        "answer": "câm, không có tiếng nói, làm điếng người",
+        "annotation1": "/dʌm/",
+        "annotation2": "adj, v",
+        "save": false
+    },
+    {
+        "question": "duplicate",
+        "answer": "bản sao",
+        "annotation1": "/´dju:plikit/",
+        "annotation2": "n, adj, v",
+        "save": false
+    },
+    {
+        "question": "dusk",
+        "answer": "chạng vạng, lúc tối nha nhem",
+        "annotation1": "/dʌsk/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "eager",
+        "answer": "hăm hở, háo hức",
+        "annotation1": "/ˈiːɡər/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "easy",
+        "answer": "dễ dàng",
+        "annotation1": "/ˈiːzi/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "elated",
+        "answer": "phấn khích, phấn khởi",
+        "annotation1": "/ɪˈleɪtɪd/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "elective",
+        "answer": "chọn lọc bằng bầu cử",
+        "annotation1": "/ɪˈlektɪv/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "elegant",
+        "answer": "thanh lịch, tao nhã, đoan trang",
+        "annotation1": "/ˈelɪɡənt/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "elevate",
+        "answer": "nâng lên, đưa lên, nâng cao",
+        "annotation1": "/ˈelɪveɪt/",
+        "annotation2": "v",
+        "save": false
+    },
+    {
+        "question": "elite",
+        "answer": "tinh tú, ưu tú",
+        "annotation1": "/ɪˈliːt/, /eɪˈliːt/",
+        "annotation2": "n, adj",
+        "save": false
+    },
+    {
+        "question": "elusive",
+        "answer": "hay lảng tránh, thoái thác, khó nắm bắt",
+        "annotation1": "/ɪˈluːsɪv/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "embarrass",
+        "answer": "làm xấu hổ, lúng túng",
+        "annotation1": "/ɪmˈbærəs/",
+        "annotation2": "v",
+        "save": false
+    },
+    {
+        "question": "emphatically",
+        "answer": "mạnh mẽ, dứt khoát",
+        "annotation1": "/ɪmˈfætɪkli/",
+        "annotation2": "adv",
+        "save": false
+    },
+    {
+        "question": "empty",
+        "answer": "trống, rỗng, trống không",
+        "annotation1": "/'empti/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "encourage",
+        "answer": "khuyên khích, cổ vũ",
+        "annotation1": "/ɪnˈkɜːrɪdʒ/",
+        "annotation2": "v",
+        "save": false
+    },
+    {
+        "question": "endorse",
+        "answer": "chứng thực, xác nhận, tán thành",
+        "annotation1": "/ɪnˈdɔːrs/",
+        "annotation2": "v",
+        "save": false
+    },
+    {
+        "question": "engrossing",
+        "answer": "choán hết thời gian, quá cuốn hút",
+        "annotation1": "/ɪnˈɡrəʊsɪŋ/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "enjoy",
+        "answer": "thích thú, khoái",
+        "annotation1": "/ɪnˈdʒɔɪ/",
+        "annotation2": "v",
+        "save": false
+    },
+    {
+        "question": "enlarge",
+        "answer": "mở rộng, phóng to",
+        "annotation1": "/ɪnˈlɑːrdʒ/",
+        "annotation2": "v",
+        "save": false
+    },
+    {
+        "question": "enormous",
+        "answer": "to lớn, khổng lồ",
+        "annotation1": "/ɪˈnɔːrməs/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "enquire",
+        "answer": "điều tra, thẩm tra",
+        "annotation1": "/ɪnˈkwaɪər/",
+        "annotation2": "v",
+        "save": false
+    },
+    {
+        "question": "enraged",
+        "answer": "nổi giận, nổi khùng",
+        "annotation1": "/ɪnˈreɪdʒ/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "entertaining",
+        "answer": "có tính giải trí, thú vị",
+        "annotation1": "/ˌentərˈteɪnɪŋ/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "entrance",
+        "answer": "sự đi vào, cổng vào, lối vào sự gia nhập, quyền tham gia",
+        "annotation1": "/ˈentrəns/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "entrepreneur",
+        "answer": "người phụ trách hãng buôn",
+        "annotation1": "/,ɔntrəprə'nə:/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "envious",
+        "answer": "thèm muốn, đố kỵ, ghen tị",
+        "annotation1": "/ˈenviəs/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "envisage",
+        "answer": "dự tính, nhìn trước",
+        "annotation1": "/ɪnˈvɪzɪdʒ/",
+        "annotation2": "v",
+        "save": false
+    },
+    {
+        "question": "envy",
+        "answer": "sự thèm muốn, nỗi ghen tỵ, them muốn, đố kỵ",
+        "annotation1": "/ˈenvi/",
+        "annotation2": "n, v",
+        "save": false
+    },
+    {
+        "question": "epitome",
+        "answer": "bản tóm tắt",
+        "annotation1": "/ɪˈpɪtəmi/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "equivalent",
+        "answer": "vật tương đương, tương đương",
+        "annotation1": "/ɪˈkwɪvələnt/",
+        "annotation2": "n, v",
+        "save": false
+    },
+    {
+        "question": "escalate",
+        "answer": "leo thang nghĩa bóng",
+        "annotation1": "/ˈeskəleɪt/",
+        "annotation2": "v",
+        "save": false
+    },
+    {
+        "question": "essential",
+        "answer": "thuộc bản chất, thiết yếu, cốt yếu",
+        "annotation1": "/ɪˈsenʃl/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "eternal",
+        "answer": "đời đời, vĩnh viễn, bất diệt",
+        "annotation1": "/ɪˈtɜːrnl/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "ethical",
+        "answer": "thuộc đạo đức, luân thường đạo lý",
+        "annotation1": "/ˈeθɪkl/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "evaluate",
+        "answer": "ước lượng, định giá",
+        "annotation1": "/ɪˈvæljueɪt/",
+        "annotation2": "v",
+        "save": false
+    },
+    {
+        "question": "evil",
+        "answer": "xấu xa, ác độc",
+        "annotation1": "/ˈiːvl/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "exactly",
+        "answer": "chính xác, đúng như vậy",
+        "annotation1": "/ɪɡˈzæktli/",
+        "annotation2": "adv",
+        "save": false
+    },
+    {
+        "question": "exaggerate",
+        "answer": "thổi phồng, phóng đại, làm quá lên",
+        "annotation1": "/ɪɡˈzædʒəreɪt/",
+        "annotation2": "v",
+        "save": false
+    },
+    {
+        "question": "examine",
+        "answer": "khám xét, khảo sát",
+        "annotation1": "/ɪɡˈzæmɪn/",
+        "annotation2": "v",
+        "save": false
+    },
+    {
+        "question": "except",
+        "answer": "trừ ra, không kể đến",
+        "annotation1": "/ɪkˈsept/",
+        "annotation2": "prep",
+        "save": false
+    },
+    {
+        "question": "exceptional",
+        "answer": "khác thường, ngoại lệ",
+        "annotation1": "/ɪkˈsepʃənl/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "execute",
+        "answer": "thực hiện, thi hành",
+        "annotation1": "/ˈeksɪkjuːt/",
+        "annotation2": "v",
+        "save": false
+    },
+    {
+        "question": "exemplary",
+        "answer": "gương mẫu, mẫu mực",
+        "annotation1": "/ɪɡˈzempləri/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "exempt",
+        "answer": "được miễn thuế, không phải thực hiện",
+        "annotation1": "/ɪɡˈzempt/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "exhaust",
+        "answer": "làm kiệt quệ, dốc cạn sức lực",
+        "annotation1": "/ɪɡˈzɔːst/",
+        "annotation2": "v",
+        "save": false
+    },
+    {
+        "question": "exit",
+        "answer": "lối ra, lối thoát, thoát ra, biến mất",
+        "annotation1": "/ˈeɡzɪt/, /ˈeksɪt/",
+        "annotation2": "n, v",
+        "save": false
+    },
+    {
+        "question": "expert",
+        "answer": "chuyên môn, thành thạo, thông thạo",
+        "annotation1": "/'ekspɜ:rt/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "explain",
+        "answer": "giải thích, lý giải",
+        "annotation1": "/ɪkˈspleɪn/",
+        "annotation2": "v",
+        "save": false
+    },
+    {
+        "question": "extinct",
+        "answer": "tuyệt chủng, tuyệt giống",
+        "annotation1": "/ɪkˈstɪŋkt/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "extra",
+        "answer": "thêm, phụ vào, thêm vào, phần phụ thêm",
+        "annotation1": "/ˈekstrə/",
+        "annotation2": "n, adj, adv",
+        "save": false
+    },
+    {
+        "question": "extravagant",
+        "answer": "quá mức, quá độ",
+        "annotation1": "/ɪkˈstrævəɡənt/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "extremist",
+        "answer": "người cực đoan, quá khích",
+        "annotation1": "ɪkˈstriːmɪst/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "eye-opener",
+        "answer": "điều làm cho tỉnh ngộ, khai sáng",
+        "annotation1": "/ˈaɪ əʊəpənər/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "fair",
+        "answer": "hội chợ, đúng, hợp lý, công bằng",
+        "annotation1": "/fer/",
+        "annotation2": "n, v",
+        "save": false
+    },
+    {
+        "question": "fairly",
+        "answer": "công bằng, không thiên vị kha khá",
+        "annotation1": "/ˈferli/",
+        "annotation2": "adv",
+        "save": false
+    },
+    {
+        "question": "faithful",
+        "answer": "trung thành, chung thủy",
+        "annotation1": "/ˈfeɪθfl/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "famous",
+        "answer": "nổi tiếng, trứ danh",
+        "annotation1": "/ˈfeɪməs/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "fanatic",
+        "answer": "người cuồng tín",
+        "annotation1": "/fəˈnætɪk/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "fantastic",
+        "answer": "tuyệt vời, vô cùng tốt",
+        "annotation1": "/fænˈtæstɪk/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "far flung",
+        "answer": "xa rộng",
+        "annotation1": "/ˌfɑːr ˈflʌŋ/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "fast",
+        "answer": "nhanh chóng, mau",
+        "annotation1": "/fæst/",
+        "annotation2": "adj, adv",
+        "save": false
+    },
+    {
+        "question": "fat",
+        "answer": "chất béo, béo phì, thừa cân",
+        "annotation1": "/fæt/",
+        "annotation2": "n, adj",
+        "save": false
+    },
+    {
+        "question": "fatal",
+        "answer": "tiền định, không tránh được tai hại, gây tai họa, chí mạng",
+        "annotation1": "/ˈfeɪtl/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "fate",
+        "answer": "định mệnh, số phận",
+        "annotation1": "/feɪt/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "fatigue",
+        "answer": "sự mệt mỏi, mệt nhọc",
+        "annotation1": "/fəˈtiːɡ/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "feasible",
+        "answer": "khả thi, có thể thực hiện được",
+        "annotation1": "/ˈfiːzəbl/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "feeble",
+        "answer": "yếu đuối, nhu nhược",
+        "annotation1": "/ˈfiːbl/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "ferry",
+        "answer": "phà, chở bằng phà",
+        "annotation1": "/ˈferi/",
+        "annotation2": "n, v",
+        "save": false
+    },
+    {
+        "question": "fetch",
+        "answer": "tìm về, đem về đấm thụi, thọi",
+        "annotation1": "/fetʃ/",
+        "annotation2": "v",
+        "save": false
+    },
+    {
+        "question": "fiction",
+        "answer": "điều hư cấu, tưởng tượng tiểu thuyết",
+        "annotation1": "/ˈfɪkʃn/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "fill",
+        "answer": "làm đầy, nhồi đầy",
+        "annotation1": "/fɪl/",
+        "annotation2": "v",
+        "save": false
+    },
+    {
+        "question": "film",
+        "answer": "phim ảnh",
+        "annotation1": "/fɪlm/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "fine",
+        "answer": "tốt, khỏe",
+        "annotation1": "/faɪn/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "finish",
+        "answer": "sự kết liễu, phần kết thúc, hoàn thành, kết thúc",
+        "annotation1": "/ˈfɪnɪʃ/",
+        "annotation2": "n, v",
+        "save": false
+    },
+    {
+        "question": "fire",
+        "answer": "lửa, ánh lửa, đốt cháy, sa thải",
+        "annotation1": "/ˈfaɪər/",
+        "annotation2": "n, v",
+        "save": false
+    },
+    {
+        "question": "firm",
+        "answer": "hãng, công ty, chắc chắn, vững chắc",
+        "annotation1": "/fɜːrm/",
+        "annotation2": "n, adj",
+        "save": false
+    },
+    {
+        "question": "fitting",
+        "answer": "phù hợp, thích hợp",
+        "annotation1": "/ˈfɪtɪŋ/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "flaw",
+        "answer": "thiếu sót, sai lầm",
+        "annotation1": "/flɔː/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "flawless",
+        "answer": "hoàn hảo, không tì vết",
+        "annotation1": "/ˈflɔːləs/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "flinch",
+        "answer": "chùn bước, nao núng",
+        "annotation1": "/flɪntʃ/",
+        "annotation2": "v",
+        "save": false
+    },
+    {
+        "question": "flippant",
+        "answer": "suồng sã, nhả nhớt",
+        "annotation1": "/ˈflɪpənt/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "flourish",
+        "answer": "nét trang trí hoa mỹ, thịnh vượng, phát đạt",
+        "annotation1": "/'flʌri∫/",
+        "annotation2": "n, v",
+        "save": false
+    },
+    {
+        "question": "fluke",
+        "answer": "sự may mắn",
+        "annotation1": "/fluːk/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "fond",
+        "answer": "yêu mến, yêu dấu",
+        "annotation1": "/fɑːnd/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "forbid",
+        "answer": "cấm, ngăn cấm",
+        "annotation1": "/fərˈbɪd/",
+        "annotation2": "v",
+        "save": false
+    },
+    {
+        "question": "forcefully",
+        "answer": "mạnh mẽ, sinh động",
+        "annotation1": "/ˈfɔːrsfəli/",
+        "annotation2": "adv",
+        "save": false
+    },
+    {
+        "question": "formerly",
+        "answer": "trước đây, thuở xưa",
+        "annotation1": "/ˈfɔːrmərli/",
+        "annotation2": "adv",
+        "save": false
+    },
+    {
+        "question": "fortunate",
+        "answer": "may mắn, thuận lợi",
+        "annotation1": "/ˈfɔːrtʃənət/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "fraction",
+        "answer": "phần nhỏ, miếng nhỏ",
+        "annotation1": "/ˈfrækʃn/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "fracture",
+        "answer": "y học sự gãy, chỗ gãy xương",
+        "annotation1": "/'fræktʃə/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "fragile",
+        "answer": "dễ vỡ, yếu ớt",
+        "annotation1": "/ˈfrædʒl/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "fraud",
+        "answer": "sự gian lận, lừa dối",
+        "annotation1": "/frɔːd/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "freak",
+        "answer": "quái vật, thứ dị thường, quái dị",
+        "annotation1": "/friːk/",
+        "annotation2": "n, adj",
+        "save": false
+    },
+    {
+        "question": "freezing",
+        "answer": "giá lạnh, rét mướt",
+        "annotation1": "/ˈfriːzɪŋ/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "frequently",
+        "answer": "thường xuyên",
+        "annotation1": "/ˈfriːkwəntli/",
+        "annotation2": "adv",
+        "save": false
+    },
+    {
+        "question": "frigid",
+        "answer": "giá lạnh, nhạt nhẽo",
+        "annotation1": "/ˈfrɪdʒɪd/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "frivolous",
+        "answer": "phù phiếm, nhẹ dạ",
+        "annotation1": "/ˈfrɪvələs/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "frosty",
+        "answer": "băng giá, giá rét",
+        "annotation1": "/ˈfrɔːsti/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "fuddy-duddy",
+        "answer": "người cổ hủ, cổ hủ, lỗi thời",
+        "annotation1": "/ˈfʌdi dʌdi/",
+        "annotation2": "n, adj",
+        "save": false
+    },
+    {
+        "question": "fulfillment",
+        "answer": "hoàn chỉnh",
+        "annotation1": "/fʊlˈfɪlmənt/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "fun",
+        "answer": "sự vui đùa, niềm vui thích, vui vẻ",
+        "annotation1": "/fʌn/",
+        "annotation2": "n, adj",
+        "save": false
+    },
+    {
+        "question": "function",
+        "answer": "chức năng, hoạt động, thực hiện chức năng",
+        "annotation1": "/ˈfʌŋkʃn/",
+        "annotation2": "n, v",
+        "save": false
+    },
+    {
+        "question": "funny",
+        "answer": "buồn cười, hài hước",
+        "annotation1": "/ˈfʌni/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "furious",
+        "answer": "giận dữ, điên tiết",
+        "annotation1": "/ˈfjʊriəs/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "future",
+        "answer": "tương lai",
+        "annotation1": "/ˈfjuːtʃər/",
+        "annotation2": "n, adj",
+        "save": false
+    },
+    {
+        "question": "gain",
+        "answer": "lợi lộc, lợi ích, đạt được",
+        "annotation1": "/ɡeɪn/",
+        "annotation2": "n, v",
+        "save": false
+    },
+    {
+        "question": "garbage",
+        "answer": "rác rưởi",
+        "annotation1": "/ˈɡɑːrbɪdʒ/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "garish",
+        "answer": "lòe loẹt, sặc sỡ",
+        "annotation1": "/ˈɡerɪʃ/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "gather",
+        "answer": "tập hợp, tụ họp hái, lượm",
+        "annotation1": "/ˈɡæðər/",
+        "annotation2": "v",
+        "save": false
+    },
+    {
+        "question": "gaudy",
+        "answer": "lòe loẹt, cầu kỳ",
+        "annotation1": "/ˈɡɔːdi/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "gaunt",
+        "answer": "hoang vắng, thê lương, buồn thảm",
+        "annotation1": "/ɡɔːnt/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "gender",
+        "answer": "giống, giới tính",
+        "annotation1": "/ˈdʒendər/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "generous",
+        "answer": "rộng lượng, khoan thai",
+        "annotation1": "/ˈdʒenərəs/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "genuine",
+        "answer": "thành thật, chân thật",
+        "annotation1": "/ˈdʒenjuɪn/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "gesture",
+        "answer": "điệu bộ, cử chỉ, động tác",
+        "annotation1": "/ˈdʒestʃər/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "get",
+        "answer": "có được, kiếm được, nhận được",
+        "annotation1": "/ɡet/",
+        "annotation2": "v",
+        "save": false
+    },
+    {
+        "question": "glad",
+        "answer": "vui lòng, sung sướng",
+        "annotation1": "/ɡlæd/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "glare",
+        "answer": "nhìn trừng trừng, cái nhìn, ánh nhìn giận dữ, ánh sáng, chiếu sáng",
+        "annotation1": "/ɡler/",
+        "annotation2": "v, n",
+        "save": false
+    },
+    {
+        "question": "glimpse",
+        "answer": "cái nhìn lướt qua, nhìn thoáng qua",
+        "annotation1": "/ɡlɪmps/",
+        "annotation2": "n, v",
+        "save": false
+    },
+    {
+        "question": "glitter",
+        "answer": "lấp lánh",
+        "annotation1": "/ˈɡlɪtər/",
+        "annotation2": "v",
+        "save": false
+    },
+    {
+        "question": "gloomy",
+        "answer": "tối tăm, u ám, ảm đạm",
+        "annotation1": "/ˈɡluːmi/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "glossy",
+        "answer": "bóng loáng, hào nhoáng",
+        "annotation1": "/ˈɡlɑːsi/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "government",
+        "answer": "sự cai trị, thống trị chính phủ, chính quyền",
+        "annotation1": "/ˈɡʌvərnmənt/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "grab",
+        "answer": "sự chộp, túm lấy, vồ, giật",
+        "annotation1": "/ɡræb/",
+        "annotation2": "n, v",
+        "save": false
+    },
+    {
+        "question": "gracious",
+        "answer": "hòa nhã, lịch thiệp",
+        "annotation1": "/ˈɡreɪʃəs/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "great",
+        "answer": "to lớn, vĩ đại",
+        "annotation1": "/ɡreɪt/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "gregarious",
+        "answer": "thích đàn đúm, giao du",
+        "annotation1": "/ɡrɪˈɡeriəs/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "grief",
+        "answer": "nỗi sầu khổ",
+        "annotation1": "/ɡriːf/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "grim",
+        "answer": "dữ tợn, nhẫn tâm",
+        "annotation1": "/ɡrɪm/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "grouse",
+        "answer": "sự càu nhàu, cằn nhằn, càu nhàu",
+        "annotation1": "/ɡraʊs/",
+        "annotation2": "n, v",
+        "save": false
+    },
+    {
+        "question": "gruesome",
+        "answer": "khủng khiếp, kinh khủng",
+        "annotation1": "/ˈɡruːsəm/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "grumble",
+        "answer": "sự càu nhàu, cằn nhằn, càu nhàu",
+        "annotation1": "/ˈɡrʌmbl/",
+        "annotation2": "n, v",
+        "save": false
+    },
+    {
+        "question": "guarantee",
+        "answer": "sự bảo đảm, cam đoan, bảo lãnh, hứa chắc chắn, cam đoan, bảo đảm",
+        "annotation1": "/ˌɡærənˈtiː/",
+        "annotation2": "n, v",
+        "save": false
+    },
+    {
+        "question": "guard",
+        "answer": "sự đề phòng, bảo vệ, canh giữ",
+        "annotation1": "/ɡɑːrd/",
+        "annotation2": "n, v",
+        "save": false
+    },
+    {
+        "question": "guilt",
+        "answer": "tội lỗi",
+        "annotation1": "/ɡɪlt/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "guiltless",
+        "answer": "không phạm tội, không biết tí gì, không có tí nào",
+        "annotation1": "/ˈɡɪltləs/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "hallucination",
+        "answer": "ảo giác",
+        "annotation1": "/həˌluːsɪˈneɪʃn/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "halt",
+        "answer": "sự dừng lại, tạm nghỉ, cho dừng lại, lưỡng lự, do dự",
+        "annotation1": "/hɔːlt/",
+        "annotation2": "n, v",
+        "save": false
+    },
+    {
+        "question": "handover",
+        "answer": "sự bàn giao",
+        "annotation1": "/ˈhændəʊvər/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "handsome",
+        "answer": "đẹp trai, ưa nhìn",
+        "annotation1": "/ˈhænsəm/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "handy",
+        "answer": "thuận tiện, sẵn tiện",
+        "annotation1": "/ˈhændi/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "hard",
+        "answer": "cứng, rắn, hà khắc, khắc nghiệt, hết sức",
+        "annotation1": "/hɑːrd/",
+        "annotation2": "adj, adv",
+        "save": false
+    },
+    {
+        "question": "harmless",
+        "answer": "vô hại, không làm hại ai được",
+        "annotation1": "/ˈhɑːrmləs/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "havoc",
+        "answer": "sự tàn phá",
+        "annotation1": "/ˈhævək/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "hazard",
+        "answer": "sự may rủi, mối nguy, phó thác cho may rủi, đánh bạo",
+        "annotation1": "/ˈhæzərd/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "hazy",
+        "answer": "lờ mờ, mơ hồ, ngà ngà say",
+        "annotation1": "/ˈheɪzi/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "heartless",
+        "answer": "vô tâm, nhẫn tâm",
+        "annotation1": "/ˈhɑːrtləs/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "heed",
+        "answer": "chú ý, sự lưu ý, sự để ý",
+        "annotation1": "/hi:d/",
+        "annotation2": "n, v",
+        "save": false
+    },
+    {
+        "question": "helpful",
+        "answer": "có ích, giúp ích",
+        "annotation1": "/ˈhelpfl/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "heroic",
+        "answer": "tính chất anh hùng, quả cảm, can đảm",
+        "annotation1": "/həˈrəʊɪk/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "hesitant",
+        "answer": "do dự, ngập ngừng, lưỡng lự",
+        "annotation1": "/ˈhezɪtənt/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "hint",
+        "answer": "lời gợi ý, bóng gió, gợi ý, ám chỉ",
+        "annotation1": "/hɪnt/",
+        "annotation2": "n, v",
+        "save": false
+    },
+    {
+        "question": "hire",
+        "answer": "sự cho thuê, cho thuê, mướn",
+        "annotation1": "/ˈhaɪər/",
+        "annotation2": "n, v",
+        "save": false
+    },
+    {
+        "question": "honest",
+        "answer": "trung thực, chân thật",
+        "annotation1": "/ˈɑːnɪst/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "honorable",
+        "answer": "đáng tôn kính, đáng kính trọng",
+        "annotation1": "/ˈɑːnərəbl/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "hop",
+        "answer": "bước nhảy, nhảy cẫng",
+        "annotation1": "/hɑːp/",
+        "annotation2": "n, v",
+        "save": false
+    },
+    {
+        "question": "horrible",
+        "answer": "xấu xa, khủng khiếp",
+        "annotation1": "/ˈhɔːrəbl/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "huge",
+        "answer": "to lớn, đồ sộ",
+        "annotation1": "/hjuːdʒ/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "humble",
+        "answer": "khiêm tốn, nhún nhường",
+        "annotation1": "/ˈhʌmbl/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "humiliate",
+        "answer": "làm nhục, làm bẽ mặt",
+        "annotation1": "/hjuːˈmɪlieɪt/",
+        "annotation2": "v",
+        "save": false
+    },
+    {
+        "question": "hurry",
+        "answer": "sự vội vàng, hấp tấp, thúc giục, bắt làm gấp",
+        "annotation1": "/ˈhɜːri/",
+        "annotation2": "n, v",
+        "save": false
+    },
+    {
+        "question": "hypnotize",
+        "answer": "thôi miên",
+        "annotation1": "/ˈhɪpnətaɪz/",
+        "annotation2": "v",
+        "save": false
+    },
+    {
+        "question": "identical",
+        "answer": "y hệt, giống nhau",
+        "annotation1": "/aɪˈdentɪkl/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "idiot",
+        "answer": "đồ ngốc",
+        "annotation1": "/ˈɪdiət/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "ignore",
+        "answer": "phớt lờ, bỏ qua",
+        "annotation1": "/ɪɡˈnɔːr/",
+        "annotation2": "v",
+        "save": false
+    },
+    {
+        "question": "illusion",
+        "answer": "ảo tưởng, ảo giác",
+        "annotation1": "/ɪˈluːʒn/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "imitate",
+        "answer": "theo gương, noi theo, mô phỏng",
+        "annotation1": "/ˈɪmɪteɪt/",
+        "annotation2": "v",
+        "save": false
+    },
+    {
+        "question": "immaculate",
+        "answer": "trong trắng, không vết,  không khuyết điểm",
+        "annotation1": "/ɪˈmækjələt/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "immediate",
+        "answer": "trực tiếp, ngay tức thì, ngay lập tức",
+        "annotation1": "/ɪˈmiːdiət/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "imminent",
+        "answer": "sắp xảy ra",
+        "annotation1": "/ˈɪmɪnənt/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "impact",
+        "answer": "sự va chạm, tác động, ảnh hưởng",
+        "annotation1": "/ˈɪmpækt/",
+        "annotation2": "n, v",
+        "save": false
+    },
+    {
+        "question": "impaired",
+        "answer": "suy yếu, khiếm khuyết",
+        "annotation1": "/ɪmˈperd/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "impartial",
+        "answer": "công bằng, không thiên vị",
+        "annotation1": "/ɪmˈpɑːrʃl/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "impish",
+        "answer": "nghèo túng, thiếu thốn",
+        "annotation1": "/´impiʃ/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "implore",
+        "answer": "cầu khẩn, khẩn nài",
+        "annotation1": "/ɪmˈplɔːr/",
+        "annotation2": "v",
+        "save": false
+    },
+    {
+        "question": "impoverished",
+        "answer": "làm mất công dụng",
+        "annotation1": "/ɪmˈpɑːvɚɪʃt/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "inadequate",
+        "answer": "không tương xứng, không thích đáng",
+        "annotation1": "/ɪnˈædɪkwət/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "inappropriate",
+        "answer": "không thích hợp",
+        "annotation1": "/ˌɪnəˈprəʊpriət/",
+        "annotation2": " ",
+        "save": false
+    },
+    {
+        "question": "incarnation",
+        "answer": "hiện thân, sự tạo hình",
+        "annotation1": "/ˌɪnkɑːrˈneɪʃn/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "increase",
+        "answer": "sự tăng lên, tăng cao, tăng lên",
+        "annotation1": "/ˈɪŋkriːs/, /ɪnˈkriːs/",
+        "annotation2": "n, v",
+        "save": false
+    },
+    {
+        "question": "indifferent",
+        "answer": "lãnh đạm, thờ ơ",
+        "annotation1": "/ɪnˈdɪfrənt/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "indigenous",
+        "answer": "bản xứ",
+        "annotation1": "/ɪnˈdɪdʒənəs/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "indistinct",
+        "answer": "không rõ ràng, lờ mờ",
+        "annotation1": "/ˌɪndɪˈstɪŋkt/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "individual",
+        "answer": "cá nhân, người, cá thể, riêng lẻ, cá nhân, tách biệt",
+        "annotation1": "/ˌɪndɪˈvɪdʒuəl/",
+        "annotation2": "n, adj",
+        "save": false
+    },
+    {
+        "question": "industrious",
+        "answer": "cần cù, siêng năng",
+        "annotation1": "/ɪnˈdʌstriəs/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "inevitable",
+        "answer": "không thể tránh được, chắc chắn xảy ra",
+        "annotation1": "/ɪnˈevɪtəbl/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "infamous",
+        "answer": "tai tiếng, ô nhục",
+        "annotation1": "/ˈɪnfəməs/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "infant",
+        "answer": "đứa bé còn ẵm ngửa",
+        "annotation1": "/ˈɪnfənt/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "infect",
+        "answer": "nhiễm, lan truyền",
+        "annotation1": "/ɪnˈfekt/",
+        "annotation2": "v",
+        "save": false
+    },
+    {
+        "question": "inferior",
+        "answer": "thấp, cấp dưới",
+        "annotation1": "/ɪnˈfɪriər/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "inform",
+        "answer": "báo tin, cho biết",
+        "annotation1": "/ɪnˈfɔːrm/",
+        "annotation2": "v",
+        "save": false
+    },
+    {
+        "question": "infuriate",
+        "answer": "làm cho ai điên tiết, nổi cáu",
+        "annotation1": "/ɪnˈfjʊrieɪt/",
+        "annotation2": "v",
+        "save": false
+    },
+    {
+        "question": "ingenious",
+        "answer": "khéo léo, tài tình, mưu trí",
+        "annotation1": "/in´dʒi:niəs/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "inhabitant",
+        "answer": "người ở, dân cư, người cư trú",
+        "annotation1": "/ɪnˈhæbɪtənt/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "initiate",
+        "answer": "người đã được vỡ lòng, khai tâm, bắt đầu, khởi xướng",
+        "annotation1": "/ɪˈnɪʃieɪt/",
+        "annotation2": "n, v",
+        "save": false
+    },
+    {
+        "question": "innocent",
+        "answer": "vô tội, ngây thơ",
+        "annotation1": "/ˈɪnəsnt/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "inroad",
+        "answer": "sự xâm nhập, đột nhập",
+        "annotation1": "/ˈɪnrəʊd/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "insight",
+        "answer": "sự hiểu thấu, sự thật ngầm hiểu",
+        "annotation1": "/ˈɪnsaɪt/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "insomnia",
+        "answer": "chứng mất ngủ",
+        "annotation1": "/ɪnˈsɑːmniə/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "inspect",
+        "answer": "xét kỹ, thanh tra",
+        "annotation1": "/ɪnˈspekt/",
+        "annotation2": "v",
+        "save": false
+    },
+    {
+        "question": "instantly",
+        "answer": "ngay khi, ngay lập tức",
+        "annotation1": "/ˈɪnstəntli/",
+        "annotation2": "adv",
+        "save": false
+    },
+    {
+        "question": "instruction",
+        "answer": "hướng dẫn",
+        "annotation1": "/ɪnˈstrʌkʃn/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "insufficient",
+        "answer": "không đủ, thiếu thốn",
+        "annotation1": "/ˌɪnsəˈfɪʃnt/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "interesting",
+        "answer": "thú vị, gây chú ý",
+        "annotation1": "/ˈɪntrəstɪŋ/, /ˈɪntrestɪŋ/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "intolerant",
+        "answer": "không dung thứ, không chịu được",
+        "annotation1": "/ɪnˈtɑːlərənt/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "intrude",
+        "answer": "xâm nhập, xâm phạm",
+        "annotation1": "/ɪnˈtruːd/",
+        "annotation2": "v",
+        "save": false
+    },
+    {
+        "question": "invade",
+        "answer": "xâm lược, xâm chiếm",
+        "annotation1": "/ɪnˈveɪd/",
+        "annotation2": "v",
+        "save": false
+    },
+    {
+        "question": "inventory",
+        "answer": "sự kiểm kê, bản kiểm kê",
+        "annotation1": "/ˈɪnvəntɔːri/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "investigate",
+        "answer": "điều tra nghiên cứu",
+        "annotation1": "/ɪnˈvestɪɡeɪt/",
+        "annotation2": "v",
+        "save": false
+    },
+    {
+        "question": "invincible",
+        "answer": "vô địch, bất khả chiến bại",
+        "annotation1": "/ɪnˈvɪnsəbl/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "irrelevant",
+        "answer": "không thích đáng, không liên quan",
+        "annotation1": "/ɪˈreləvənt/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "irritable",
+        "answer": "dễ cáu, cáu kỉnh",
+        "annotation1": "/'iritəbəl/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "isolated",
+        "answer": "cô lập, bị cách ly",
+        "annotation1": "/ˈaɪsəleɪtɪd/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "jealous",
+        "answer": "ghen tị, đố kỵ",
+        "annotation1": "/ˈdʒeləs/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "jolly",
+        "answer": "vui tươi, vui vẻ, hết sức, lắm, quá, tán tỉnh",
+        "annotation1": "/ˈdʒɑːli/",
+        "annotation2": "adj, adv, v",
+        "save": false
+    },
+    {
+        "question": "jovial",
+        "answer": "vui vẻ, vui tính",
+        "annotation1": "/ˈdʒəʊviəl/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "joy",
+        "answer": "sự vui mừng, hân hoan",
+        "annotation1": "/dʒɔɪ/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "joyful",
+        "answer": "vui mừng, hân hoan",
+        "annotation1": "/ˈdʒɔɪfl/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "jubilant",
+        "answer": "vui sướng, mừng rỡ",
+        "annotation1": "/ˈdʒuːbɪlənt/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "junior",
+        "answer": "người ít tuổi, ít thâm niên hơn, trẻ tuổi, ở cấp dưới",
+        "annotation1": "/ˈdʒuːniər/",
+        "annotation2": "n, adj",
+        "save": false
+    },
+    {
+        "question": "killing",
+        "answer": "sự giết chóc, tàn sát",
+        "annotation1": "/ˈkɪlɪŋ/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "kind-hearted",
+        "answer": "tốt bụng, có lòng tốt",
+        "annotation1": "/ˌkaɪnd ˈhɑːrtɪd/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "laborious",
+        "answer": "cần cù, khó nhọc, gian khổ",
+        "annotation1": "/ləˈbɔːriəs/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "lackadaisical",
+        "answer": "đa sầu, đa cảm, yếu đuối, ủy mị",
+        "annotation1": "/ˌlækəˈdeɪzɪkl/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "learn",
+        "answer": "học tập, nghe được, biết được",
+        "annotation1": "/lɜːrn/",
+        "annotation2": "v",
+        "save": false
+    },
+    {
+        "question": "leave",
+        "answer": "sự cho phép, để lại, bỏ lại, bỏ quên, bỏ đi, rời đi",
+        "annotation1": "/liːv/",
+        "annotation2": "v",
+        "save": false
+    },
+    {
+        "question": "lengthy",
+        "answer": "dài, dài dòng",
+        "annotation1": "/ˈleŋkθi/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "lenient",
+        "answer": "nhân hậu, hiền hậu, khoan dung",
+        "annotation1": "/ˈliːniənt/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "lethal",
+        "answer": "làm chết người, gây chết người",
+        "annotation1": "/'li:θəl/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "lethargic",
+        "answer": "thờ ơ, lờ phờ",
+        "annotation1": "/ləˈθɑːrdʒɪk/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "liable",
+        "answer": "khả thi, có khả năng xảy ra",
+        "annotation1": "/ˈlaɪəbl/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "liberal",
+        "answer": "rộng rãi, hào phóng tự do",
+        "annotation1": "/ˈlɪbərəl/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "libertarian",
+        "answer": "người theo chủ nghĩa tự do",
+        "annotation1": "/ˌlɪbərˈteriən/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "license",
+        "answer": "sự cho phép, giấy phép, bằng, chứng chỉ, cho phép, cấp giấy phép",
+        "annotation1": "/ˈlaɪsns/",
+        "annotation2": "v",
+        "save": false
+    },
+    {
+        "question": "limitation",
+        "answer": "sự hạn chế, hạn định",
+        "annotation1": "/ˌlɪmɪˈteɪʃn/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "listless",
+        "answer": "bơ phờ, lờ phờ",
+        "annotation1": "/ˈlɪstləs/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "literary",
+        "answer": "thuộc văn chương, có tính văn chương, nghĩa bóng",
+        "annotation1": "/ˈlɪtəreri/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "little",
+        "answer": "nhỏ bé, ít ỏi",
+        "annotation1": "/ˈlɪtl/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "livelihood",
+        "answer": "cách sinh nhai, sinh kế",
+        "annotation1": "/ˈlaɪvlihʊd/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "load",
+        "answer": "gánh nặng, trọng tải, chất, chở, chồng chất",
+        "annotation1": "/ləʊd/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "loathe",
+        "answer": "ghê tởm, kinh hãi",
+        "annotation1": "/ləʊð/",
+        "annotation2": "v",
+        "save": false
+    },
+    {
+        "question": "local",
+        "answer": "tính địa phương, người dân địa phương",
+        "annotation1": "/ˈləʊkl/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "lofty",
+        "answer": "cao ngất, sừng sững kiêu căng, kiêu kỳ",
+        "annotation1": "/ˈlɔːfti/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "logical",
+        "answer": "hợp lý, hợp với logic",
+        "annotation1": "/ˈlɑːdʒɪkl/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "loiter",
+        "answer": "đi tha thẩn, la cà",
+        "annotation1": "/ˈlɔɪtər/",
+        "annotation2": "v",
+        "save": false
+    },
+    {
+        "question": "loyal",
+        "answer": "trung thành, trung kiên",
+        "annotation1": "/ˈlɔɪəl/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "lucid",
+        "answer": "tỉnh táo",
+        "annotation1": "/ˈluːsɪd/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "lunar",
+        "answer": "thuộc mặt trăng",
+        "annotation1": "/ˈluːnər/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "luxurious",
+        "answer": "sang trọng, lộng lẫy",
+        "annotation1": "/lʌɡˈʒʊriəs/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "magnanimous",
+        "answer": "hào hiệp, cao thượng",
+        "annotation1": "/mæɡˈnænɪməs/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "magnify",
+        "answer": "làm to ra, phóng to, mở rộng, khuếch đại",
+        "annotation1": "/ˈmæɡnɪfaɪ/",
+        "annotation2": "v",
+        "save": false
+    },
+    {
+        "question": "maiden",
+        "answer": "trinh nữ, cô gái đồng trinh, thuộc trinh nữ, thời con gái",
+        "annotation1": "/ˈmeɪdn/",
+        "annotation2": "n, adj",
+        "save": false
+    },
+    {
+        "question": "mainly",
+        "answer": "chính, chủ yếu, phần lớn",
+        "annotation1": "/ˈmeɪnli/",
+        "annotation2": "adv",
+        "save": false
+    },
+    {
+        "question": "maintain",
+        "answer": "giữ gìn, duy trì, bảo vệ, bảo dưỡng, kiên định với ý kiến",
+        "annotation1": "/meɪnˈteɪn/",
+        "annotation2": "v",
+        "save": false
+    },
+    {
+        "question": "malfunction",
+        "answer": "sự trục trặc, làm việc sai chức năng",
+        "annotation1": "/ˌmælˈfʌŋkʃn/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "malicious",
+        "answer": "hiểm độc, có ác tâm",
+        "annotation1": "/məˈlɪʃəs/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "man-made",
+        "answer": "nhân tạo, do con người tạo ra",
+        "annotation1": "/ˌmæn ˈmeɪd/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "mansion",
+        "answer": "lâu đài, biệt thự",
+        "annotation1": "/ˈmænʃn/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "mate",
+        "answer": "bạn bè, người phụ việc, giúp việc, giao phối con đực và con cái",
+        "annotation1": "/meɪt/",
+        "annotation2": "n, v",
+        "save": false
+    },
+    {
+        "question": "mature",
+        "answer": "chín, thuần thục, trưởng thành làm cho chín, làm cho hoàn thiện",
+        "annotation1": "/məˈtʃʊr/, /məˈtʊr/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "meager",
+        "answer": "gầy gò, khẳng khiu, hom hem nghèo nàn, đạm bạc",
+        "annotation1": "/ˈmiːɡər/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "mean",
+        "answer": "xấu tính, hèn hạ, bần tiện, bủn xỉn, muốn nói, có ý định, có ý muốn, dự định",
+        "annotation1": "/miːn/",
+        "annotation2": "n, v",
+        "save": false
+    },
+    {
+        "question": "meaningful",
+        "answer": "có ý nghĩa, đầy ý nghĩa",
+        "annotation1": "/ˈmiːnɪŋfl/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "memento",
+        "answer": "vật kỷ niệm, vật lưu niệm",
+        "annotation1": "/məˈmentəʊ/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "memorize",
+        "answer": "học thuộc, ghi nhớ",
+        "annotation1": "/ˈmeməraɪz/",
+        "annotation2": "v",
+        "save": false
+    },
+    {
+        "question": "mental",
+        "answer": "thuộc tâm thần, tinh thần, trí tuệ, trí óc",
+        "annotation1": "/ˈmentl/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "mentor",
+        "answer": "người cố vấn, người hướng dẫn",
+        "annotation1": "/ˈmentɔːr/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "merry",
+        "answer": "vui vẻ, thú vị, dễ chịu",
+        "annotation1": "/ˈmeri/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "mesmerize",
+        "answer": "thôi miên, mê hoặc, quyến rũ",
+        "annotation1": "/ˈmezməraɪz/",
+        "annotation2": "v",
+        "save": false
+    },
+    {
+        "question": "messy",
+        "answer": "hỗn độn, lộn xộn, bừa bãi",
+        "annotation1": "/ˈmesi/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "midday",
+        "answer": "buổi trưa, giữa ngày",
+        "annotation1": "/ˌmɪdˈdeɪ/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "middle",
+        "answer": "giữa, ở giữa",
+        "annotation1": "/ˈmɪdl/",
+        "annotation2": "n, adj",
+        "save": false
+    },
+    {
+        "question": "mighty",
+        "answer": "mạnh, hùng cường, hùng mạnh, to lớn, vĩ đại, hùng vĩ",
+        "annotation1": "/ˈmaɪti/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "mild",
+        "answer": "nhẹ nhàng, êm dịu, dịu dàng, hòa nhã",
+        "annotation1": "/maɪld/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "militant",
+        "answer": "người chiến đấu, chiến đấu",
+        "annotation1": "/ˈmɪlɪtənt/",
+        "annotation2": "n, adj",
+        "save": false
+    },
+    {
+        "question": "mimic",
+        "answer": "giả, bắt chước",
+        "annotation1": "/ˈmɪmɪk/",
+        "annotation2": "v",
+        "save": false
+    },
+    {
+        "question": "mind",
+        "answer": "tinh thần, trí tuệ, đầu óc",
+        "annotation1": "/maind/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "miniature",
+        "answer": "bức tiểu họa, hình thu nhỏ, nhỏ, thu nhỏ lại",
+        "annotation1": "/ˈmɪnətʃər/, /ˈmɪnətʃʊr/",
+        "annotation2": "n, adj",
+        "save": false
+    },
+    {
+        "question": "minnow",
+        "answer": "cá tuế họ cá chép",
+        "annotation1": "/ˈmɪnəʊ/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "mirage",
+        "answer": "ảo tưởng, ảo vọng",
+        "annotation1": "/məˈrɑːʒ/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "mischievous",
+        "answer": "tinh nghịch, tinh quái, ranh mãnh, láu lỉnh",
+        "annotation1": "/´mistʃivəs/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "misery",
+        "answer": "cảnh nghèo khổ, đáng thương, sự đau đớn, khổ sở",
+        "annotation1": "/ˈmɪzəri/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "miss",
+        "answer": "cô gái, thiếu nữ sự trượt, không trúng đích, sự thiếu vắng trượt, lỡ, nhỡ",
+        "annotation1": "/mɪs/",
+        "annotation2": "n, v",
+        "save": false
+    },
+    {
+        "question": "mistake",
+        "answer": "lỗi, sai lầm, lỗi lầm, phạm sai lầm, hiểu sai, hiểu lầm",
+        "annotation1": "/mɪˈsteɪk/",
+        "annotation2": "n, v",
+        "save": false
+    },
+    {
+        "question": "mistaken",
+        "answer": "sai lầm, bị hiểu sai",
+        "annotation1": "/mɪˈsteɪkən/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "moderate",
+        "answer": "vừa phải, phải chăng, điều độ, ôn hòa, không quá khích, làm cho ôn hòa, giảng hòa, làm dịu nhẹ, tiết chế",
+        "annotation1": "ˈmɑːdərət/",
+        "annotation2": "adj, v",
+        "save": false
+    },
+    {
+        "question": "modern",
+        "answer": "hiện đại, tân tiến",
+        "annotation1": "/ˈmɑːdərn/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "modest",
+        "answer": "khiêm tốn, nhún nhường, nhũn nhặn bình thường, giản dị, thùy mị, nhu mì",
+        "annotation1": "/ˈmɑːdɪst/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "moist",
+        "answer": "ẩm, ẩm ướt, ướt lấp nhấp",
+        "annotation1": "/mɔɪst/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "mood",
+        "answer": "tâm trạng, tính khí, tâm tính, tính tình",
+        "annotation1": "/mu:d/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "moral",
+        "answer": "lời răn dạy, bài học, thuộc đạo đức, phẩm hạnh, có đạo đức",
+        "annotation1": "/ˈmɔːrəl/",
+        "annotation2": "n, adj",
+        "save": false
+    },
+    {
+        "question": "mortal",
+        "answer": "chết, không bất tử nguy đến tính mạng",
+        "annotation1": "/ˈmɔːrtl/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "mum",
+        "answer": "lặng yên, giữ kín",
+        "annotation1": "/mʌm/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "mural",
+        "answer": "tranh tường",
+        "annotation1": "/ˈmjʊrəl/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "myriad",
+        "answer": "vô số, lớn, nhiều vô cùng",
+        "annotation1": "/ˈmɪriəd/",
+        "annotation2": "n, adj",
+        "save": false
+    },
+    {
+        "question": "mysterious",
+        "answer": "huyền bí, khó hiểu, bí ẩn",
+        "annotation1": "/mɪˈstɪriəs/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "myth",
+        "answer": "thần thoại, chuyện hoang đường, lời đồn",
+        "annotation1": "/mɪθ/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "narrative",
+        "answer": "chuyện kể, bài tường thuật",
+        "annotation1": "/ˈnærətɪv/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "nasty",
+        "answer": "bẩn thỉu, dơ dáy",
+        "annotation1": "/'na:sti/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "native",
+        "answer": "người gốc, thổ dân, thuộc địa phương",
+        "annotation1": "/ˈneɪtɪv/",
+        "annotation2": "n, v",
+        "save": false
+    },
+    {
+        "question": "nausea",
+        "answer": "sự buồn nôn, sự kinh tởm",
+        "annotation1": "/ˈnɔːziə/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "necessary",
+        "answer": "cần thiết, thiết yếu",
+        "annotation1": "/ˈnesəseri/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "needy",
+        "answer": "nghèo túng, thiếu thốn",
+        "annotation1": "/´ni:di/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "negligible",
+        "answer": "không đáng kể",
+        "annotation1": "/ˈneɡlɪdʒəbl/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "nervous",
+        "answer": "lo lắng, bồn chồn",
+        "annotation1": "/ˈnɜːrvəs/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "neutral",
+        "answer": "trung lập, không có tính chất rõ ràng",
+        "annotation1": "/ˈnuːtrəl/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "niche",
+        "answer": "chỗ thích hợp, phù hợp với một nhóm nhỏ ngách",
+        "annotation1": "/nɪtʃ/",
+        "annotation2": "n, adj",
+        "save": false
+    },
+    {
+        "question": "nippy",
+        "answer": "nhanh nhẹn, lanh lẹ, hoạt bát",
+        "annotation1": "/ˈnɪpi/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "noise",
+        "answer": "tiếng ồn, huyên náo, om sòm",
+        "annotation1": "/nɔɪz/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "nonchalant",
+        "answer": "thờ ơ, hờ hững, lãnh đạm, vô tình",
+        "annotation1": "/ˌnɑːnʃəˈlɑːnt/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "noon",
+        "answer": "trưa, buổi trưa, đỉnh cao nhất trong sự nghiệp",
+        "annotation1": "/nuːn/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "normal",
+        "answer": "tình trạng bình thường, mức bình thường, thường, thông thường, bình thường",
+        "annotation1": "/ˈnɔːrml/",
+        "annotation2": "n, adj",
+        "save": false
+    },
+    {
+        "question": "notable",
+        "answer": "người có danh vọng, người có địa vị uy quyền, có tiếng, trứ danh đáng kể, đáng chú ý",
+        "annotation1": "/ˈnəʊtəbl/",
+        "annotation2": "n, adj",
+        "save": false
+    },
+    {
+        "question": "notify",
+        "answer": "báo, khai báo, thông báo, cho hay, cho biết",
+        "annotation1": "/ˈnəʊtɪfaɪ/",
+        "annotation2": "v",
+        "save": false
+    },
+    {
+        "question": "notorious",
+        "answer": "lừng danh, khét tiếng, tai tiếng",
+        "annotation1": "/nəʊˈtɔːriəs/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "nuisance",
+        "answer": "sự phiền hà, mối phiền toái, gây khó chịu",
+        "annotation1": "/ˈnuːsns/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "nurture",
+        "answer": "sự nuôi dưỡng, giáo dục, nuôi nấng, dưỡng giục",
+        "annotation1": "/ˈnɜːrtʃər/",
+        "annotation2": "n, v",
+        "save": false
+    },
+    {
+        "question": "obey",
+        "answer": "vâng lời, tuân theo, tuân lệnh",
+        "annotation1": "/o'bei/",
+        "annotation2": "v",
+        "save": false
+    },
+    {
+        "question": "obscure",
+        "answer": "mờ mịt, tối tăm, không rõ nghĩa, mơ hồ, khó hiểu, không có tiếng tăm, vô danh",
+        "annotation1": "/əbˈskjʊr/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "observe",
+        "answer": "quan sát, theo dõi tuân theo, tôn trọng",
+        "annotation1": "/əbˈzɜːrv/",
+        "annotation2": "v",
+        "save": false
+    },
+    {
+        "question": "obsession",
+        "answer": "sự ám ảnh, nỗi ám ảnh",
+        "annotation1": "/əbˈseʃn/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "obsolete",
+        "answer": "cổ xưa, quá hạn, lỗi thời",
+        "annotation1": "/ˌɑːbsəˈliːt/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "obtain",
+        "answer": "đạt được, giành được, thu được",
+        "annotation1": "/əbˈteɪn/",
+        "annotation2": "v",
+        "save": false
+    },
+    {
+        "question": "occult",
+        "answer": "sâu kín, huyền bí, che khuất, che lấp",
+        "annotation1": "/əˈkʌlt/",
+        "annotation2": "adj, v",
+        "save": false
+    },
+    {
+        "question": "offensive",
+        "answer": "cuộc tấn công, thế tấn công, xúc phạm, làm mất lòng, có tính tấn công, công kích",
+        "annotation1": "/əˈfensɪv/",
+        "annotation2": "n, adj",
+        "save": false
+    },
+    {
+        "question": "old fashioned",
+        "answer": "cổ hủ, lạc hậu, lỗi thời",
+        "annotation1": "/ˌoʊldˈfæʃənd/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "operate",
+        "answer": "hoạt động, đang làm việc, thi hành",
+        "annotation1": "/ˈɑːpəreɪt/",
+        "annotation2": "v",
+        "save": false
+    },
+    {
+        "question": "opportunity",
+        "answer": "cơ hội, thời cơ, dịp",
+        "annotation1": "/ˌɑːpərˈtuːnəti/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "opposite",
+        "answer": "điều trái ngược, sự đối lập, đối ngược, trái nhau, trước mặt, đối diện",
+        "annotation1": "/ˈɑːpəzɪt/",
+        "annotation2": "n, adj, adv, prep",
+        "save": false
+    },
+    {
+        "question": "optional",
+        "answer": "tùy ý, không bắt buộc",
+        "annotation1": "/ˈɑːpʃənl/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "ordinary",
+        "answer": "bình thường, thông thường, điều bình thường, thông thường",
+        "annotation1": "/ˈɔːrdneri/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "original",
+        "answer": "nguyên bản, gốc",
+        "annotation1": "/ə'ridʒənl/",
+        "annotation2": "adj, n",
+        "save": false
+    },
+    {
+        "question": "original",
+        "answer": "thuộc gốc, căn nguyên, đầu tiên, độc đáo, nguyên bản",
+        "annotation1": "/əˈrɪdʒənl/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "ornament",
+        "answer": "đồ trang hoàng, trang trí, trang sức, trang hoàng",
+        "annotation1": "/ˈɔːrnəmənt/",
+        "annotation2": "n, v",
+        "save": false
+    },
+    {
+        "question": "outgoing",
+        "answer": "dễ gần, thoải mái, hòa đồng",
+        "annotation1": "/ˌaʊtˈɡəʊɪŋ/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "outrage",
+        "answer": "sự xúc phạm, làm tổn thương, sỉ nhục, sự oán hận, giận dữ, xúc phạm, lăng mạ, sỉ nhục",
+        "annotation1": "/ˈaʊtreɪdʒ/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "outrageous",
+        "answer": "tàn bạo, vô nhân đạo, quá chừng, thái quá xúc phạm, làm tổn thương",
+        "annotation1": "/aʊtˈreɪdʒəs/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "outskirts",
+        "answer": "phạm vi ngoài một vấn đề, vùng ngoại ô, xa trung tâm",
+        "annotation1": "/ˈaʊtskɜːrts/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "outstanding",
+        "answer": "nổi bật, đáng chú ý, nổi tiếng, vượt trội",
+        "annotation1": "/aʊtˈstændɪŋ/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "overjoyed",
+        "answer": "vui mừng khôn xiết",
+        "annotation1": "/ˌəʊvərˈdʒɔɪd/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "overlook",
+        "answer": "trông nom, quan sát, xem xét bỏ qua, tha thứ",
+        "annotation1": "/ˌəʊvərˈlʊk/",
+        "annotation2": "v",
+        "save": false
+    },
+    {
+        "question": "overseas",
+        "answer": "nước ngoài, ngang qua biển",
+        "annotation1": "/ˌəʊvərˈsiːz/",
+        "annotation2": "adj, adv",
+        "save": false
+    },
+    {
+        "question": "oversee",
+        "answer": "trông nom, giám thị, quan sát",
+        "annotation1": "/ˌəʊvərˈsiː/",
+        "annotation2": "v",
+        "save": false
+    },
+    {
+        "question": "overturned",
+        "answer": "sự lật đổ, đảo lộn, lật úp, đánh đổ, lật ngược",
+        "annotation1": "/ˌəʊvərˈtɜːrn/",
+        "annotation2": "n, v",
+        "save": false
+    },
+    {
+        "question": "overwhelm",
+        "answer": "áp đảo, lất át, làm choáng ngợp tràn ngập, làm chôn vùi",
+        "annotation1": "/ˌəʊvərˈwelm/",
+        "annotation2": "v",
+        "save": false
+    },
+    {
+        "question": "pack",
+        "answer": "túi đeo, ba lô, đàn bầy, gói ghém, đóng gói, đóng hộp, xếp chặt, ních người",
+        "annotation1": "/pæk/",
+        "annotation2": "n, v",
+        "save": false
+    },
+    {
+        "question": "pail",
+        "answer": "cái thùng, xô, lượng đựng trong xô",
+        "annotation1": "/peɪl/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "part",
+        "answer": "phần, bộ phận, phần việc, nhiệm vụ, vai trò, chia thành từng phần, chia tách",
+        "annotation1": "/pɑːrt/",
+        "annotation2": "n, v",
+        "save": false
+    },
+    {
+        "question": "particular",
+        "answer": "riêng biệt, cá biệt, đặc thù, ngoại lệ tường tận, tỉ mỉ, chi tiết",
+        "annotation1": "/pərˈtɪkjələr/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "passion",
+        "answer": "cảm xúc mãnh liệt, sự đam mê, say mê",
+        "annotation1": "/ˈpæʃn/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "passport",
+        "answer": "hộ chiếu",
+        "annotation1": "/ˈpæspɔːrt/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "patient",
+        "answer": "bệnh nhân, kiên nhẫn, nhẫn nại, bền chí",
+        "annotation1": "/ˈpeɪʃnt/",
+        "annotation2": "n, adj",
+        "save": false
+    },
+    {
+        "question": "patriotic",
+        "answer": "yêu nước, ái quốc",
+        "annotation1": "/ˌpeɪtriˈɑːtɪk/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "peaceful",
+        "answer": "hòa bình, thái bình, yên tĩnh",
+        "annotation1": "/ˈpiːsfl/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "peal",
+        "answer": "tràng hồi sấm, cười, rung, đánh từng hồi",
+        "annotation1": "/piːl/",
+        "annotation2": "n, v",
+        "save": false
+    },
+    {
+        "question": "pedestrian",
+        "answer": "người đi bộ, khách bộ hành, bằng chân, đi bộ, chán ngắt, tẻ nhạt",
+        "annotation1": "/pəˈdestriən/",
+        "annotation2": "n, adj",
+        "save": false
+    },
+    {
+        "question": "penniless",
+        "answer": "không có tiền, không xu dính túi, nghèo túng",
+        "annotation1": "/ˈpeniləs/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "pensive",
+        "answer": "trầm ngâm, sâu sắc",
+        "annotation1": "/ˈpensɪv/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "perception",
+        "answer": "sự nhận thức, am hiểu, sự sáng suốt",
+        "annotation1": "/pərˈsepʃn/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "perhaps",
+        "answer": "có lẽ, có thể",
+        "annotation1": "/pərˈhæps/",
+        "annotation2": "adv",
+        "save": false
+    },
+    {
+        "question": "permit",
+        "answer": "giấy phép, sự cho phép, cho phép, cho cơ hội",
+        "annotation1": "/ˈpɜːrmɪt/, /pərˈmɪt/",
+        "annotation2": "n, v",
+        "save": false
+    },
+    {
+        "question": "personal",
+        "answer": "cá nhân, riêng tư",
+        "annotation1": "/ˈpɜːrsənl/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "photo",
+        "answer": "bức ảnh, tấm ảnh",
+        "annotation1": "/ˈfəʊtəʊ/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "pinnacle",
+        "answer": "cực điểm, đỉnh cao nhọn núi, tảng đá, điểm cao nhất, đỉnh cao sự nghiệp",
+        "annotation1": "/ˈpɪnəkl/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "pleasant",
+        "answer": "làm thích ý, vừa ý vui vẻ, dễ thương",
+        "annotation1": "/ˈpleznt/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "pluck",
+        "answer": "nhổ, bứt, hái",
+        "annotation1": "/plʌk/",
+        "annotation2": "n, v",
+        "save": false
+    },
+    {
+        "question": "plump",
+        "answer": "thẳng thừng, không quanh co, úp mở bụ bẫm, phúng phính, đầy đặn",
+        "annotation1": "/plʌmp/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "plunge",
+        "answer": "sự lao xuống, bước liều, sự lao đầu vào khó khăn, nguy hiểm, nhúng, thọc, lao, đâm sâu vào",
+        "annotation1": "/plʌndʒ/",
+        "annotation2": "n, v",
+        "save": false
+    },
+    {
+        "question": "podium",
+        "answer": "bục đứng cho giáo viên, người diễn thuyết",
+        "annotation1": "/ˈpəʊdiəm/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "polite",
+        "answer": "lễ phép, lịch thiệp, lịch sự",
+        "annotation1": "/pəˈlaɪt/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "portion",
+        "answer": "phần chia, khẩu phần, chia phần, phân phát",
+        "annotation1": "/ˈpɔːrʃn/",
+        "annotation2": "n, v",
+        "save": false
+    },
+    {
+        "question": "possess",
+        "answer": "có, chiếm hữu, sở hữu",
+        "annotation1": "/pəˈzes/",
+        "annotation2": "v",
+        "save": false
+    },
+    {
+        "question": "possibility",
+        "answer": "khả năng, sự có thể, triển vọng, tiềm năng",
+        "annotation1": "/ˌpɑːsəˈbɪləti/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "posture",
+        "answer": "tư thế, dáng điệu",
+        "annotation1": "/ˈpɑːstʃər/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "potent",
+        "answer": "có hiệu lực, có hiệu nghiệm, có uy lực, có sức thuyết phục",
+        "annotation1": "/ˈpəʊtnt/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "powerful",
+        "answer": "hùng mạnh, hùng cường, có sức mạnh lớn, có tác động mạnh",
+        "annotation1": "/ˈpaʊərfl/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "practice",
+        "answer": "thói quen, thông lệ, sự thực hành, thực tiễn thực hành, luyện tập",
+        "annotation1": "/ˈpræktɪs/",
+        "annotation2": "n, v",
+        "save": false
+    },
+    {
+        "question": "precisely",
+        "answer": "đúng, chính xác, một cách chính xác",
+        "annotation1": "/prɪˈsaɪsli/",
+        "annotation2": "adv",
+        "save": false
+    },
+    {
+        "question": "prejudiced",
+        "answer": "có thành kiến, biểu lộ thành kiến",
+        "annotation1": "/ˈpredʒədɪst/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "preposterous",
+        "answer": "hoàn toàn trái với lý lẽ thường, vô lý hết sức, phi lý, ngược đời, ngớ ngẩn, lố bịch",
+        "annotation1": "/prɪˈpɑːstərəs/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "preserve",
+        "answer": "bảo quản, giữ gìn, lưu giữ, bảo tồn",
+        "annotation1": "/prɪˈzɜːrv/",
+        "annotation2": "v",
+        "save": false
+    },
+    {
+        "question": "prestigious",
+        "answer": "có uy tín, có thanh thế, đem lại uy tín, đem lại thanh thế",
+        "annotation1": "/preˈstiːdʒəs/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "prevail",
+        "answer": "thắng thế, chiếm ưu thế, đánh bại thịnh hành, phổ biến khắp, lan khắp, thường xảy ra nhiều",
+        "annotation1": "/prɪˈveɪl/",
+        "annotation2": "v",
+        "save": false
+    },
+    {
+        "question": "prevent",
+        "answer": "ngăn cản, ngăn chặn, ngăn ngừa",
+        "annotation1": "/prɪˈvent/",
+        "annotation2": "v",
+        "save": false
+    },
+    {
+        "question": "previously",
+        "answer": "trước, trước đây",
+        "annotation1": "/ˈpriːviəsli/",
+        "annotation2": "adv",
+        "save": false
+    },
+    {
+        "question": "prior",
+        "answer": "trước, trước khi, quan trọng hơn",
+        "annotation1": "/ˈpraɪər/",
+        "annotation2": "adj, adv",
+        "save": false
+    },
+    {
+        "question": "private",
+        "answer": "riêng tư, cá nhân, tư nhân",
+        "annotation1": "/ˈpraɪvət/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "prize",
+        "answer": "giải thưởng, phần thưởng",
+        "annotation1": "/praɪz/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "procedure",
+        "answer": "thủ tục, chuỗi hành động",
+        "annotation1": "/prəˈsiːdʒər/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "process",
+        "answer": "quá trình, quy trình, sự tiến triển, chế biến, xử lý",
+        "annotation1": "/ˈprɑːses/",
+        "annotation2": "n, v",
+        "save": false
+    },
+    {
+        "question": "produce",
+        "answer": "sản lương, sản vật, sản phẩm, kết quả, trình ra, đưa ra, giơ ra",
+        "annotation1": "/prəˈduːs/",
+        "annotation2": "v, n",
+        "save": false
+    },
+    {
+        "question": "promote",
+        "answer": "thăng chức, xúc tiến, khuyến khích",
+        "annotation1": "/prəˈməʊt/",
+        "annotation2": "v",
+        "save": false
+    },
+    {
+        "question": "prompt",
+        "answer": "mau, lẹ, nhanh chóng, ngay lập tức, xúi giục, thúc giục, thúc đẩy",
+        "annotation1": "/prɑːmpt/",
+        "annotation2": "v, adj",
+        "save": false
+    },
+    {
+        "question": "propel",
+        "answer": "đẩy tới, thúc đẩy",
+        "annotation1": "/prəˈpel/",
+        "annotation2": "v",
+        "save": false
+    },
+    {
+        "question": "propose",
+        "answer": "đề nghị, đề xuất, đưa ra đề cử, tiến cử, cầu hôn",
+        "annotation1": "/prəˈpəʊz/",
+        "annotation2": "v",
+        "save": false
+    },
+    {
+        "question": "prosper",
+        "answer": "thịnh vượng, làm cho thịnh vượng",
+        "annotation1": "/['prɔspə] /",
+        "annotation2": "adj, v",
+        "save": false
+    },
+    {
+        "question": "prototype",
+        "answer": "nguyên mẫu, mẫu đầu tiên người, vật đầu tiên",
+        "annotation1": "/ˈprəʊtətaɪp/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "provocative",
+        "answer": "khiêu khích, trêu chọc, kích thích, khêu gợi",
+        "annotation1": "/prəˈvɑːkətɪv/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "provoke",
+        "answer": "khích, xúi giục, khêu gợi",
+        "annotation1": "/prəˈvəʊk/",
+        "annotation2": "v",
+        "save": false
+    },
+    {
+        "question": "prudent",
+        "answer": "thận trọng, cẩn thận, khôn ngoan",
+        "annotation1": "/ˈpruːdnt/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "pudgy",
+        "answer": "thông tục ngắn và béo, béo lùn, mập lùn",
+        "annotation1": "/ˈpʌdʒi/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "punctual",
+        "answer": "đúng giờ, đúng thời điểm",
+        "annotation1": "/ˈpʌŋktʃuəl/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "punishment",
+        "answer": "sự trừng trị, sự bị trừng phạt",
+        "annotation1": "/'pʌniʃmənt/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "purchase",
+        "answer": "sự mua sắm, vật mua được, mua, sắm, tậu, trả giá",
+        "annotation1": "/ˈpɜːrtʃəs/",
+        "annotation2": "n, v",
+        "save": false
+    },
+    {
+        "question": "pure",
+        "answer": "nguyên chất, tinh khiết, trong lành, thanh khiết",
+        "annotation1": "/pjʊr/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "quake",
+        "answer": "sự run rẩy, động đất, rung động, run, rẩy",
+        "annotation1": "/kweɪk/",
+        "annotation2": "v",
+        "save": false
+    },
+    {
+        "question": "quantity",
+        "answer": "lượng, số lượng, khối lượng",
+        "annotation1": "/ˈkwɑːntəti/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "questionable",
+        "answer": "đáng ngờ, có vấn đề",
+        "annotation1": "/ˈkwestʃənəbl/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "quick",
+        "answer": "nhanh, mau, tính lanh lợi, hoạt bát, nhanh trí, sáng trí, nhanh",
+        "annotation1": "/kwɪk/",
+        "annotation2": "adj, adv",
+        "save": false
+    },
+    {
+        "question": "quickness",
+        "answer": "sự nhanh, sự mau chóng",
+        "annotation1": "/´kwiknis/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "racket",
+        "answer": "tiếng ồn, cảnh nhộn nhịp, huyên náo",
+        "annotation1": "/ˈrækɪt/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "ratify",
+        "answer": "thông qua, phê chuẩn",
+        "annotation1": "/´ræti¸fai/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "rational",
+        "answer": "có lý trí, dựa trên lý trí",
+        "annotation1": "/´ræʃənəl/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "ravage",
+        "answer": "sự tàn phá",
+        "annotation1": "/´rævidʒ/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "raze",
+        "answer": "phá bằng, san bằng, phá trụi",
+        "annotation1": "/reiz/",
+        "annotation2": "v",
+        "save": false
+    },
+    {
+        "question": "recent",
+        "answer": "gần đây, xảy ra gần đây, mới đây, mới xảy ra",
+        "annotation1": "/´ri:sənt/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "recipient",
+        "answer": "người nhận, nước nhận",
+        "annotation1": "/rɪˈsɪpiənt/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "reciprocate",
+        "answer": "trả, đền đáp lại, đáp lại",
+        "annotation1": "/ri´siprə¸keit/",
+        "annotation2": "v",
+        "save": false
+    },
+    {
+        "question": "reduction",
+        "answer": "sự thu nhỏ, sự giảm bớt",
+        "annotation1": "/ri´dʌkʃən/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "refined",
+        "answer": "nguyên chất, đã lọc, đã tinh chế",
+        "annotation1": "/ri´faind/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "refresh",
+        "answer": "làm khoẻ người, làm tỉnh táo",
+        "annotation1": "/ri´freʃ/",
+        "annotation2": "v",
+        "save": false
+    },
+    {
+        "question": "regret",
+        "answer": "lòng thương tiếc, hối tiếc, tiếc",
+        "annotation1": "/ri'gret/",
+        "annotation2": "n, v",
+        "save": false
+    },
+    {
+        "question": "rejuvenate",
+        "answer": "làm ai trẻ lại, làm ai khoẻ lại",
+        "annotation1": "/ri´dʒu:və¸neit/",
+        "annotation2": "v",
+        "save": false
+    },
+    {
+        "question": "relax",
+        "answer": "nới lỏng, buông lỏng, lơi ra",
+        "annotation1": "/ri´læks/",
+        "annotation2": "v",
+        "save": false
+    },
+    {
+        "question": "remark",
+        "answer": "sự để ý, sự chú ý, nhận xét, bình luận",
+        "annotation1": "/ri'mɑ:k/",
+        "annotation2": "n, v",
+        "save": false
+    },
+    {
+        "question": "remorse",
+        "answer": "sự ăn năn, sự hối hận",
+        "annotation1": "/ri'mɔ:s/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "remote",
+        "answer": "xa, xa xôi, hẻo lánh",
+        "annotation1": "/ri'mout/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "renew",
+        "answer": "thay mới, làm mới lại",
+        "annotation1": "/ri´nju:/",
+        "annotation2": "v",
+        "save": false
+    },
+    {
+        "question": "renowned",
+        "answer": "nổi tiếng, lừng danh",
+        "annotation1": "/rɪˈnaʊnd/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "represent",
+        "answer": "đại diện, biểu trưng",
+        "annotation1": "/ˌreprɪˈzent/",
+        "annotation2": "v",
+        "save": false
+    },
+    {
+        "question": "republican",
+        "answer": "cộng hòa, mang đặc trưng của nền cộng hòa, người ủng hộ chế độ cộng hòa",
+        "annotation1": "/rɪˈpʌblɪkən/",
+        "annotation2": "adj, n",
+        "save": false
+    },
+    {
+        "question": "repulsive",
+        "answer": "ghê tởm, đáng ghét, kinh tởm",
+        "annotation1": "/ri'pʌlsiv/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "reputable",
+        "answer": "có danh tiếng tốt, đáng kính trọng, đáng tin",
+        "annotation1": "/ˈrepjətəbl/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "resilient",
+        "answer": "bật nảy, co giãn, đàn hồi",
+        "annotation1": "/ri´ziliənt/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "resist",
+        "answer": "kháng cự, chống lại, chất cản màu",
+        "annotation1": "/ri'zist/",
+        "annotation2": "v, n",
+        "save": false
+    },
+    {
+        "question": "respond",
+        "answer": "hưởng ứng",
+        "annotation1": "/ri'spond/",
+        "annotation2": "v",
+        "save": false
+    },
+    {
+        "question": "response",
+        "answer": "sự trả lời, câu trả lời",
+        "annotation1": "/rɪˈspɒns/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "rest",
+        "answer": "sự yên tâm, sự yên lòng, sự thanh thản, sự thư thái, nghỉ, nghỉ ngơi",
+        "annotation1": "/rest /",
+        "annotation2": "n, v",
+        "save": false
+    },
+    {
+        "question": "restrict",
+        "answer": "hạn chế, giới hạn",
+        "annotation1": "/ris´trikt/",
+        "annotation2": "v",
+        "save": false
+    },
+    {
+        "question": "retaliate",
+        "answer": "trả đũa, trả miếng, trả thù",
+        "annotation1": "/ri´tæli¸eit/",
+        "annotation2": "v",
+        "save": false
+    },
+    {
+        "question": "retrograde",
+        "answer": "lùi lại, thụt lùi",
+        "annotation1": "/´retrou¸greid/",
+        "annotation2": "adj, n, v",
+        "save": false
+    },
+    {
+        "question": "reveal",
+        "answer": "bộc lộ, tiết lộ, làm lộ ra",
+        "annotation1": "/rɪˈviːl/",
+        "annotation2": "v",
+        "save": false
+    },
+    {
+        "question": "revenge",
+        "answer": "sự trả thù, báo thù",
+        "annotation1": "/ri'vendʤ/",
+        "annotation2": "n, v",
+        "save": false
+    },
+    {
+        "question": "rich",
+        "answer": "giàu, giàu có, dồi dào, phong phú",
+        "annotation1": "/ritʃ/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "righteous",
+        "answer": "ngay thẳng, đạo đức, công bằng người",
+        "annotation1": "/´raitʃəs/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "robust",
+        "answer": "tráng kiện, cường tráng, có sức khoẻ",
+        "annotation1": "/roʊˈbʌst, ˈroʊbʌst/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "rookie",
+        "answer": "lính mới, tân binh",
+        "annotation1": "/'rƱki/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "roster",
+        "answer": "bảng phân công",
+        "annotation1": "/´roustə/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "rough",
+        "answer": "ráp, nhám, xù xì, miền đất gồ ghề",
+        "annotation1": "/rᴧf/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "routine",
+        "answer": "công việc, thói quen thường ngày thường lệ, thường làm đều đặn",
+        "annotation1": "/ruːˈtiːn/",
+        "annotation2": "n, adj",
+        "save": false
+    },
+    {
+        "question": "rude",
+        "answer": "khiếm nhã, bất lịch sự",
+        "annotation1": "/ru:d/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "ruin",
+        "answer": "sự đổ nát, sự hư hại nghiêm trọng, làm hỏng, làm tan nát, tàn phá",
+        "annotation1": "/ru:in/",
+        "annotation2": "n, v",
+        "save": false
+    },
+    {
+        "question": "rush",
+        "answer": "cây bấc, cây cói, xông lên, lao vào",
+        "annotation1": "/rʌ∫/",
+        "annotation2": "n, v",
+        "save": false
+    },
+    {
+        "question": "sack",
+        "answer": "bao tải, bao bố, bỏ vào bao, đóng bao",
+        "annotation1": "/sæk/",
+        "annotation2": "n, v",
+        "save": false
+    },
+    {
+        "question": "safety",
+        "answer": "sự an toàn, chắc chắn",
+        "annotation1": "/ˈseɪfti/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "sane",
+        "answer": "lành mạnh, đúng mực",
+        "annotation1": "/sein/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "satellite",
+        "answer": "vệ tinh, vệ tinh nhân tạo tay sai, người hầu",
+        "annotation1": "/ˈsætəlaɪt/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "scanty",
+        "answer": "ít ỏi, thiếu, không đủ",
+        "annotation1": "/´skænti/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "scarcity",
+        "answer": "sự hiếm có",
+        "annotation1": "/ˈskersəti/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "scrawny",
+        "answer": "gầy nhẳng, gầy giơ xương,",
+        "annotation1": "/´skrɔ:ni/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "scribble",
+        "answer": "viết nguệch ngoạc, chữ viết cẩu thả",
+        "annotation1": "/skribl/",
+        "annotation2": "v, n",
+        "save": false
+    },
+    {
+        "question": "scrutinize",
+        "answer": "nhìn chăm chú, nhìn kỹ",
+        "annotation1": "/´skru:ti¸naiz/",
+        "annotation2": "v",
+        "save": false
+    },
+    {
+        "question": "secluded",
+        "answer": "hẻo lánh, không có nhiều người trông thấy",
+        "annotation1": "/si´klu:did/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "secret",
+        "answer": "thầm kín, bí mật, điều bí mật",
+        "annotation1": "/'si:krit/",
+        "annotation2": "adj, n",
+        "save": false
+    },
+    {
+        "question": "section",
+        "answer": "bộ phận, nhóm tách biệt nằm trong khối lớn, chia thành phần",
+        "annotation1": "/'sekʃn/",
+        "annotation2": "n, v",
+        "save": false
+    },
+    {
+        "question": "sector",
+        "answer": "khu vực, lĩnh vực",
+        "annotation1": "/ˈsektər/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "secure",
+        "answer": "chắc chắn, bảo đảm, làm kiên cố",
+        "annotation1": "/sɪ'kjʊər/  /sə'kjʊr/",
+        "annotation2": "adj, v",
+        "save": false
+    },
+    {
+        "question": "segment",
+        "answer": "đoạn, khúc, đốt, miếng, phân đoạn, phân đốt",
+        "annotation1": "/'segmənt/",
+        "annotation2": "n, v",
+        "save": false
+    },
+    {
+        "question": "seize",
+        "answer": "nắm, bắt, chộp",
+        "annotation1": "/si:z/",
+        "annotation2": "v",
+        "save": false
+    },
+    {
+        "question": "select",
+        "answer": "tuyển, được lựa chọn",
+        "annotation1": "/si´lekt/",
+        "annotation2": "v, adj",
+        "save": false
+    },
+    {
+        "question": "selective",
+        "answer": "có tuyển chọn, dựa trên sự tuyển chọn",
+        "annotation1": "/si'lektiv/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "selfless",
+        "answer": "không ích kỷ, vị tha, luôn nghĩ đến người khác",
+        "annotation1": "/´selflis/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "senior",
+        "answer": "người lớn tuổi hơn, người có thâm niên, kinh nghiệm nhiều, cao hơn về tuổi, kinh nghiệm",
+        "annotation1": "/ˈsiːniər/",
+        "annotation2": "n, adj",
+        "save": false
+    },
+    {
+        "question": "sensible",
+        "answer": "có óc xét đoán, biểu lộ óc xét đoán",
+        "annotation1": "/'sensəbl/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "separate",
+        "answer": "khác nhau, riêng biệt, độc lập",
+        "annotation1": "/'seprət/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "serene",
+        "answer": "trong, sáng sủa, quang tạnh, trầm lặng, thanh bình, thanh thản",
+        "annotation1": "/si'ri:n/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "settled",
+        "answer": "không thay đổi, không có khả năng thay đổi",
+        "annotation1": "/´setld/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "severe",
+        "answer": "khắt khe, gay gắt",
+        "annotation1": "/səˈvɪər/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "sewer",
+        "answer": "người khâu, người may vá",
+        "annotation1": "/ˈsuːər/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "sheer",
+        "answer": "không giới hạn, không kiểm soát, thẳng đứng, vuông góc",
+        "annotation1": "/ʃiə/",
+        "annotation2": "adj, adv",
+        "save": false
+    },
+    {
+        "question": "shield",
+        "answer": "cái mộc, cái khiên, che chở, bảo vệ",
+        "annotation1": "/ʃi:ld/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "shiny",
+        "answer": "sáng chói, bóng",
+        "annotation1": "/'∫aini/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "shiver",
+        "answer": "sự run, sự rùng mình",
+        "annotation1": "/´ʃivə/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "shocking",
+        "answer": "gây ra căm phẫn, làm ghê tởm",
+        "annotation1": "/´ʃɔkiη/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "shout",
+        "answer": "sự la hét, sự hò hét, tiếng gọi, tiếng kêu thét lớn",
+        "annotation1": "/ʃaʊt/",
+        "annotation2": "v",
+        "save": false
+    },
+    {
+        "question": "shove",
+        "answer": "xô đẩy thô bạo",
+        "annotation1": "/ʃʌv/",
+        "annotation2": "n, v",
+        "save": false
+    },
+    {
+        "question": "showy",
+        "answer": "loè loẹt, phô trương",
+        "annotation1": "/´ʃoui/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "shrewd",
+        "answer": "khôn ngoan, sắc sảo",
+        "annotation1": "/ʃruːd/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "shrine",
+        "answer": "mồ, hòm đựng thánh cốt",
+        "annotation1": "/∫rain/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "sightseeing",
+        "answer": "sự tham quan",
+        "annotation1": "/'saɪtsi:ɪŋ/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "significant",
+        "answer": "đầy ý nghĩa, có tính chất gợi ý",
+        "annotation1": "/sɪgˈnɪfɪkənt/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "silly",
+        "answer": "ngờ nghệch, ngớ ngẩn",
+        "annotation1": "/ˈsɪli/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "simplify",
+        "answer": "làm đơn giản, đơn giản hoá",
+        "annotation1": "/'simplifai/",
+        "annotation2": "v",
+        "save": false
+    },
+    {
+        "question": "simultaneously",
+        "answer": "đồng thời, xảy ra cùng một lúc",
+        "annotation1": "/¸siməl´teiniəsli/",
+        "annotation2": "adv",
+        "save": false
+    },
+    {
+        "question": "sincere",
+        "answer": "thành thật, ngay thật, chân thật, thật, không giả vờ",
+        "annotation1": "/sin´siə/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "skeptical",
+        "answer": "hoài nghi, đa nghi, hay ngờ vực",
+        "annotation1": "/´skeptikl/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "skillful",
+        "answer": "khéo tay, tài giỏi",
+        "annotation1": "/´skilful/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "skinny",
+        "answer": "gầy nhom, gầy trơ xương, rất gầy",
+        "annotation1": "/'skini/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "sleeplessness",
+        "answer": "sự khó ngủ, sự không ngủ được",
+        "annotation1": "/´sli:plisnis/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "slender",
+        "answer": "mảnh khảnh, mảnh dẻ, mảnh mai",
+        "annotation1": "/´slendə/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "slick",
+        "answer": "bóng, mượt, trơn, tài tình, khéo léo, nhanh nhẹn",
+        "annotation1": "/slik/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "sluggish",
+        "answer": "chậm chạp, không nhanh nhẹn, không hoạt bát, uể oải, lờ đờ, lờ phờ",
+        "annotation1": "/´slʌgiʃ/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "snub",
+        "answer": "hếch, ngắn và hơi vểnh lên ở chót",
+        "annotation1": "/snʌb/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "sociable",
+        "answer": "dễ gần gũi, dễ chan hoà, hoà đồng",
+        "annotation1": "/ˈsəʊʃəbl/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "soil",
+        "answer": "đất trồng, vết bẩn, vết nhơ, làm bẩn, làm dơ, vấy bẩn",
+        "annotation1": "/sɔɪl/",
+        "annotation2": "n, v",
+        "save": false
+    },
+    {
+        "question": "solemn",
+        "answer": "trọng thể, chính thức",
+        "annotation1": "/ˈsɒləm/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "sorrow",
+        "answer": "sự đau khổ, sự buồn phiền, cảm thấy buồn bã",
+        "annotation1": "/ˈsɒroʊ , ˈsɔroʊ/",
+        "annotation2": "n, v",
+        "save": false
+    },
+    {
+        "question": "souvenir",
+        "answer": "vật kỷ niệm, đồ lưu niệm",
+        "annotation1": "/ˌsuvəˈnɪər/, /ˈsuvəˌnɪər/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "sparkle",
+        "answer": "sự toé lửa, nhấp nháy, lấp lánh",
+        "annotation1": "/ˈspɑrkəl/",
+        "annotation2": "n, v",
+        "save": false
+    },
+    {
+        "question": "sparse",
+        "answer": "thưa thớt, rải rác, lơ thơ, rải mỏng ra",
+        "annotation1": "/spa:s/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "specific",
+        "answer": "rành mạch, rõ ràng, cụ thể, đặc trưng, riêng biệt",
+        "annotation1": "/spĭ-sĭf'ĭk/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "spill",
+        "answer": "sự tràn ra, chảy ra, đổ ra",
+        "annotation1": "/spil/",
+        "annotation2": "n, v",
+        "save": false
+    },
+    {
+        "question": "split",
+        "answer": "nứt, nẻ, chia ra, tách ra",
+        "annotation1": "/split/",
+        "annotation2": "v, adj",
+        "save": false
+    },
+    {
+        "question": "spotless",
+        "answer": "không có đốm, không một vết nhơ, sạch sẽ, tinh tươm",
+        "annotation1": "/´spɔtlis/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "sprint",
+        "answer": "sự chạy nhanh, sự chạy nước rút, cách chạy nước rút",
+        "annotation1": "/sprint/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "stable",
+        "answer": "vững chắc, ổn định, kiên định, kiên quyết",
+        "annotation1": "/steibl/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "state",
+        "answer": "trạng thái, tình trạng quốc gia, nhà nước",
+        "annotation1": "/steɪt/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "steady",
+        "answer": "vững, vững chắc, vững vàng, làm cho vững",
+        "annotation1": "/'stedi/",
+        "annotation2": "adj, v",
+        "save": false
+    },
+    {
+        "question": "stern",
+        "answer": "nghiêm nghị, nghiêm khắc, lạnh lùng",
+        "annotation1": "/stɜ:n/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "stiff",
+        "answer": "cứng, cứng rắn, kiên quyết",
+        "annotation1": "/stɪf/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "stigma",
+        "answer": "vết nhơ, điều sỉ nhục",
+        "annotation1": "/ˈstɪɡmə/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "stock",
+        "answer": "kho dự trữ, hàng cất trong kho, cung cấp, có sẵn trong kho",
+        "annotation1": "/stɔk/",
+        "annotation2": "n, v, adj",
+        "save": false
+    },
+    {
+        "question": "stoic",
+        "answer": "người khắc kỷ, người chịu đựng trong nghịch cảnh",
+        "annotation1": "/´stouik/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "stout",
+        "answer": "chắc, khoẻ, bền, người chắc mập, người mập mạp",
+        "annotation1": "/staut/",
+        "annotation2": "adj, n",
+        "save": false
+    },
+    {
+        "question": "strait",
+        "answer": "hẹp, chặt chẽ, tình cảnh khó khăn",
+        "annotation1": "/streit/",
+        "annotation2": "adj, n",
+        "save": false
+    },
+    {
+        "question": "strangle",
+        "answer": "siết cổ chết, bóp nghẹt",
+        "annotation1": "/'stræɳgl/",
+        "annotation2": "v",
+        "save": false
+    },
+    {
+        "question": "strenuous",
+        "answer": "hăm hở, tích cực, hăng hái, rất cố gắng",
+        "annotation1": "/´strenjuəs/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "strike",
+        "answer": "cuộc đình công, bãi công, đánh, đập, tấn công",
+        "annotation1": "/straɪk/",
+        "annotation2": "n, v",
+        "save": false
+    },
+    {
+        "question": "stringent",
+        "answer": "nghiêm ngặt, nghiêm khắc, chặt chẽ về nội quy, luật pháp",
+        "annotation1": "/'strin-juh/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "struggle",
+        "answer": "sự đấu tranh, cuộc đấu tranh, cuộc chiến đấu, đấu tranh, chống lại",
+        "annotation1": "/'strʌgəl/",
+        "annotation2": "n, v",
+        "save": false
+    },
+    {
+        "question": "study",
+        "answer": "sự tìm tòi, sự nghiên cứu, sự điều tra về một vấn đề, học, nghiên cứu, xem rất cẩn thận",
+        "annotation1": "/'stʌdi/",
+        "annotation2": "n, v",
+        "save": false
+    },
+    {
+        "question": "stunned",
+        "answer": "làm choáng váng, đánh bất tỉnh",
+        "annotation1": "/stʌn/",
+        "annotation2": "v",
+        "save": false
+    },
+    {
+        "question": "subtle",
+        "answer": "phảng phất, huyền ảo, tinh vi, tinh tế",
+        "annotation1": "/sʌtl/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "subtract",
+        "answer": "trừ",
+        "annotation1": "/səb´trækt/",
+        "annotation2": "v",
+        "save": false
+    },
+    {
+        "question": "success",
+        "answer": "sự thành công, sự thắng lợi, sự thành đạt",
+        "annotation1": "/sək'ses/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "suggest",
+        "answer": "đề nghị, đề xuất, gợi ý",
+        "annotation1": "/sə'dʤest/",
+        "annotation2": "v",
+        "save": false
+    },
+    {
+        "question": "supervise",
+        "answer": "giám sát, quản lý, kiểm soát",
+        "annotation1": "/'su:pəvaiz/",
+        "annotation2": "v",
+        "save": false
+    },
+    {
+        "question": "support",
+        "answer": "sự ủng hộ, người ủng hộ, hỗ trợ",
+        "annotation1": "/səˈpɔːrt/",
+        "annotation2": "n, v",
+        "save": false
+    },
+    {
+        "question": "surge",
+        "answer": "sự tràn, tràn như sóng",
+        "annotation1": "/sə:dʒ/",
+        "annotation2": "n, v",
+        "save": false
+    },
+    {
+        "question": "surplus",
+        "answer": "số dư, số thừa, số thặng dư",
+        "annotation1": "/'sə:pləs/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "surprising",
+        "answer": "làm ngạc nhiên, làm kinh ngạc, đáng sửng sốt",
+        "annotation1": "/sər´praiziη/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "sustain",
+        "answer": "đỡ, chống đỡ, giữ vững được trong thời gian dài",
+        "annotation1": "/səˈsteɪn/",
+        "annotation2": "v",
+        "save": false
+    },
+    {
+        "question": "swift",
+        "answer": "mau, nhanh, lẹ",
+        "annotation1": "/swift/",
+        "annotation2": "adj, adv",
+        "save": false
+    },
+    {
+        "question": "symbolize",
+        "answer": "tượng trưng, biểu tượng hóa",
+        "annotation1": "/ˈsɪmbəlaɪz/",
+        "annotation2": "v",
+        "save": false
+    },
+    {
+        "question": "talkative",
+        "answer": "thích nói, hay nói, lắm mồm, ba hoa, bép xép",
+        "annotation1": "/ˈtɔkətɪv/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "tall",
+        "answer": "cao, cao hơn trung bình, cao hơn xung quanh người, đồ vật",
+        "annotation1": "/tɔ:l/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "tame",
+        "answer": "thuần, đã thuần hoá thú rừng, dạy cho thuần",
+        "annotation1": "/teim/",
+        "annotation2": "adj, v",
+        "save": false
+    },
+    {
+        "question": "tandem",
+        "answer": "xe hai ngựa thắng con trước con sau",
+        "annotation1": "/'tændəm/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "tangible",
+        "answer": "hữu hình, có thể sờ mó được",
+        "annotation1": "/'tændʒəbl/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "taut",
+        "answer": "căng, không bị chùng, căng thẳng thân kinh, cơ bắp",
+        "annotation1": "/tɔːt/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "tavern",
+        "answer": "quán rượu, quán trọ",
+        "annotation1": "/ˈtævərn/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "temper",
+        "answer": "tính tình, tình khí, tâm tính",
+        "annotation1": "/'tempər/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "temporary",
+        "answer": "tạm thời, nhất thời, lâm thời",
+        "annotation1": "/ˈtɛmpəˌrɛri/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "tender",
+        "answer": "mềm, dễ nhai, không dai thịt",
+        "annotation1": "/'tendər/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "tenet",
+        "answer": "nguyên lý, giáo lý, chủ nghĩa",
+        "annotation1": "/'tenit/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "tense",
+        "answer": "căng, căng thẳng, bồn chồn, làm cho căng thẳng, hồi hộp",
+        "annotation1": "/tens/",
+        "annotation2": "adj, v",
+        "save": false
+    },
+    {
+        "question": "terrible",
+        "answer": "khủng khiếp, gây khiếp sợ",
+        "annotation1": "/ˈterəbl/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "thoughtless",
+        "answer": "không suy nghĩ, vô tư lự",
+        "annotation1": "/´θɔ:tlis/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "thrifty",
+        "answer": "tiết kiệm, tằn tiện",
+        "annotation1": "/´θrifti/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "thrive",
+        "answer": "thịnh vượng, làm cho thịnh vượng",
+        "annotation1": "thrive",
+        "annotation2": "v",
+        "save": false
+    },
+    {
+        "question": "thumping",
+        "answer": "to lớn, khổng lồ, hết mức, cực kỳ",
+        "annotation1": "/ˈθʌmpɪŋ/",
+        "annotation2": "adj, adv",
+        "save": false
+    },
+    {
+        "question": "tight",
+        "answer": "chặt, bó khít",
+        "annotation1": "/taɪt/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "timely",
+        "answer": "xảy ra đúng lúc, hợp thời",
+        "annotation1": "/´taimli/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "timid",
+        "answer": "rụt rè, nhút nhát, bẽn lẽn, dễ sợ hãi",
+        "annotation1": "/'timid/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "tip",
+        "answer": "đầu, mút, đỉnh, chóp",
+        "annotation1": "/tip/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "toilet",
+        "answer": "nhà vệ sinh, bệ xí, phòng có nhà vệ sinh",
+        "annotation1": "/´tɔilit/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "traffic",
+        "answer": "sự đi lại, giao thông, vận tải",
+        "annotation1": "/ˈtræfɪk/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "tragic",
+        "answer": "bi kịch, như bi kịch, theo kiểu bi kịch",
+        "annotation1": "/ˈtrædʒɪk/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "tranquil",
+        "answer": "yên tĩnh, yên bình, lặng lẽ, không bị quấy rầy",
+        "annotation1": "/´træηkwil/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "tranquility",
+        "answer": "thay đổi, biến đổi hình dáng, trạng thái, chức năng",
+        "annotation1": "/træns'fɔ:m/",
+        "annotation2": "v",
+        "save": false
+    },
+    {
+        "question": "transform",
+        "answer": "ngắn ngủi, phù du, bóng chớp",
+        "annotation1": "/´trænzitəri/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "transitory",
+        "answer": "ngắn ngủi, phù du, bóng chớp",
+        "annotation1": "/´trænzitəri/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "tremble",
+        "answer": "sự run, cảm giác run, động tác run",
+        "annotation1": "/'trembl/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "triumph",
+        "answer": "sự chiến thắng, thành công lớn, chiến thắng",
+        "annotation1": "/ˈtraɪəmf , ˈtraɪʌmf/",
+        "annotation2": "adj, v",
+        "save": false
+    },
+    {
+        "question": "trivial",
+        "answer": "tầm thường, không đáng kể, ít quan trọng",
+        "annotation1": "/ˈtrɪviəl/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "trustworthy",
+        "answer": "đáng tin cậy",
+        "annotation1": "/ˈtrʌstwɜːrði/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "ultrasound",
+        "answer": "siêu âm, sóng siêu âm",
+        "annotation1": "/ˈʌltrəsaʊnd/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "umbrella",
+        "answer": "ô, dù, sự bảo vệ, thế lực bảo vệ",
+        "annotation1": "/ʌmˈbrelə/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "unchanging",
+        "answer": "không thay đổi, không đổi",
+        "annotation1": "/ʌnˈtʃeɪndʒɪŋ/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "unconquerable",
+        "answer": "không thể chinh phục được, không thể chế ngự được",
+        "annotation1": "/ʌη´kɔηkərəbl/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "uncooked",
+        "answer": "chưa nấu chín, còn sống",
+        "annotation1": "/ʌη´kukt/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "unfortunate",
+        "answer": "không may, rủi ro, bất hạnh",
+        "annotation1": "/Λnfo:'t∫əneit/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "unimportant",
+        "answer": "không quan trọng, không đáng kể",
+        "annotation1": "/ˌʌnɪmˈpɔːrtnt/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "unintelligent",
+        "answer": "không thông minh, tối dạ",
+        "annotation1": "/¸ʌnin´telidʒənt/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "unkind",
+        "answer": "không tốt, độc ác, tàn nhẫn",
+        "annotation1": "/ʌn´kaind/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "unlucky",
+        "answer": "không gặp may, không may mắn, đem lại vận rủi, bất hạnh, xui, rủi, đen đủi",
+        "annotation1": "/ʌn´lʌki/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "unoccupied",
+        "answer": "nhàn rỗi, rảnh rỗi, không bận thời gian không có người ở, trống, bỏ không đất",
+        "annotation1": "/ʌn´ɔkju¸paid/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "unpretentious",
+        "answer": "không khoe khoang, không phô trương, khiêm tốn",
+        "annotation1": "/¸ʌnpri´tenʃəs/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "unrelated",
+        "answer": "không kể lại, không thuật lại, không có liên quan",
+        "annotation1": "/¸ʌnri´leitid/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "unstoppable",
+        "answer": "quyết tâm",
+        "annotation1": "/ʌn´stɔpəbl/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "unusual",
+        "answer": "hiếm, không thông thường, lạ, khác thường đáng chú ý, đặc sắc, đặc biệt",
+        "annotation1": "/ʌn´ju:ʒuəl/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "unwilling",
+        "answer": "không muốn, không có ý định, không sẵn lòng, miễn cưỡng",
+        "annotation1": "/ʌn´wiliη/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "update",
+        "answer": "cập nhật, hiện đại hóa, sự cập nhật",
+        "annotation1": "/ˌʌpˈdeɪt/",
+        "annotation2": "v",
+        "save": false
+    },
+    {
+        "question": "upstanding",
+        "answer": "dựng ngược, dựng đứng lên",
+        "annotation1": "/ʌp´stændiη/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "urge",
+        "answer": "sự thúc đẩy, thôi thúc, thúc giục",
+        "annotation1": "/ɜːrdʒ/",
+        "annotation2": "n, v",
+        "save": false
+    },
+    {
+        "question": "urgent",
+        "answer": "gấp, khẩn cấp, cấp bách",
+        "annotation1": "/ˈɜrdʒənt/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "utilize",
+        "answer": "dùng, sử dụng, tận dụng",
+        "annotation1": "/'ju:təlaɪz/",
+        "annotation2": "v",
+        "save": false
+    },
+    {
+        "question": "vacant",
+        "answer": "trống, rỗng",
+        "annotation1": "/'veikənt/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "vague",
+        "answer": "mơ hồ, lờ mờ, mập mờ, không rõ ràng cách hiểu, sự nhận thức",
+        "annotation1": "/veig/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "valiant",
+        "answer": "anh dũng, anh hùng",
+        "annotation1": "/'væljənt/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "valour",
+        "answer": "sự dũng cảm nhất là trong chiến tranh",
+        "annotation1": "/ˈvælər/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "vanquish",
+        "answer": "thắng, đánh bại, chế ngự, khắc phục, vượt qua",
+        "annotation1": "/ˈvæŋkwɪʃ/",
+        "annotation2": "v",
+        "save": false
+    },
+    {
+        "question": "variety",
+        "answer": "sự đa dạng, nhiều thứ, đủ loại, những thứ khác nhau",
+        "annotation1": "/vəˈraɪəti/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "vary",
+        "answer": "biến đổi, thay đổi, khác nhau",
+        "annotation1": "/ˈværi/",
+        "annotation2": "v",
+        "save": false
+    },
+    {
+        "question": "vast",
+        "answer": "rộng lớn, mênh mông, bao la",
+        "annotation1": "/væst/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "vendor",
+        "answer": "người bán dạo bán thực phẩm hoặc các thứ lặt vặt khác ở quầy ngoài trời",
+        "annotation1": "/'vendər/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "verdict",
+        "answer": "lời tuyên án, lời phán quyết",
+        "annotation1": "/´və:dikt/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "versatile",
+        "answer": "nhiều mặt, nhiều phương diện, toàn diện",
+        "annotation1": "/vɜ:sətaɪl/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "viable",
+        "answer": "có thể làm được, khả thi",
+        "annotation1": "/ˈvaɪəbl/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "victory",
+        "answer": "sự chiến thắng, sự thắng lợi",
+        "annotation1": "/'viktəri/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "vigorous",
+        "answer": "sôi nổi, mãnh liệt, mạnh mẽ, hoạt bát, đầy sinh lực",
+        "annotation1": "/'vigərəs/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "vile",
+        "answer": "ghê tởm, tồi tệ, rẻ tiền, không có giá trị",
+        "annotation1": "/vaɪl/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "violent",
+        "answer": "mãnh liệt, hung tợn",
+        "annotation1": "/ˈvaɪələnt/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "virtuous",
+        "answer": "có đạo đức tốt, cho thấy có đạo đức tốt",
+        "annotation1": "/ˈvɜrtʃuəs/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "voluntary",
+        "answer": "tự ý, tự nguyện, tự giác, tình nguyện",
+        "annotation1": "/ˈvɒlənˌtɛri/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "vulgar",
+        "answer": "thiếu thẩm mỹ, khiếm nhã, tục tĩu",
+        "annotation1": "/´vʌlgə/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "waiver",
+        "answer": "sự bỏ, sự từ bỏ, sự khước từ, giấy từ bỏ, giấy khước từ",
+        "annotation1": "/'weivə/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "wardrobe",
+        "answer": "tủ quần áo",
+        "annotation1": "/'wɔ:droub/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "warlike",
+        "answer": "thuộc chiến tranh, thích gây sự, hiếu chiến",
+        "annotation1": "/ˈwɔːrlaɪk/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "wealthy",
+        "answer": "giàu, giàu có",
+        "annotation1": "/ˈwɛlθi/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "weird",
+        "answer": "không bình thường, khác thường, kỳ lạ, khó hiểu",
+        "annotation1": "/'wiəd/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "wide",
+        "answer": "rộng, rộng lớn",
+        "annotation1": "/waid/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "willingly",
+        "answer": "sẵn lòng, vui lòng tự ý, tự nguyện",
+        "annotation1": "/ˈwɪlɪŋli/",
+        "annotation2": "adv",
+        "save": false
+    },
+    {
+        "question": "win",
+        "answer": "sự thắng cuộc, thắng cuộc, thắng trận",
+        "annotation1": "/win/",
+        "annotation2": "n, v",
+        "save": false
+    },
+    {
+        "question": "wisecrack",
+        "answer": "lời nói lém lỉnh, nói lém lỉnh",
+        "annotation1": "/´waiz¸kræk/",
+        "annotation2": "n, v",
+        "save": false
+    },
+    {
+        "question": "withdraw",
+        "answer": "rút, rút lui",
+        "annotation1": "/wɪðˈdrɔ , wɪθˈdrɔ/",
+        "annotation2": "v",
+        "save": false
+    },
+    {
+        "question": "withstand",
+        "answer": "giữ vững, trụ lại, cưỡng lại, chịu đựng, chống lại",
+        "annotation1": "/wið´stænd/",
+        "annotation2": "v",
+        "save": false
+    },
+    {
+        "question": "woe",
+        "answer": "sự đau buồn, nỗi phiền muộn",
+        "annotation1": "/wəʊ/",
+        "annotation2": "n",
+        "save": false
+    },
+    {
+        "question": "worn",
+        "answer": "mòn, hỏng vì sử dụng quá nhiều",
+        "annotation1": "/´wɔ:n/",
+        "annotation2": "adj",
+        "save": false
+    },
+    {
+        "question": "yell",
+        "answer": "sự kêu la, tiếng la hét, kêu la, la hét",
+        "annotation1": "/jel/",
+        "annotation2": "n, v",
+        "save": false
+    },
+    {
+        "question": "yield",
+        "answer": "sản lượng, hoa lợi thửa ruộng, hiệu suất máy",
+        "annotation1": "/ji:ld/",
+        "annotation2": "n",
+        "save": false
+    }
+];
+// localStorage.setItem("data", JSON.stringify(flashcards));
+const id = "data1";
+localStorage.setItem(id, JSON.stringify(dataSet));
+// localStorage.setItem("current-key-46587", id);
+var arr = JSON.parse(localStorage.getItem("store-input-data")) || [];
+const title = "1000 TỪ TIẾNG ANH B1";
+var temp = true;
+for (let i = 0; i < arr.length; i++) {
+    if (arr[i].id === id)
+        temp = false;
+}
+if (temp) {
+    for (let i=arr.length;i>0;i--)
+        arr[i]=arr[i-1];
+    // arr.push({ id: id, title: title });
+    arr[0]={ id: id, title: title };
+
+}
+localStorage.setItem("store-input-data", JSON.stringify(arr));
+// console.log(arr);
+// alert("Data saved successfully!");
+// window.location.href = "mobie.html";
+// console.log(arr);

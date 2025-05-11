@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Text Submission</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      /* justify-content: center;
+      height: 100vh; */
+      margin: 0;
+    }
+
+    textarea {
+      width: 80%;
+      max-width: 600px;
+      height: 200px;
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      resize: vertical;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    button {
+      margin-top: 15px;
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+
+    #output {
+      margin-top: 20px;
+      max-width: 800px;
+      background-color: white;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      font-size: 16px;
+    }
+
+    strong {
+      color: #e53935;
+    }
+  </style>
+</head>
+<body>
+  <textarea id="passage" placeholder="Enter your text here..."></textarea>
+  <button onclick="highlightQuestions()">SUBMIT</button>
+  <div id="output"></div>
+
+  <script>
+    // Sample flashcards array
+    const flashcards = JSON.parse(localStorage.getItem("data")) || [];
+
+    function highlightQuestions() {
+      const passage = document.getElementById("passage").value;
+      const outputDiv = document.getElementById("output");
+
+      let highlightedText = passage;
+
+      // Tô đậm từng từ question nếu xuất hiện trong đoạn văn
+      flashcards.forEach(card => {
+        const word = card.question;
+        const regex = new RegExp(`\\b(${word})\\b`, "gi");
+        highlightedText = highlightedText.replace(regex, `<strong>$1</strong>`);
+      });
+
+      outputDiv.innerHTML = highlightedText;
+    }
+  </script>
+</body>
+</html>

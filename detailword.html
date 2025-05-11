@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./image/games.png" type="image/x-icon">
+    <title id="title-topic">Word Card</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        
+        #box {
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 350px;
+        }
+        
+        #box div {
+            margin: 8px 0;
+            font-size: 18px;
+            font-weight: 500;
+            color: #333;
+        }
+        
+        #word {
+            font-size: 24px;
+            font-weight: bold;
+            color: #007bff;
+        }
+        
+        #from-type {
+            font-style: italic;
+            color: #555;
+        }
+        
+        #transcription {
+            color: #777;
+            font-size: 16px;
+        }
+        
+        #mean {
+            font-size: 20px;
+            font-weight: bold;
+            color: #28a745;
+        }
+        
+        #box img {
+            width: 100%;
+            border-radius: 8px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+        <div id="word">WORD</div>
+        <div id="from-type">noun</div>
+        <div id="transcription">/wc.vf/</div>
+        <div id="mean">TỪ</div>
+        <img src="https://vietelite.edu.vn/wp-content/uploads/2024/03/z5200007571788_f8c097da84d60157c53a4c1809706726-1024x594.jpg" alt="Word Image">
+    </div>
+    <script>
+        var data = JSON.parse(localStorage.getItem("details-listenning-test-46845"));
+        document.getElementById("word").innerHTML = `${data.word}<img src="./image/volumepro.png" alt="" style="width: 15px;display: inline;">`;
+        document.getElementById("from-type").textContent = data.type;
+        document.getElementById("transcription").textContent = data.transcription;
+        document.getElementById("mean").textContent = data.mean;
+        document.getElementById("title-topic").textContent = data.word;
+    </script>
+</body>
+</html>

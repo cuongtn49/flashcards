@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/divideGroup.css">
+    <link rel="shortcut icon" href="./image/divideGroup/logo.png" type="image/x-icon">
+    <title>Flashcard Divider</title>
+</head>
+<!-- <style>
+    .container-divided-group,
+    .export-data {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .left-group,
+    .middle-group,
+    .right-group,
+    .export-addList,
+    .export-removeList {
+        flex: 1;
+        height: 500px;
+        margin: 5px;
+        border: 1px solid black;
+    }
+</style> -->
+
+<body>
+    <div id="selection-bar" class="selection-bar">
+        <div onclick="removeElseFunc()">Bỏ còn lại</div>
+        <div onclick="exitFunc()">Kết thúc</div>
+        <div onclick="addElseFunc()">Lấy còn lại</div>
+    </div>
+    <div id="container-divided-group" class="container-divided-group">
+        <div id="left-group" class="left-group" onclick="removeListFunc()">←Bỏ</div>
+        <div id="middle-group" class="middle-group">
+            <div id="tuvung">word</div>
+            <div id="tuloai">word</div>
+            <div id="phienam">word</div>
+            <div id="nghia">từ</div>
+        </div>
+        <div id="right-group" class="right-group" onclick="addListFunc()">Lấy→</div>
+    </div>
+    <div id="export-data" class="export-data" style="display: none;">
+        <div id="export-removeList" class="export-removeList" style="white-space: pre-line;"></div>
+        <div id="export-addList" class="export-addList" style="white-space: pre-line;"></div>
+    </div>
+    <script>
+        var flashcards = JSON.parse(localStorage.getItem("data")) || [];
+        console.log(flashcards);
+        var index = 0;
+        var addList = [];
+        var removeList = [];
+
+        function addListFunc() {
+            if (index < flashcards.length) {
+                addList.push(flashcards[index]);
+                index++;
+                if (index < flashcards.length) displayFunc();
+            }
+            if (index == flashcards.length) exportFunc();
+
+        }
+        function removeListFunc() {
+            if (index < flashcards.length) {
+                removeList.push(flashcards[index]);
+                index++;
+                if (index < flashcards.length) displayFunc();
+            }
+            if (index == flashcards.length) exportFunc();
+        }
+        function displayFunc() {
+            document.getElementById("tuvung").textContent = flashcards[index].question;
+            document.getElementById("nghia").textContent = flashcards[index].answer;
+            document.getElementById("tuloai").textContent = flashcards[index].annotation2;
+            document.getElementById("phienam").textContent = flashcards[index].annotation1;
+        }
+        function exportFunc() {
+            // document.getElementById("container-divided-group").style.opacity = "0";
+            // setTimeout(() => {
+            //     document.getElementById("container-divided-group").style.display = "none";
+            //     document.getElementById("export-data").style.display = "flex";
+            //     document.getElementById("export-data").style.opacity = "0";
+            //     setTimeout(() => {
+            //         document.getElementById("export-data").style.opacity = "1";
+            //     }, 100);
+            // }, 300);
+            document.getElementById("container-divided-group").style.display = "none";
+            var addListContent = "";
+            for (let i = 0; i < addList.length; i++) {
+                addListContent += `${addList[i].question} -- ${addList[i].answer}`;
+                if (addList[i].annotation1.trim().length > 0) addListContent += ` -- ${addList[i].annotation1}`;
+                if (addList[i].annotation2.trim().length > 0) addListContent += ` -- ${addList[i].annotation2}`;
+                addListContent += "\n";
+            }
+            document.getElementById("export-addList").textContent = addListContent;
+            document.getElementById("export-data").style.display = "flex";
+
+            var removeListContent = "";
+            for (let i = 0; i < removeList.length; i++) {
+                removeListContent += `${removeList[i].question} -- ${removeList[i].answer}`;
+                if (removeList[i].annotation1.trim().length > 0) removeListContent += ` -- ${removeList[i].annotation1}`;
+                if (removeList[i].annotation2.trim().length > 0) removeListContent += ` -- ${removeList[i].annotation2}`;
+                removeListContent += "\n";
+            }
+            document.getElementById("export-removeList").textContent = removeListContent;
+            document.getElementById("export-data").style.display = "flex";
+
+            document.getElementById("selection-bar").style.display = "none";
+
+        }
+
+        function exitFunc(){
+            exportFunc();
+        }
+        function addElseFunc(){
+            for (let i=index;i<flashcards.length;i++)
+                addList.push(flashcards[i]);
+            exportFunc();
+        }
+        function removeElseFunc(){
+            for (let i=index;i<flashcards.length;i++)
+                removeList.push(flashcards[i]);
+            exportFunc();
+        }
+
+        document.addEventListener("keydown", function (event) {
+            if (event.key === "ArrowRight") {
+                flashEffect("right-group");
+                addListFunc();  // phím →
+            } else if (event.key === "ArrowLeft") {
+                flashEffect("left-group");
+                removeListFunc();  // phím ←
+            }
+        });
+
+        // Hàm hiệu ứng nhấp nháy
+        function flashEffect(elementId) {
+            const el = document.getElementById(elementId);
+            el.classList.add("flash-effect");
+            setTimeout(() => {
+                el.classList.remove("flash-effect");
+            }, 300); // Thời gian khớp với animation CSS
+        }
+
+        displayFunc();
+    </script>
+</body>
+
+</html>

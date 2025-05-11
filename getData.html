@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Hiển thị CSDL Flashcards</title>
+</head>
+<body>
+    <h1>Cấu trúc CSDL Flashcards</h1>
+    <pre id="output"></pre>
+
+    <script>
+        const flashcards = JSON.parse(localStorage.getItem("data")) || [];
+        const output = document.getElementById("output");
+
+        output.textContent = `${JSON.stringify(flashcards, null, 4)}`;
+    </script>
+</body>
+</html>

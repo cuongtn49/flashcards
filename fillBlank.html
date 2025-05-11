@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./image/logo1.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/fillblank.css">
+    <title>Fill Blank</title>
+</head>
+<style>
+    .choices-container input[type="radio"] {
+        opacity: 0;
+        position: absolute;
+        pointer-events: none;
+    }
+
+    #box {
+        display: flex;
+        justify-content: center;
+        color: black;
+    }
+
+    .fill-blank-box {
+        display: flex;
+        gap: 5px;
+        margin-left: 20px;
+    }
+
+    .fill-blank-box input {
+        width: 20px;
+        border: none;
+        outline: none;
+        border-bottom: 2px solid #ff9800;
+        color: #ff9800;
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        padding-bottom: 5px;
+    }
+
+    #box {
+        display: flex;
+    }
+
+    .save-word {
+        position: absolute;
+        z-index: 200;
+    }
+
+    .automatic {
+        position: absolute;
+        top: 30px;
+        right: 30px;
+
+    }
+</style>
+
+<body>
+    <div id="app-container">
+        <div class="settings-section" id="settings-container">
+            <h2>Cài đặt chế độ</h2>
+            <label>
+                <input type="checkbox" name="options" value="random" id="option-random" checked /> Ngẫu nhiên
+            </label>
+            <label>
+                <input type="checkbox" name="options" value="" id="tudong" checked /> Tự động chuyển
+            </label>
+            <!-- <br /> -->
+            <label>
+                <input type="checkbox" name="options" value="" id="star-qs" /> Thuật ngữ đã được đánh dấu
+            </label>
+            <!-- <br /> -->
+            <label>
+                <input type="radio" name="options" value="" id="dinhnghia" checked /> Định nghĩa
+            </label>
+            <label>
+                <input type="radio" name="options" value="" id="nghe" /> Nghe
+            </label>
+            <br />
+            <label>
+                Số lượng câu hỏi:
+                <input type="number" id="question-count" value="5" min="1" />
+            </label>
+            <button class="action-button" id="start-button" style="display: block; margin: 0 auto; margin-top: 40px;">
+                Bắt đầu
+            </button>
+        </div>
+        <div class="save-word" id="save-word" style="display: none;"><img src="./image/star.png" style="width: 30px;"
+                alt=""></div>
+        <div class="content-section" id="quiz-container" style="display: none;">
+
+            <h2 class="instructions-text" id="number-qs">question 1</h2>
+            <h3 class="display-question" id="meaning">Tiếng Anh</h3>
+            <!-- <input type="text" id="user-input" placeholder="Nhập câu trả lời tại đây..." autocomplete="off" /> -->
+            <div id="box"></div>
+            <p class="feedback-message" id="feedback-message" style="visibility: hidden;">Thông báo kết quả</p>
+            <div class="control-buttons">
+                <button class="action-button" id="answer-button">Đáp án</button>
+                <button class="action-button" id="again-button">Nhập lại</button>
+                <button class="action-button" id="next-button">Tiếp theo</button>
+                <div>
+                    <img class="automatic" id="automatic1" src="image/execution (2).png" alt="" style="width: 40px;">
+                    <img class="automatic" id="automatic2" src="image/execution3.png" alt=""
+                        style="width: 40px; display: none;">
+                </div>
+            </div>
+        </div>
+        <div class="completion-message" id="completion-message" style="display: none;">
+            🎉 Bạn đã hoàn thành xuất sắc! 🎉
+            <span>Chúc mừng bạn với kết quả tuyệt vời!</span>
+            <span class="score-display" id="score-display" style="font-weight: 900;">Điểm số: 0</span>
+            <span class="correct-count" id="correct-count">Số câu đúng: 0</span>
+            <span class="wrong-count" id="wrong-count">Số câu sai: 0</span>
+        </div>
+
+        <div class="detailed-review" id="detailed-review" style="display: none;">
+            <h2>Kết quả Chi Tiết</h2>
+            <table class="review-data" id="review-data">
+                <thead>
+                    <tr>
+                        <th>STT</th>
+                        <th>Câu hỏi</th>
+                        <th>Câu trả lời</th>
+                        <th>Kết quả</th>
+                    </tr>
+                </thead>
+                <tbody class="table-body" id="table-body">
+                    <!-- Các hàng dữ liệu sẽ được thêm vào đây -->
+                    <tr>
+                        <td>1</td>
+                        <td>question 1</td>
+                        <td>your word</td>
+                        <td>word</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <!-- <script src="../js/app.js"></script> -->
+    <script>
+        // alert("Chức năng này còn đang trong quá trình hoàn thiện!");
+
+        var flashcards = JSON.parse(localStorage.getItem("data")) || [];
+        var original = flashcards.map(element => element);
+
+
+
+
+
+        var index = 0;
+        var tudong = null;
+        var socau = null;
+        var saveYourAnswer = null;
+        var iscore = null;
+        var boolscore = null;
+        document.getElementById("question-count").value = flashcards.length;
+
+        const number = document.getElementById("number-qs");
+        const mean = document.getElementById("meaning");
+        const nextbtn = document.getElementById("next-button");
+
+        const displayanswer = document.getElementById("feedback-message");
+
+        document.getElementById("star-qs").addEventListener("change", (event) => {
+            if (event.target.checked) {  // Check if the checkbox is checked
+                document.getElementById("question-count").value = JSON.parse(localStorage.getItem("favouriteID")).length;
+            } else {
+                document.getElementById("question-count").value = flashcards.length;
+            }
+        });
+
+
+        document.getElementById("start-button").addEventListener("click", () => {
+            socau = document.getElementById("question-count").value;
+            tudong = document.getElementById("tudong").checked;
+            const ngaunhien = document.getElementById("option-random").checked;
+
+            if (document.getElementById("star-qs").checked) {
+                flashcards = JSON.parse(localStorage.getItem("favouriteID")) || [];
+            } else flashcards = JSON.parse(localStorage.getItem("data")) || [];
+
+            if (socau > flashcards.length || socau <= 0) {
+                alert("Số câu không hợp lệ!");
+            } else {
+                if (ngaunhien) flashcards = flashcards.sort(() => Math.random() - 0.5);
+                if (tudong) automatic();
+                saveYourAnswer = new Array(socau);
+                for (let i = 0; i < socau; i++) {
+                    saveYourAnswer[i] = "";
+                }
+                console.log(saveYourAnswer);
+
+                iscore = new Array(socau);
+                for (let i = 0; i < socau; i++) {
+                    iscore[i] = false;
+                }
+
+                boolscore = new Array(socau);
+                for (let i = 0; i < socau; i++) {
+                    boolscore[i] = true;
+                }
+
+                begin();
+                displayStar();
+            }
+        });
+
+        function begin() {
+            document.getElementById("settings-container").style.display = "none";
+            document.getElementById("quiz-container").style.display = "block";
+            display(flashcards[index].question, flashcards[index].answer);
+            check(flashcards[index].question);
+            document.getElementById("save-word").style.display = "block";
+
+        }
+
+
+        function display(word, meaning) {
+            number.textContent = `question ${index + 1}`;
+            if (document.getElementById("dinhnghia").checked) mean.textContent = meaning;
+            else {
+                mean.innerHTML = `<h3 class="display-question" id="loudspeakerQuestion"><img src="./image/audio-guide.png" alt="" style="width: 100px;"></h3>`;
+                speak(word);
+                const loudspeakerQuestion = document.getElementById("loudspeakerQuestion");
+                loudspeakerQuestion.onclick = function () {
+                    speak(word);
+                }
+            }
+
+
+
+            document.getElementById("box").innerHTML = "";
+            const div = document.createElement("div");
+            div.className = "fill-blank-box";
+            for (let i = 0; i < word.length; i++) {
+                const input = document.createElement("div");
+                input.innerHTML = `<input type="text" maxlength="1">`;
+                if (word[i].trim().length === 0) {
+                    input.innerHTML = `&nbsp;&nbsp;`;
+                }
+                div.appendChild(input);
+            }
+            document.getElementById("box").appendChild(div);
+        }
+        function removeWhitespace(inputString) {
+            // Sử dụng phương thức replace với biểu thức chính quy để loại bỏ khoảng trắng
+            return inputString.replace(/\s+/g, '');
+        }
+        function splitByPattern(string1, string2) {
+            // Tách chuỗi string1 thành mảng dựa trên khoảng trắng
+            const string1Parts = string1.split(" ");
+
+            // Biến giữ kết quả
+            let result = [];
+            let currentIndex = 0;
+
+            // Lặp qua từng phần tử của string1Parts
+            for (let part of string1Parts) {
+                // Cắt chuỗi string2 dựa trên độ dài của từng phần tử trong string1Parts
+                result.push(string2.slice(currentIndex, currentIndex + part.length));
+                // Cập nhật chỉ số hiện tại
+                currentIndex += part.length;
+            }
+
+            // Trả về chuỗi đã tách, nối bằng khoảng trắng
+            return result.join(" ");
+        }
+        function check(word) {
+            const inputs = document.querySelectorAll("#box input");
+            inputs[0].focus();
+            var ischeck = true;
+            var yourAnswer = "";
+            originalword = word;
+            word = removeWhitespace(word);
+            console.log(originalword);
+            Array.from(inputs).forEach((element, index) => {
+                element.addEventListener('keydown', (event) => {
+                    if (element.value !== "") {
+                        const nextInput = inputs[index + 1];
+                        if (nextInput) {
+                            nextInput.focus();
+                        }
+                        setTimeout(() => {
+                            if (index === inputs.length - 2) {
+                                Array.from(inputs).forEach((element, index) => {
+                                    yourAnswer += element.value;
+                                    element.disabled = true;
+                                    if (element.value.toLowerCase() !== word[index].toLowerCase()) {
+                                        element.style.color = "red";
+                                        ischeck = false;
+                                    }
+                                    else element.style.color = "green";
+                                });
+                                saveAnswer(splitByPattern(originalword, yourAnswer));
+                                // alert(yourAnswer);
+                                score(ischeck);
+                                // if (ischeck) playAudio("./audio/right.mp3");
+                                // else playAudio("./audio/wrong.mp3");
+                                if (tudong && ischeck) {
+                                    setTimeout(() => {
+                                        next();
+                                        displayStar();
+                                    }, 1000);
+                                }
+                            }
+
+                        }, 100);
+                    }
+                });
+            });
+        }
+        function score(value) {
+            if (boolscore[index]) iscore[index] = value;
+            boolscore[index] = false;
+        }
+        function saveAnswer(yourAnswer) {
+            if (saveYourAnswer[index].length > 0) saveYourAnswer[index] += " - " + yourAnswer;
+            else saveYourAnswer[index] = yourAnswer;
+        }
+        function next() {
+            if (index < socau - 1) {
+                index++;
+                displayanswer.style.visibility = "hidden";
+                display(flashcards[index].question, flashcards[index].answer);
+                check(flashcards[index].question);
+            } else {
+                //playAudio("./audio/finish.mp3");
+                document.getElementById("quiz-container").style.display = "none";
+                document.getElementById("completion-message").style.display = "block";
+                document.getElementById("detailed-review").style.display = "block";
+                document.getElementById("save-word").style.display = "none";
+                displayMark();
+                // document.getElementById("correct-count").textContent += sum(score);
+                console.log(iscore);
+                var right = 0;
+                for (let i = 0; i < socau; i++) {
+                    if (iscore[i]) right++;
+                }
+                // console.log(right);
+
+                document.getElementById("score-display").textContent = "Điểm số: " + (parseFloat(((socau - (socau - right)) / socau) * 10)).toFixed(1);
+                document.getElementById("correct-count").textContent = "Số câu đúng: " + right;
+                document.getElementById("wrong-count").textContent = "Số câu sai: " + (socau - right);
+
+
+                const userKey = localStorage.getItem("current-key-46587") + "fillBlank";
+                let userData = JSON.parse(localStorage.getItem(userKey)) || {totalScore: 0, attempts: 0, averageScore: 0}; // object chứa thông tin toàn bộ user
+
+
+                // Tính điểm cho lần làm bài hiện tại
+                const currentScore = parseFloat(((right / socau) * 10).toFixed(1));
+
+                // Cập nhật dữ liệu
+                userData.totalScore += currentScore;
+                userData.attempts += 1;
+                userData.averageScore = parseFloat(
+                    (userData.totalScore / userData.attempts).toFixed(1)
+                );
+
+                // Lưu lại vào localStorage
+                localStorage.setItem(userKey, JSON.stringify(userData));
+
+                // Thông báo điểm trung bình
+                alert("Điểm trung bình: " + userData.averageScore);
+
+
+            }
+        }
+        function nextBtn() {
+            nextbtn.addEventListener("click", () => {
+                next();
+                displayStar();
+            })
+        }
+        if (!tudong) nextBtn();
+
+        document.getElementById("answer-button").addEventListener("click", () => {
+            displayanswer.textContent = flashcards[index].question;
+            displayanswer.style.visibility = "visible";
+            score(false);
+        });
+
+        document.getElementById("again-button").addEventListener("click", () => {
+            display(flashcards[index].question, flashcards[index].answer);
+            check(flashcards[index].question);
+        });
+
+        document.getElementById("automatic1").addEventListener("click", () => {
+            automatic();
+        });
+        document.getElementById("automatic2").addEventListener("click", () => {
+            tudong = false;
+            document.querySelector("#automatic2").style.display = "none";
+            document.querySelector("#automatic1").style.display = "inline";
+        });
+        function automatic() {
+            tudong = true;
+            document.querySelector("#automatic1").style.display = "none";
+            document.querySelector("#automatic2").style.display = "inline";
+        }
+
+        function displayMark() {
+            document.getElementById("table-body").innerHTML = "";
+            for (let i = 0; i < socau; i++) {
+                const tr = document.createElement("tr");
+                tr.innerHTML = `
+                    
+                        <td>${i + 1}</td>
+                        <td>${flashcards[i].question}</td>
+                        <td>${saveYourAnswer[i]}</td>
+                        <td>${flashcards[i].answer}</td>
+                    
+                `;
+                document.getElementById("table-body").appendChild(tr);
+            }
+        }
+
+        document.getElementById("save-word").addEventListener("click", () => {
+            // alert(document.querySelector("#save-word img").src);
+            if (document.querySelector("#save-word img").src.endsWith("star.png")) {
+                document.querySelector("#save-word img").src = "./image/star (1).png";
+                flashcards[index].save = true;
+                // alert(original[index].question === flashcards[index].question);
+                saveFavourite(true);
+            } else {
+                document.querySelector("#save-word img").src = "./image/star.png";
+                flashcards[index].save = false;
+                saveFavourite(false);
+
+            }
+        });
+        function saveFavourite(value) {
+            if (original[index].question === flashcards[index].question) {
+                original[index].save = value;
+            } else {
+                for (let i = 0; i < original.length; i++) {
+                    if (original[i].question === flashcards[index].question) {
+                        original[i].save = value;
+                        break;
+                    }
+                }
+            }
+            localStorage.setItem("data", JSON.stringify(original));
+            AddFavourite();
+        }
+        function displayStar() {
+            if (flashcards[index].save) {
+                document.querySelector("#save-word img").src = "./image/star (1).png";
+            } else document.querySelector("#save-word img").src = "./image/star.png";
+        }
+
+        function AddFavourite() {
+            // var favouriteList = JSON.parse(localStorage.getItem("favouriteID")) || [];
+            var favouriteList = [];
+            for (let i = 0; i < original.length; i++) {
+                if (original[i].save) favouriteList.push(original[i]);
+            }
+            localStorage.setItem("favouriteID", JSON.stringify(favouriteList));
+            console.log(favouriteList);
+
+        }
+        function speak(inputText) {
+            // const inputText = document.getElementById("text-input").value; // Lấy giá trị văn bản từ ô input
+            const utterance = new SpeechSynthesisUtterance(inputText); // Tạo đối tượng chứa văn bản cần đọc
+            window.speechSynthesis.speak(utterance); // Đọc văn bản
+        }
+
+
+
+        // Hàm phát âm thanh
+        function playAudio(status) {
+            const audio = new Audio(status);
+            audio.play();
+        }
+
+
+    </script>
+</body>
+
+</html>

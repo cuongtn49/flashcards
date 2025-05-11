@@ -1,0 +1,72 @@
+/* Thêm phần này vào giữa cặp <style> trong file HTML của bạn */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.container-divided-group,
+.export-data {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.left-group,
+.middle-group,
+.right-group,
+.export-addList,
+.export-removeList {
+    flex: 1;
+    height: 500px;
+    padding: 15px;
+    margin: 5px;
+    border: 2px solid #dee2e6;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    overflow-y: auto;
+}
+
+.left-group:hover,
+.right-group:hover {
+    background-color: #e9f5ff;
+    cursor: pointer;
+}
+
+.middle-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    color: #333;
+}
+
+#tuvung {
+    font-size: 28px;
+    color: #007bff;
+}
+
+#tuloai,
+#phienam,
+#nghia {
+    font-size: 22px;
+    font-weight: normal;
+}
+
+.export-addList,
+.export-removeList {
+    white-space: pre-line;
+    background-color: #f1f3f5;
+    font-family: monospace;
+    font-size: 16px;
+}

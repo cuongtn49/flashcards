@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text to Speech</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 90%;
+            max-width: 700px;
+        }
+
+        h2 {
+            margin-bottom: 15px;
+            color: #333;
+        }
+
+        textarea {
+            width: 90%;
+            height: 300px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            resize: none;
+            font-size: 16px;
+            outline: none;
+        }
+
+        button {
+            margin-top: 15px;
+            padding: 10px 20px;
+            background: #007bff;
+            color: #fff;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s ease-in-out;
+        }
+
+        button:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Text to Speech</h2>
+        <textarea id="content" placeholder="Nhập văn bản tại đây..."></textarea>
+        <button id="play">Phát Âm</button>
+    </div>
+
+    <script>
+        document.getElementById("play").addEventListener("click", () => {
+            speak(document.getElementById("content").value);
+        });
+
+        function speak(inputText) {
+            if (!inputText.trim()) {
+                alert("Vui lòng nhập văn bản.");
+                return;
+            }
+            const utterance = new SpeechSynthesisUtterance(inputText);
+            window.speechSynthesis.speak(utterance);
+        }
+    </script>
+
+</body>
+</html>
