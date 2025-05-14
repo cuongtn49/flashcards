@@ -13,7 +13,8 @@
     <script>
         // const struct={separatorSymbol:"--"};
         // localStorage.setItem("setting",JSON.stringify(struct));
-        const setting = JSON.parse(localStorage.getItem("setting"));
+        var setting = "--";
+        if (localStorage.getItem("setting")) setting = JSON.parse(localStorage.getItem("setting"));
         // alert(seting);
         document.getElementById("input").value=setting.separatorSymbol;
         document.getElementById("confirm").addEventListener("click",()=>{
