@@ -1,0 +1,211 @@
+/* style.css */
+
+/* Reset & font mặc định */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Roboto, sans-serif;
+}
+
+/* Nền và text chung */
+body {
+  background-color: #f5f6f8;
+  padding: 40px;
+  color: #2c3e50;
+}
+
+/* Tiêu đề */
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #34495e;
+  font-size: 28px;
+}
+
+/* Label & dropdown */
+label {
+  font-size: 1rem;
+  margin-right: 10px;
+}
+
+select {
+  padding: 8px 14px;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  color: #2c3e50;
+  transition: border-color 0.3s ease;
+}
+
+select:focus {
+  border-color: #3498db;
+  outline: none;
+}
+
+/* Bảng thời khóa biểu */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  border-radius: 6px;
+  overflow: hidden;
+  margin-top: 20px;
+}
+
+thead {
+  background-color: #3498db;
+  color: #fff;
+}
+
+th, td {
+  padding: 12px;
+  text-align: center;
+  border-bottom: 1px solid #eaeaea;
+}
+
+/* tbody tr:hover {
+  background-color: #f0f4f8;
+} */
+
+input[type="text"] {
+  width: 100%;
+  padding: 6px;
+  font-size: 0.95rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  text-align: center;
+  background-color: #fafafa;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+input[type="text"]:focus {
+  border-color: #2980b9;
+  background-color: #fff;
+  outline: none;
+}
+
+/* Nút Lưu */
+button {
+  margin: 30px auto 0;
+  display: block;
+  padding: 10px 24px;
+  background-color: #2ecc71;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #27ae60;
+}
+.table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+}
+/* Responsive cho điện thoại */
+@media (max-width: 768px) {
+  body {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 8px;
+  }
+
+  select {
+    width: 100%;
+    font-size: 0.95rem;
+  }
+
+  table {
+    font-size: 0.85rem;
+  }
+
+  th, td {
+    padding: 8px;
+  }
+
+  input[type="text"] {
+    font-size: 0.9rem;
+    padding: 5px;
+  }
+
+  button {
+    width: 100%;
+    font-size: 1rem;
+    padding: 12px;
+  }
+}
+
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 20px;
+  }
+
+  select, input[type="text"], button {
+    font-size: 0.9rem;
+  }
+
+  table {
+    font-size: 0.8rem;
+  }
+
+  th, td {
+    padding: 6px;
+  }
+}
+/* Ẩn mobile view ở màn hình lớn */
+.mobile-view {
+  display: none;
+}
+
+/* Khối từng ngày cho mobile */
+.day-block {
+  background-color: white;
+  margin-bottom: 16px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.day-block h3 {
+  margin-top: 0;
+  color: #007BFF;
+}
+
+.period-block {
+  margin-bottom: 8px;
+}
+
+.period-block input {
+  width: 100%;
+  padding: 6px;
+  font-size: 0.9rem;
+  margin-top: 4px;
+}
+
+/* Ẩn bảng trên điện thoại, hiển thị dạng khối */
+@media (max-width: 768px) {
+  .table-wrapper {
+    display: none;
+  }
+  .mobile-view {
+    display: block;
+  }
+}
+
+
+

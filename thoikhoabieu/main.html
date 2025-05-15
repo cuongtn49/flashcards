@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quản lý Thời Khóa Biểu</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Quản lý Thời Khóa Biểu</h1>
+      <label for="choices"></label>
+    <select id="choices" name="choices">
+        <option value="week1">Tuần 1</option>
+        <option value="week2">Tuần 2</option>
+        <option value="week3">Tuần 3</option>
+    </select>
+    <br><br>
+  <table id="timetable">
+    <thead>
+      <tr>
+        <th>Tiết</th>
+        <th>Thời gian</th>
+        <th>T2</th>
+        <th>T3</th>
+        <th>T4</th>
+        <th>T5</th>
+        <th>T6</th>
+        <th>T7</th>
+        <th>CN</th>
+      </tr>
+    </thead>
+    <tbody id="table-body">
+      <!-- Các dòng thời khóa biểu sẽ được thêm vào đây -->
+    </tbody>
+  </table>
+  <button onclick="saveChanges()">Lưu thay đổi</button>
+
+<script>
+  let week1 = [
+    ["1", "07:00-07:50", "3", "1", "2", "3", "1", "2", "3"],
+    ["2", "07:50-08:40", "3", "1", "2", "3", "1", "2", "3"],
+    ["3", "08:50-09:40", "3", "1", "2", "3", "1", "2", "3"],
+    ["4", "09:50-10:40", "3", "1", "2", "3", "1", "2", "3"],
+    ["5", "10:40-11:30", "3", "1", "2", "3", "1", "2", "3"],
+    ["6", "13:30-14:20", "3", "1", "2", "3", "1", "2", "3"],
+    ["7", "14:20-15:10", "3", "1", "2", "3", "1", "2", "3"],
+    ["8", "15:20-16:10", "3", "1", "2", "3", "1", "2", "3"],
+    ["9", "16:10-17:00", "3", "1", "2", "3", "1", "2", "3"]
+  ];
+
+  week = document.getElementById("choices").value || week1;
+
+  // Hiển thị thời khóa biểu
+  function displayTimetable() {
+    const tableBody = document.getElementById("table-body");
+    tableBody.innerHTML = ""; // Xóa nội dung bảng trước khi cập nhật
+
+    for (let i = 0; i < week.length; i++) {
+      const tr = document.createElement("tr");
+      tr.innerHTML = `
+        <td>${week[i][0]}</td>
+        <td>${week[i][1]}</td>
+        <td><input type="text" value="${week[i][2]}" onchange="updateTimetable(${i}, 2, this.value)"></td>
+        <td><input type="text" value="${week[i][3]}" onchange="updateTimetable(${i}, 3, this.value)"></td>
+        <td><input type="text" value="${week[i][4]}" onchange="updateTimetable(${i}, 4, this.value)"></td>
+        <td><input type="text" value="${week[i][5]}" onchange="updateTimetable(${i}, 5, this.value)"></td>
+        <td><input type="text" value="${week[i][6]}" onchange="updateTimetable(${i}, 6, this.value)"></td>
+        <td><input type="text" value="${week[i][7]}" onchange="updateTimetable(${i}, 7, this.value)"></td>
+        <td><input type="text" value="${week[i][8]}" onchange="updateTimetable(${i}, 8, this.value)"></td>
+      `;
+      tableBody.appendChild(tr);
+    }
+  }
+
+  // Cập nhật thời khóa biểu khi thay đổi giá trị
+  function updateTimetable(row, col, value) {
+    week[row][col] = value;
+  }
+
+  // Lưu thay đổi (giả sử lưu vào localStorage để tham khảo sau này)
+  function saveChanges() {
+    localStorage.setItem(week, JSON.stringify(week));
+    alert("Thay đổi đã được lưu.");
+  }
+
+  // Khi trang web được tải, hiển thị thời khóa biểu
+  window.onload = function() {
+    const savedTimetable = localStorage.getItem(week);
+    if (savedTimetable) {
+      week = JSON.parse(savedTimetable);
+    }
+    displayTimetable();
+  };
+</script>
+
+</body>
+</html>

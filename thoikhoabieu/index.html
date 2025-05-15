@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quản lý Thời Khóa Biểu</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a href="" onclick="fresh()">fresh</a>
+  <h1>Quản lý Thời Khóa Biểu</h1>
+
+  <label for="choices">Chọn tuần:</label>
+  <select id="choices" name="choices" onchange="onWeekChange()">
+      <option value="week1">Tuần 1</option>
+      <option value="week2">Tuần 2</option>
+      <option value="week3">Tuần 3</option>
+      <option value="week4">Tuần 4</option>
+      <option value="week5">Tuần 5</option>
+      <option value="week6">Tuần 6</option>
+      <option value="week7">Tuần 7</option>
+      <option value="week8">Tuần 8</option>
+      <option value="week9">Tuần 9</option>
+      <option value="week10">Tuần 10</option>
+      <option value="week11">Tuần 11</option>
+      <option value="week12">Tuần 12</option>
+      <option value="week13">Tuần 13</option>
+  </select>
+  
+  <br><br>
+
+  <div class="table-wrapper">
+    <table id="timetable">
+    <thead>
+      <tr>
+        <th>Tiết</th>
+        <th>Thời gian</th>
+        <th>T2</th>
+        <th>T3</th>
+        <th>T4</th>
+        <th>T5</th>
+        <th>T6</th>
+        <th>T7</th>
+        <th>CN</th>
+      </tr>
+    </thead>
+    <tbody id="table-body">
+      <!-- Các dòng thời khóa biểu sẽ được thêm vào đây -->
+    </tbody>
+  </table>
+  </div>
+  <div id="mobile-view" class="mobile-view"></div>
+
+
+  <button onclick="saveChanges()">Lưu thay đổi</button>
+
+<script>
+  // Dữ liệu mẫu cho tuần 1, 2, 3
+  const weekData = {
+    week1: [
+      ["1", "07:00-07:50", "Trí tuệ nhân tạo", "Điền kinh", "Nguyên lý hệ điều hành", "Máy học ứng dụng", "", "", ""],
+      ["2", "07:50-08:40", "Trí tuệ nhân tạo", "Điền kinh", "Nguyên lý hệ điều hành", "Máy học ứng dụng", "", "", ""],
+      ["3", "08:50-09:40", "Trí tuệ nhân tạo", "Điền kinh", "Nguyên lý hệ điều hành", "Máy học ứng dụng", "", "", ""],
+      ["4", "09:50-10:40", "", "", "", "", "", "", ""],
+      ["5", "10:40-11:30", "", "", "", "", "", "", ""],
+      ["6", "13:30-14:20", "Máy học ứng dụng", "Nguyên lý hệ điều hành", "Trí tuệ nhân tạo", "Tư tưởng HCM", "", "", ""],
+      ["7", "14:20-15:10", "Máy học ứng dụng", "Nguyên lý hệ điều hành", "Trí tuệ nhân tạo", "Tư tưởng HCM", "", "", ""],
+      ["8", "15:20-16:10", "Máy học ứng dụng", "Nguyên lý hệ điều hành", "Trí tuệ nhân tạo", "Tư tưởng HCM", "", "", ""],
+      ["9", "16:10-17:00", "", "", "", "", "", "", ""]
+    ],
+    week2: [
+      ["1", "07:00-07:50", "Trí tuệ nhân tạo", "Điền kinh", "Nguyên lý hệ điều hành", "Máy học ứng dụng", "", "", ""],
+      ["2", "07:50-08:40", "Trí tuệ nhân tạo", "Điền kinh", "Nguyên lý hệ điều hành", "Máy học ứng dụng", "", "", ""],
+      ["3", "08:50-09:40", "Trí tuệ nhân tạo", "Điền kinh", "Nguyên lý hệ điều hành", "Máy học ứng dụng", "", "", ""],
+      ["4", "09:50-10:40", "", "", "", "", "", "", ""],
+      ["5", "10:40-11:30", "", "", "", "", "", "", ""],
+      ["6", "13:30-14:20", "Máy học ứng dụng", "Nguyên lý hệ điều hành", "Trí tuệ nhân tạo", "Tư tưởng HCM", "", "", ""],
+      ["7", "14:20-15:10", "Máy học ứng dụng", "Nguyên lý hệ điều hành", "Trí tuệ nhân tạo", "Tư tưởng HCM", "", "", ""],
+      ["8", "15:20-16:10", "Máy học ứng dụng", "Nguyên lý hệ điều hành", "Trí tuệ nhân tạo", "Tư tưởng HCM", "", "", ""],
+      ["9", "16:10-17:00", "", "", "", "", "", "", ""]
+    ],
+    week3: [
+      ["1", "07:00-07:50", "Trí tuệ nhân tạo", "Điền kinh", "Nguyên lý hệ điều hành", "Máy học ứng dụng", "", "", ""],
+      ["2", "07:50-08:40", "Trí tuệ nhân tạo", "Điền kinh", "Nguyên lý hệ điều hành", "Máy học ứng dụng", "", "", ""],
+      ["3", "08:50-09:40", "Trí tuệ nhân tạo", "Điền kinh", "Nguyên lý hệ điều hành", "Máy học ứng dụng", "", "", ""],
+      ["4", "09:50-10:40", "", "", "", "", "", "", ""],
+      ["5", "10:40-11:30", "", "", "", "", "", "", ""],
+      ["6", "13:30-14:20", "Máy học ứng dụng", "Nguyên lý hệ điều hành", "Trí tuệ nhân tạo", "Tư tưởng HCM", "", "", ""],
+      ["7", "14:20-15:10", "Máy học ứng dụng", "Nguyên lý hệ điều hành", "Trí tuệ nhân tạo", "Tư tưởng HCM", "", "", ""],
+      ["8", "15:20-16:10", "Máy học ứng dụng", "Nguyên lý hệ điều hành", "Trí tuệ nhân tạo", "Tư tưởng HCM", "", "", ""],
+      ["9", "16:10-17:00", "", "", "", "", "", "", ""]
+    ],
+    week4: [
+      ["1", "07:00-07:50", "Trí tuệ nhân tạo", "Điền kinh", "Nguyên lý hệ điều hành", "Máy học ứng dụng", "", "", ""],
+      ["2", "07:50-08:40", "Trí tuệ nhân tạo", "Điền kinh", "Nguyên lý hệ điều hành", "Máy học ứng dụng", "", "", ""],
+      ["3", "08:50-09:40", "Trí tuệ nhân tạo", "Điền kinh", "Nguyên lý hệ điều hành", "Máy học ứng dụng", "", "", ""],
+      ["4", "09:50-10:40", "", "", "", "", "", "", ""],
+      ["5", "10:40-11:30", "", "", "", "", "", "", ""],
+      ["6", "13:30-14:20", "Máy học ứng dụng", "Nguyên lý hệ điều hành", "Trí tuệ nhân tạo", "Tư tưởng HCM", "", "", ""],
+      ["7", "14:20-15:10", "Máy học ứng dụng", "Nguyên lý hệ điều hành", "Trí tuệ nhân tạo", "Tư tưởng HCM", "", "", ""],
+      ["8", "15:20-16:10", "Máy học ứng dụng", "Nguyên lý hệ điều hành", "Trí tuệ nhân tạo", "Tư tưởng HCM", "", "", ""],
+      ["9", "16:10-17:00", "", "", "", "", "", "", ""]
+    ],
+    week5: [
+      ["1", "07:00-07:50", "Trí tuệ nhân tạo", "Điền kinh", "Nguyên lý hệ điều hành", "Máy học ứng dụng", "", "", ""],
+      ["2", "07:50-08:40", "Trí tuệ nhân tạo", "Điền kinh", "Nguyên lý hệ điều hành", "Máy học ứng dụng", "", "", ""],
+      ["3", "08:50-09:40", "Trí tuệ nhân tạo", "Điền kinh", "Nguyên lý hệ điều hành", "Máy học ứng dụng", "", "", ""],
+      ["4", "09:50-10:40", "", "", "", "", "", "", ""],
+      ["5", "10:40-11:30", "", "", "", "", "", "", ""],
+      ["6", "13:30-14:20", "Máy học ứng dụng", "Nguyên lý hệ điều hành", "Trí tuệ nhân tạo", "Tư tưởng HCM", "", "", ""],
+      ["7", "14:20-15:10", "Máy học ứng dụng", "Nguyên lý hệ điều hành", "Trí tuệ nhân tạo", "Tư tưởng HCM", "", "", ""],
+      ["8", "15:20-16:10", "Máy học ứng dụng", "Nguyên lý hệ điều hành", "Trí tuệ nhân tạo", "Tư tưởng HCM", "", "", ""],
+      ["9", "16:10-17:00", "", "", "", "", "", "", ""]
+    ],
+    week6: [
+      ["1", "07:00-07:50", "Trí tuệ nhân tạo", "Điền kinh", "Nguyên lý hệ điều hành", "Máy học ứng dụng", "", "", ""],
+      ["2", "07:50-08:40", "Trí tuệ nhân tạo", "Điền kinh", "Nguyên lý hệ điều hành", "Máy học ứng dụng", "", "", ""],
+      ["3", "08:50-09:40", "Trí tuệ nhân tạo", "Điền kinh", "Nguyên lý hệ điều hành", "Máy học ứng dụng", "", "", ""],
+      ["4", "09:50-10:40", "", "", "", "", "", "", ""],
+      ["5", "10:40-11:30", "", "", "", "", "", "", ""],
+      ["6", "13:30-14:20", "Máy học ứng dụng", "Nguyên lý hệ điều hành", "Trí tuệ nhân tạo", "Tư tưởng HCM", "", "", ""],
+      ["7", "14:20-15:10", "Máy học ứng dụng", "Nguyên lý hệ điều hành", "Trí tuệ nhân tạo", "Tư tưởng HCM", "", "", ""],
+      ["8", "15:20-16:10", "Máy học ứng dụng", "Nguyên lý hệ điều hành", "Trí tuệ nhân tạo", "Tư tưởng HCM", "", "", ""],
+      ["9", "16:10-17:00", "", "", "", "", "", "", ""]
+    ],
+    week7: [
+      ["1", "07:00-07:50", "Trí tuệ nhân tạo", "Điền kinh", "Nguyên lý hệ điều hành", "Máy học ứng dụng", "", "", ""],
+      ["2", "07:50-08:40", "Trí tuệ nhân tạo", "Điền kinh", "Nguyên lý hệ điều hành", "Máy học ứng dụng", "", "", ""],
+      ["3", "08:50-09:40", "Trí tuệ nhân tạo", "Điền kinh", "Nguyên lý hệ điều hành", "Máy học ứng dụng", "", "", ""],
+      ["4", "09:50-10:40", "", "", "", "", "", "", ""],
+      ["5", "10:40-11:30", "", "", "", "", "", "", ""],
+      ["6", "13:30-14:20", "Máy học ứng dụng", "Nguyên lý hệ điều hành", "Trí tuệ nhân tạo", "Tư tưởng HCM", "", "", ""],
+      ["7", "14:20-15:10", "Máy học ứng dụng", "Nguyên lý hệ điều hành", "Trí tuệ nhân tạo", "Tư tưởng HCM", "", "", ""],
+      ["8", "15:20-16:10", "Máy học ứng dụng", "Nguyên lý hệ điều hành", "Trí tuệ nhân tạo", "Tư tưởng HCM", "", "", ""],
+      ["9", "16:10-17:00", "", "", "", "", "", "", ""]
+    ],
+    week8: [
+      ["1", "07:00-07:50", "Trí tuệ nhân tạo", "Điền kinh", "Nguyên lý hệ điều hành", "Máy học ứng dụng", "", "", ""],
+      ["2", "07:50-08:40", "Trí tuệ nhân tạo", "Điền kinh", "Nguyên lý hệ điều hành", "Máy học ứng dụng", "", "", ""],
+      ["3", "08:50-09:40", "Trí tuệ nhân tạo", "Điền kinh", "Nguyên lý hệ điều hành", "Máy học ứng dụng", "", "", ""],
+      ["4", "09:50-10:40", "", "", "", "", "", "", ""],
+      ["5", "10:40-11:30", "", "", "", "", "", "", ""],
+      ["6", "13:30-14:20", "Máy học ứng dụng", "Nguyên lý hệ điều hành", "Trí tuệ nhân tạo", "Tư tưởng HCM", "", "", ""],
+      ["7", "14:20-15:10", "Máy học ứng dụng", "Nguyên lý hệ điều hành", "Trí tuệ nhân tạo", "Tư tưởng HCM", "", "", ""],
+      ["8", "15:20-16:10", "Máy học ứng dụng", "Nguyên lý hệ điều hành", "Trí tuệ nhân tạo", "Tư tưởng HCM", "", "", ""],
+      ["9", "16:10-17:00", "", "", "", "", "", "", ""]
+    ],
+    week9: [
+      ["1", "07:00-07:50", "Trí tuệ nhân tạo", "Điền kinh", "Nguyên lý hệ điều hành", "Máy học ứng dụng", "", "", ""],
+      ["2", "07:50-08:40", "Trí tuệ nhân tạo", "Điền kinh", "Nguyên lý hệ điều hành", "Máy học ứng dụng", "", "", ""],
+      ["3", "08:50-09:40", "Trí tuệ nhân tạo", "Điền kinh", "Nguyên lý hệ điều hành", "Máy học ứng dụng", "", "", ""],
+      ["4", "09:50-10:40", "", "", "", "", "", "", ""],
+      ["5", "10:40-11:30", "", "", "", "", "", "", ""],
+      ["6", "13:30-14:20", "Máy học ứng dụng", "Nguyên lý hệ điều hành", "Trí tuệ nhân tạo", "Tư tưởng HCM", "", "", ""],
+      ["7", "14:20-15:10", "Máy học ứng dụng", "Nguyên lý hệ điều hành", "Trí tuệ nhân tạo", "Tư tưởng HCM", "", "", ""],
+      ["8", "15:20-16:10", "Máy học ứng dụng", "Nguyên lý hệ điều hành", "Trí tuệ nhân tạo", "Tư tưởng HCM", "", "", ""],
+      ["9", "16:10-17:00", "", "", "", "", "", "", ""]
+    ],
+    week10: [
+      ["1", "07:00-07:50", "Trí tuệ nhân tạo", "Điền kinh", "Nguyên lý hệ điều hành", "Máy học ứng dụng", "", "", ""],
+      ["2", "07:50-08:40", "Trí tuệ nhân tạo", "Điền kinh", "Nguyên lý hệ điều hành", "Máy học ứng dụng", "", "", ""],
+      ["3", "08:50-09:40", "Trí tuệ nhân tạo", "Điền kinh", "Nguyên lý hệ điều hành", "Máy học ứng dụng", "", "", ""],
+      ["4", "09:50-10:40", "", "", "", "", "", "", ""],
+      ["5", "10:40-11:30", "", "", "", "", "", "", ""],
+      ["6", "13:30-14:20", "Máy học ứng dụng", "Nguyên lý hệ điều hành", "Trí tuệ nhân tạo", "Tư tưởng HCM", "", "", ""],
+      ["7", "14:20-15:10", "Máy học ứng dụng", "Nguyên lý hệ điều hành", "Trí tuệ nhân tạo", "Tư tưởng HCM", "", "", ""],
+      ["8", "15:20-16:10", "Máy học ứng dụng", "Nguyên lý hệ điều hành", "Trí tuệ nhân tạo", "Tư tưởng HCM", "", "", ""],
+      ["9", "16:10-17:00", "", "", "", "", "", "", ""]
+    ],
+    week11: [
+      ["1", "07:00-07:50", "Trí tuệ nhân tạo", "Điền kinh", "Nguyên lý hệ điều hành", "Máy học ứng dụng", "", "", ""],
+      ["2", "07:50-08:40", "Trí tuệ nhân tạo", "Điền kinh", "Nguyên lý hệ điều hành", "Máy học ứng dụng", "", "", ""],
+      ["3", "08:50-09:40", "Trí tuệ nhân tạo", "Điền kinh", "Nguyên lý hệ điều hành", "Máy học ứng dụng", "", "", ""],
+      ["4", "09:50-10:40", "", "", "", "", "", "", ""],
+      ["5", "10:40-11:30", "", "", "", "", "", "", ""],
+      ["6", "13:30-14:20", "Máy học ứng dụng", "Nguyên lý hệ điều hành", "Trí tuệ nhân tạo", "Tư tưởng HCM", "", "", ""],
+      ["7", "14:20-15:10", "Máy học ứng dụng", "Nguyên lý hệ điều hành", "Trí tuệ nhân tạo", "Tư tưởng HCM", "", "", ""],
+      ["8", "15:20-16:10", "Máy học ứng dụng", "Nguyên lý hệ điều hành", "Trí tuệ nhân tạo", "Tư tưởng HCM", "", "", ""],
+      ["9", "16:10-17:00", "", "", "", "", "", "", ""]
+    ],
+    week12: [
+      ["1", "07:00-07:50", "Trí tuệ nhân tạo", "Điền kinh", "Nguyên lý hệ điều hành", "Máy học ứng dụng", "", "", ""],
+      ["2", "07:50-08:40", "Trí tuệ nhân tạo", "Điền kinh", "Nguyên lý hệ điều hành", "Máy học ứng dụng", "", "", ""],
+      ["3", "08:50-09:40", "Trí tuệ nhân tạo", "Điền kinh", "Nguyên lý hệ điều hành", "Máy học ứng dụng", "", "", ""],
+      ["4", "09:50-10:40", "", "", "", "", "", "", ""],
+      ["5", "10:40-11:30", "", "", "", "", "", "", ""],
+      ["6", "13:30-14:20", "Máy học ứng dụng", "Nguyên lý hệ điều hành", "Trí tuệ nhân tạo", "Tư tưởng HCM", "", "", ""],
+      ["7", "14:20-15:10", "Máy học ứng dụng", "Nguyên lý hệ điều hành", "Trí tuệ nhân tạo", "Tư tưởng HCM", "", "", ""],
+      ["8", "15:20-16:10", "Máy học ứng dụng", "Nguyên lý hệ điều hành", "Trí tuệ nhân tạo", "Tư tưởng HCM", "", "", ""],
+      ["9", "16:10-17:00", "", "", "", "", "", "", ""]
+    ],
+    week13: [
+      ["1", "07:00-07:50", "Trí tuệ nhân tạo", "Điền kinh", "Nguyên lý hệ điều hành", "Máy học ứng dụng", "", "", ""],
+      ["2", "07:50-08:40", "Trí tuệ nhân tạo", "Điền kinh", "Nguyên lý hệ điều hành", "Máy học ứng dụng", "", "", ""],
+      ["3", "08:50-09:40", "Trí tuệ nhân tạo", "Điền kinh", "Nguyên lý hệ điều hành", "Máy học ứng dụng", "", "", ""],
+      ["4", "09:50-10:40", "", "", "", "", "", "", ""],
+      ["5", "10:40-11:30", "", "", "", "", "", "", ""],
+      ["6", "13:30-14:20", "Máy học ứng dụng", "Nguyên lý hệ điều hành", "Trí tuệ nhân tạo", "Tư tưởng HCM", "", "", ""],
+      ["7", "14:20-15:10", "Máy học ứng dụng", "Nguyên lý hệ điều hành", "Trí tuệ nhân tạo", "Tư tưởng HCM", "", "", ""],
+      ["8", "15:20-16:10", "Máy học ứng dụng", "Nguyên lý hệ điều hành", "Trí tuệ nhân tạo", "Tư tưởng HCM", "", "", ""],
+      ["9", "16:10-17:00", "", "", "", "", "", "", ""]
+    ]
+  };
+
+  let currentWeekName = "week1";
+  let week = [];
+
+  function onWeekChange() {
+    currentWeekName = document.getElementById("choices").value;
+    const saved = localStorage.getItem(currentWeekName);
+    if (saved) {
+      week = JSON.parse(saved);
+    } else {
+      // Tạo bản sao mới để không thay đổi dữ liệu gốc
+      week = JSON.parse(JSON.stringify(weekData[currentWeekName]));
+    }
+    displayTimetable();
+  }
+
+  function displayTimetable() {
+    const tableBody = document.getElementById("table-body");
+    tableBody.innerHTML = "";
+
+    for (let i = 0; i < week.length; i++) {
+      const tr = document.createElement("tr");
+      tr.innerHTML = `
+        <td>${week[i][0]}</td>
+        <td>${week[i][1]}</td>
+        ${week[i].slice(2).map((val, colIndex) => 
+          `<td><input type="text" value="${val}" onchange="updateTimetable(${i}, ${colIndex + 2}, this.value)"></td>`
+        ).join("")}
+      `;
+      tableBody.appendChild(tr);
+    }
+  }
+
+  function updateTimetable(row, col, value) {
+    week[row][col] = value;
+  }
+
+  function saveChanges() {
+    localStorage.setItem(currentWeekName, JSON.stringify(week));
+    alert("Thời khóa biểu đã được lưu cho " + currentWeekName);
+  }
+
+  window.onload = function() {
+    onWeekChange(); // Gọi để load dữ liệu tuần mặc định
+  };
+
+
+
+  function displayTimetable() {
+  const tableBody = document.getElementById("table-body");
+  const mobileView = document.getElementById("mobile-view");
+  tableBody.innerHTML = "";
+  mobileView.innerHTML = "";
+
+  const weekdays = ["Thứ 2", "Thứ 3", "Thứ 4", "Thứ 5", "Thứ 6", "Thứ 7", "Chủ Nhật"];
+
+  // Hiển thị bảng cho màn hình lớn
+  for (let i = 0; i < week.length; i++) {
+    const tr = document.createElement("tr");
+    tr.innerHTML = `
+      <td>${week[i][0]}</td>
+      <td>${week[i][1]}</td>
+      ${week[i].slice(2).map((val, colIndex) => 
+        `<td><input type="text" value="${val}" onchange="updateTimetable(${i}, ${colIndex + 2}, this.value)"></td>`
+      ).join("")}
+    `;
+    tableBody.appendChild(tr);
+  }
+
+  // Hiển thị khối cho thiết bị nhỏ
+  for (let col = 2; col <= 8; col++) {
+    const dayBlock = document.createElement("div");
+    dayBlock.className = "day-block";
+    dayBlock.innerHTML = `<h3>${weekdays[col - 2]}</h3>`;
+
+    for (let row = 0; row < week.length; row++) {
+      const period = document.createElement("div");
+      period.className = "period-block";
+      period.innerHTML = `
+        <strong>Tiết ${week[row][0]} (${week[row][1]}):</strong>
+        <input type="text" value="${week[row][col]}" 
+               onchange="updateTimetable(${row}, ${col}, this.value)">
+      `;
+      dayBlock.appendChild(period);
+    }
+    mobileView.appendChild(dayBlock);
+  }
+}
+
+
+function fresh(){
+        localStorage.removeItem("week1");
+        localStorage.removeItem("week2");
+        localStorage.removeItem("week3");
+        localStorage.removeItem("week4");
+        localStorage.removeItem("week5");
+        localStorage.removeItem("week6");
+        localStorage.removeItem("week7");
+        localStorage.removeItem("week8");
+        localStorage.removeItem("week9");
+        localStorage.removeItem("week10");
+        localStorage.removeItem("week11");
+        localStorage.removeItem("week12");
+        localStorage.removeItem("week13");
+}
+
+</script>
+
+</body>
+</html>
